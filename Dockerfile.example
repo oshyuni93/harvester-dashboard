@@ -1,22 +1,17 @@
 FROM node:20 AS builder
 
-WORKDIR /app
+WORKDIR /src
 
 COPY . .
+RUN yarn --pure-lockfile install --ignore-engines
 
-ENV RANCHER_ENV=harvester
-ENV API=https://192.168.100.10
-RUN yarn install --frozen-lockfile && \
-    yarn build
+ENV RANCHER_ENV=harvester \
+    API=https://192.168.100.10 \
+    ROUTER_BASE="/harvester/" \
+    RESOURCE_BASE="/harvester/"
+RUN yarn build
 
-# Serve Stage
-FROM nginx:alpine
-
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Copy custom nginx config (optional)
-# COPY nginx.conf /etc/nginx/nginx.conf
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+FROM rancher/harvester:v1.4.2
+WORKDIR /var/lib/harvester/
+RUN rm -rf /usr/share/harvester/harvester*
+COPY --from=builder /src/dist /usr/share/harvester/harvester/
