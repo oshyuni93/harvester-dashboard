@@ -3,11 +3,11 @@ FROM node:20 AS builder
 WORKDIR /src
 
 COPY . .
-RUN yarn install
+RUN yarn --pure-lockfile install --ignore-engines
 
 ENV ROUTER_BASE="/dashboard/" \
     RESOURCE_BASE="/dashboard/"
-RUN yarn run build
+RUN yarn run build 
 
 FROM rancher/harvester:v1.4.2
 WORKDIR /var/lib/harvester
