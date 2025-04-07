@@ -9,7 +9,7 @@ ENV ROUTER_BASE="/dashboard/" \
     RESOURCE_BASE="/dashboard/"
 RUN yarn run build
 
-FROM harvester/harvester:v1.4.2
+FROM rancher/harvester:v1.4.2
 WORKDIR /var/lib/harvester
 RUN rm -rf /usr/share/harvester/ui-dashboard/dashboard*
 COPY --from=builder /src/dist /usr/share/harvester/ui-dashboard/dashboard
