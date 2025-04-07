@@ -7,10 +7,9 @@ COPY . .
 RUN yarn --pure-lockfile install --ignore-engines
 ENV RANCHER_ENV=harvester
 ENV API=https://192.168.100.10
-ENV ROUTER_BASE="/dashboard/"
-RUN yarn run build
+RUN yarn build
 
-FROM rancher/harvester:v1.4.2
-WORKDIR /var/lib/harvester
-RUN rm -rf /usr/share/harvester/ui-dashboard/dashboard*
-COPY --from=builder /src/dist /usr/share/harvester/ui-dashboard/dashboard
+EXPOSE 80
+EXPOSE 443
+ENTRYPOINT ["yarn"]
+CMD ["start"]
