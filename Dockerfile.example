@@ -11,5 +11,6 @@ RUN yarn --pure-lockfile install --ignore-engines
 RUN yarn run build 
 
 EXPOSE 80
+EXPOSE 443
 ENTRYPOINT ["yarn"]
 CMD ["start"]
