@@ -1,0 +1,59 @@
+name: Tests
+on:
+  push:
+    branches:
+      - master
+      - 'release-*'
+  pull_request:
+    branches:
+      - master
+      - 'release-*'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+      
+      - name: Run tests
+        uses: ./.github/actions/unit-tests
+
+      - name: Collect Coverage
+        run: |
+          mkdir -p coverage-artifacts/coverage
+          cp coverage/unit/coverage-final.json coverage-artifacts/coverage/coverage-unit.json
+          cp -r coverage/unit/ coverage-artifacts/coverage/unit/
+
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{github.run_number}}-${{github.run_attempt}}-coverage
+          path: coverage-artifacts/**/*
+
+  i18n:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Run i18n lint
+        uses: ./.github/actions/i18n-lint
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Run tests
+        uses: ./.github/actions/lint
