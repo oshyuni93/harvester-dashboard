@@ -9,7 +9,16 @@ ENV RANCHER_ENV=harvester \
     API=https://192.168.100.10 \
     ROUTER_BASE="/dashboard/" \
     RESOURCE_BASE="/dashboard/"
+ENV HARVESTER_SERVER_HTTPS_PORT=8443 \
+    HARVESTER_SERVER_HTTP_PORT=0 \
+    HARVESTER_DEBUG=false \
+    HCI_MODE=true \
+    RANCHER_EMBEDDED=true \
+    HARVESTER_SUPPORT_BUNDLE_IMAGE_DEFAULT_VALUE='{"repository":"rancher/support-bundle-kit","tag":"v0.0.46","imagePullPolicy":"IfNotPresent"}'
 RUN yarn build
+
+EXPOSE 8443
+EXPOSE 6060
 
 FROM rancher/harvester:v1.4.2
 WORKDIR /var/lib/harvester
