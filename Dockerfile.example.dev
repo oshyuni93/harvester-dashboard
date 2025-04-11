@@ -1,0 +1,14 @@
+FROM node:20 AS builder
+
+WORKDIR /src
+
+COPY . .
+
+ENV RANCHER_ENV=harvester
+ENV API=https://192.168.100.10
+
+RUN yarn --pure-lockfile install --ignore-engines
+RUN yarn run build 
+
+ENTRYPOINT ["yarn"]
+CMD ["start"]
