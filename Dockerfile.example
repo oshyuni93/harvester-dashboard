@@ -7,10 +7,11 @@ RUN yarn --pure-lockfile install --ignore-engines
 
 ENV RANCHER_ENV=harvester \
     API=https://192.168.100.10 \
-    ROUTER_BASE="/harvester/" \
-    RESOURCE_BASE="/harvester/"
+    ROUTER_BASE="/dashboard/" \
+    RESOURCE_BASE="/dashboard/"
 RUN yarn build
 
 FROM rancher/harvester:v1.4.2
-WORKDIR /var/lib/harvester/harvester
-COPY --from=builder /src/dist /usr/share/harvester/harvester/
+WORKDIR /var/lib/harvester
+RUN rm -rf /usr/share/harvester/harvester*
+COPY --from=builder /src/dist /usr/share/harvester/harvester
