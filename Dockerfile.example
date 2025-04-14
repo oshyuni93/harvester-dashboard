@@ -3,10 +3,13 @@ FROM node:20 AS builder
 WORKDIR /src
 
 COPY . .
+
+ENV RANCHER_ENV=harvester
+ENV API=https://192.168.100.10
+
 RUN yarn --pure-lockfile install --ignore-engines
 RUN yarn build
 
 FROM rancher/harvester:v1.4.2
 WORKDIR /var/lib/harvester
-RUN rm -rf /usr/share/harvester/harvester*
 COPY --from=builder /src/dist /usr/share/harvester/harvester

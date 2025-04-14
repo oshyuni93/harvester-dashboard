@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  harvester-dashboard:
+    image: ghcr.io/oshyuni93/harvester-dashboard:v0.14
+    container_name: harvester-dashboard
+    ports:
+      - "8443:8443"
+    environment:
+      - NAMESPACE=harvester-system
+      - KUBECONFIG=/root/.kube/config
+    volumes:
+      - ~/.kube/config/k3s.yaml:/root/.kube/config:ro
+    restart: unless-stopped
+
