@@ -1,492 +1,492 @@
 generic:
-  tip: Tip
-  resourceExternalLinkTips: 'External Link'
-  namespace: Namespace
-  notReady: Not Ready
-  labels: Labels
-  inProgress: In Progress
-  basic: Basic
-  loading: Loading...
+  tip: 팁
+  resourceExternalLinkTips: '외부 연결'
+  namespace: 네임스페이스
+  notReady: 준비되지 않음
+  labels: 라벨
+  inProgress: 진행 중
+  basic: 기본
+  loading: 로딩 중...
 
 nav:
   group:
-    networks: Networks
-    backupAndSnapshot: Backup and Snapshots
-    Monitoring: Monitoring
-    Logging: Logging
-    'Monitoring and Logging': Monitoring and Logging
+    networks: 네트워크
+    backupAndSnapshot: 백업 및 스냅샷
+    Monitoring: 모니터링
+    Logging: 로깅
+    'Monitoring and Logging': 모니터링 및 로깅
 
 resourceTable:
   groupBy:
-    device: Group by Device
+    device: 장비 그룹룹
 
 validation:
-  arrayCountRequired: "At least {count} {key} {count, plural, =1 {is} other {are}} required, and {key} can not be empty."
+  arrayCountRequired: "최소한 {count}개의 {key} {count, plural, =1 {is} other {are}}가 필요하며, {key}는 비어 있을 수 없습니다."
 
 members:
-  clusterMemebership: Cluster Membership
-  projectMembership: Project Membership
+  clusterMemebership: 클러스터 멤버십
+  projectMembership: 프로젝트 멤버십
 
 asyncButton:
   restart:
-    action: Save and Restart
-    success: Restarted
-    waiting: Restarting&hellip;
+    action: 저장 및 재시작
+    success: 재시작됨
+    waiting: 재시작중
 
 harvester:
   branding:
     logos:
-      tip: 'Upload a logo to replace the Harvester logo in the top-level navigation header. Image height should be 21 pixels with a max width of 200 pixels. Max file size is 20KB. Accepted formats: JPEG, PNG, SVG.'
+      tip: '상단 탐색 헤더에 있는 Harvester 로고를 대체할 로고를 업로드하세요. 이미지 높이는 21픽셀, 최대 너비는 200픽셀이어야 합니다. 최대 파일 크기는 20KB입니다. JPEG, PNG, SVG 형식을 지원합니다.'
     favicon:
-      tip: 'Upload an icon to replace the Harvester favicon in the browser tab. Max file size is 20KB'
+      tip: '브라우저 탭에 있는 Harvester 파비콘을 대체할 아이콘을 업로드하세요. 최대 파일 크기는 20KB입니다.'
   productLabel: 'Harvester'
   modal:
     backup:
-      success: 'Backup { backUpName } has been initiated.'
-      addBackup: Add Backup
+      success: '백업 { backUpName } 이 시작 되었습니다.'
+      addBackup: 백업 추가
     quota:
-      editVMQuota: Edit VM Quota
-      editQuota: Edit Quota
-      bannerMessage: Set to empty string or 0 to remove total snapshot size quota.
+      editVMQuota: VM 할당량 수정
+      editQuota: 할당량 수정
+      bannerMessage: 빈 문자열을 설정하거나 0을 설정하면 전체 스냅샷 크기 할당량이 제거됩니다.
     restore:
-      success: 'Restore { name } created successfully.'
-      title: Backup and Restore
-      selectBackup: Select Backup
+      success: '복원 { name }이 성공적으로 생성되었습니다.'
+      title: 백업 및 복원
+      selectBackup: 백업 선택
       message:
-        backup: Please select the backup that needs to be restored.
+        backup: 복원해야 할 백업을 선택하세요.
     createTemplate:
-      title: 'Generate Template'
-      name: 'Name'
-      description: 'Description'
+      title: '템플릿 생성'
+      name: '이름'
+      description: '설명'
       message:
-        tip: Please enter a template name!
-        success: 'Template { templateName } created successfully.'
-        failed: 'Failed generated template!'
+        tip: 템플릿 이름을 입력하세요!
+        success: '템플릿 { templateName }이 성공적으로 생성되었습니다..'
+        failed: '템플릿을 생성하는 데 실패했습니다!'
     schedule:
-      title: Create Schedule
+      title: 일정 만들기
       message:
-        tip: Please enter a schedule name!
-        success: 'Schedule { name } created successfully.'
-        failed: 'Failed create schedule!'
+        tip: 일정 이름을 입력하세요!
+        success: '일정 { name }이 성공적으로 생성되었습니다.'
+        failed: '일정을 만드는 데 실패했습니다!'
     cloneVM:
-      title: Clone Virtual Machine
-      name: New Virtual Machine Name
-      type: Clone volume data
+      title: 가상 머신 복제
+      name: 새 가상 머신 이름
+      type: 클론 볼륨 데이터
       action:
-        create: Create
-        clone: Clone
+        create: 생성
+        clone: 복제
       message:
-        tip: Please enter a virtual machine name!
-        success: 'Virtual machine { name } cloned successfully.'
-        failed: 'Failed clone virtual machine!'
+        tip: 가상 머신 이름을 입력하세요!
+        success: '가상 머신 {name}이 성공적으로 복제되었습니다.'
+        failed: '가상 머신 복제에 실패했습니다!'
         support:
-          longhorn: The virtual machine uses Longhorn v2 volumes, which do not <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">support</a> the Clone action.
+          longhorn: 가상 머신은 복제 작업을 <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">지원</a>하지 않는 Longhorn v2 볼륨을 사용합니다.
     exportImage:
-      title: Export to Image
-      name: Name
-      namespace: Namespace
+      title: 이미지로 내보내기
+      name: 이름
+      namespace: 네임스페이스
       message:
-        success: 'Image { name } created successfully.'
+        success: '이미지 { name }이 성공적으로 생성되었습니다.'
         support:
-          longhorn: The volume uses Longhorn V2 engine, which does not <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">support</a> the Export Image action.
+          longhorn: 해당 볼륨은 Longhorn V2 엔진을 사용하는데, 이 엔진은 이미지 내보내기 작업을 <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">지원</a>하지 않습니다.
     migration:
-      failedMessage: Latest migration failed!
-      title: Migration
+      failedMessage: 최근 마이그레이션에 실패했습니다!
+      title: 마이그레이션
       fields:
         nodeName:
-          label: Target Node
-          placeholder: Choose Target Node
+          label: 대상 노드
+          placeholder: 대상 노드 선택
     ejectCDROM:
-      title: Eject CD-ROM
-      warnTip: Eject volume will restart the virtual machine.
-      operationTip: 'Select the volume you want to delete:'
-      delete: Delete
+      title: CD-ROM 꺼내기
+      warnTip: 객체 볼륨은 가상 머신을 다시 시작합니다.
+      operationTip: '삭제할 볼륨을 선택하세요:'
+      delete: 삭제
     bundle:
-      title: Generate a Support Bundle
-      url: Issue URL
-      description: Description
-      requiredDesc: Description is required!
-      titleDescription: Collect system-related logs in Harvester to help with troubleshooting and support.
+      title: 지원 번들 생성
+      url: 문제 URL
+      description: 설명
+      requiredDesc: 설명은 필수입니다!
+      titleDescription: 문제 해결 및 지원에 도움이 되도록 Harvester에서 시스템 관련 로그를 수집합니다.
     hotplug:
-      success: 'Volume { diskName } is mounted to the virtual machine { vm }.'
-      title: Add Volume
+      success: '볼륨 { diskName }이 가상 머신 { vm }에 마운트되었습니다.'
+      title: 불륨 추가
     hotunplug:
-      success: 'Volume { name } is detached successfully.'
+      success: '볼륨 {name}이 성공적으로 분리되었습니다.'
     snapshot:
-      title: Take Snapshot
-      name: Name
+      title: 스냅샷 찍기
+      name: 이름
       message:
-        success: 'Take Snapshot { name } successfully.'
+        success: '스냅샷 {name}을 성공적으로 찍었습니다.'
         support:
-          longhorn: The volume uses Longhorn V2 engine, which does not <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">support</a> the Take Snapshot action.
+          longhorn: 해당 볼륨은 스냅샷 찍기 작업을 <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">지원</a>하지 않는 Longhorn V2 엔진을 사용합니다.
     volumeClone:
-      title: Clone Volume
-      name: Name
+      title: 볼륨 복제
+      name: 이름
       message:
-        success: 'New Volume { name } cloned successfully.'
+        success: '새 볼륨 { name }이 성공적으로 복제되었습니다.'
         support:
-          longhorn: The volume uses Longhorn V2 engine, which does not <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">support</a> the Clone action.
+          longhorn: 해당 볼륨은 복제 작업을 <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">지원</a>하지 않는 Longhorn V2 엔진을 사용합니다.
     restoreSnapshot:
-      title: Restore Snapshot
-      name: 'New Volume Name'
-      success: 'New Volume { name } restored successfully.'
+      title: 스냅샷 복원
+      name: '새 볼륨 이름'
+      success: '새 볼륨 { name }이 성공적으로 복원되었습니다.'
     vmSnapshot:
-      title: Take Virtual Machine Snapshot
-      name: Name
+      title: 가상 머신 스냅샷 찍기
+      name: 이름
       message:
-        success: 'Take virtual machine Snapshot { name } successfully.'
+        success: '가상 머신 스냅샷 {name}을 성공적으로 만들었습니다.'
         support:
-          longhorn: The VM uses Longhorn v2 volumes, which do not <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">support</a> the Take Snapshot action.
+          longhorn: VM은 스냅샷 찍기 작업을 <a href="https://docs.harvesterhci.io/v1.4/advanced/longhorn-v2/#limitations" target="_blank">지원</a>하지 않는 Longhorn v2 볼륨을 사용합니다.
     restart:
-      title: Restart Virtual Machine
-      tip: Restart the virtual machine for configuration changes to take effect.
-      cancel: Save
+      title: 가상 머신 다시 시작
+      tip: 구성 변경 사항을 적용하려면 가상 머신을 다시 시작하세요.
+      cancel: 저장
   notification:
     title:
-      succeed: Succeed
+      succeed: 성공
       info: Info
       warning: Warning
       error: Error
   action:
-    createVM: Create Virtual Machine
-    start: Start
-    restart: Restart
-    softreboot: Soft Reboot
-    stop: Stop
-    pause: Pause
-    deepClone: Clone
-    shallowClone: Clone Template
-    unpause: Unpause
-    encryptImage: Encrypt Image
-    decryptImage: Decrypt Image
-    ejectCDROM: Eject CD-ROM
-    editVMQuota: Edit Virtual Machine Quota
-    launchFormTemplate: Launch instance from template
-    modifyTemplate: Modify template (Create new version)
-    setDefaultVersion: Set default version
-    addTemplateVersion: Add template version
-    backup: Take Backup
-    createSchedule: Create Schedule
-    restore: Restore
-    restoreNewVM: Restore New
-    resumeSchedule: Resume
-    suspendSchedule: Suspend
-    restoreExistingVM: Replace Existing
-    migrate: Migrate
-    abortMigration: Abort Migration
-    createTemplate: Generate Template
-    enableMaintenance: Enable Maintenance Mode
-    disableMaintenance: Disable Maintenance Mode
-    enableCPUManager: Enable CPU Manager
-    disableCPUManager: Disable CPU Manager
-    cordon: Cordon
-    uncordon: Uncordon
-    addHotplug: Add Volume
-    exportImage: Export Image
-    viewlogs: View Logs
-    cancelExpand: Cancel Expand
-    snapshot: Take Snapshot
-    pvcClone: Clone Volume
-    vmSnapshot: Take Virtual Machine Snapshot
-    shutdown: Shut Down
-    powerOn: Power On
-    reboot: Reboot
-    forceStop: Force Stop
+    createVM: 가상 머신 생성
+    start: 시작
+    restart: 재시작
+    softreboot: 소프트 재부팅
+    stop: 멈춤
+    pause: 일시중지
+    deepClone: 복제
+    shallowClone: 복제 템플릿
+    unpause: 일시중지 해제
+    encryptImage: 이미지 암호화
+    decryptImage: 이미지 복호화
+    ejectCDROM: CD-ROM 꺼내기
+    editVMQuota: 가상 머신 할당량 편집
+    launchFormTemplate: 템플릿에서 인스턴스 시작
+    modifyTemplate: 템플릿 수정(새 버전 만들기)
+    setDefaultVersion: 기본 버전 설정
+    addTemplateVersion: 템플릿 버전 추가
+    backup: 백업 받기
+    createSchedule: 일정 만들기
+    restore: 복원
+    restoreNewVM: 새로 복원
+    resumeSchedule: 재개
+    suspendSchedule: 유예
+    restoreExistingVM: 기존 교체
+    migrate: 마이그레이션
+    abortMigration: 마이그레이션 중단
+    createTemplate: 템플릿 생성
+    enableMaintenance: 유지 관리 모드 활성화
+    disableMaintenance: 유지 관리 모드 비활성화
+    enableCPUManager: CPU 관리자 활성화
+    disableCPUManager: CPU 관리자 비활성화
+    cordon: 차단
+    uncordon: 차단 해제
+    addHotplug: 볼륨 추가
+    exportImage: 이미지 내보내기
+    viewlogs: 로그 보기
+    cancelExpand: 펼치기 취소
+    snapshot: 스냅샷 찍기
+    pvcClone: 볼륨 복제
+    vmSnapshot: 가상 머신 스냅샷 찍기
+    shutdown: 종료
+    powerOn: 전원 켜기
+    reboot: 재부팅
+    forceStop: 강제 정지
   tableHeaders:
-    imageEncryption: Encryption
-    size: Size
-    virtualSize: Virtual Size
-    progress: Progress
-    message: Message
-    phase: Phase
-    attachedVM: Attached Virtual Machine
-    cpuManager: CPU Manager
-    fingerprint: Fingerprint
-    value: Value
-    actions: Actions
-    readyToUse: Ready To Use
-    backupTarget: Backup Target
-    targetVm: Target Virtual Machine
-    cronExpression: Cron Expression
-    retain: Retain
-    scheduleType: Type
-    maxFailure: Max Failure
-    sourceVm: Source Virtual Machine
-    vmSchedule: Virtual Machine Schedule
-    hostIp: Host IP
+    imageEncryption: 암호화
+    size: 크기
+    virtualSize: 가상 크기
+    progress: 진행
+    message: 메시지
+    phase: 단계
+    attachedVM: 연결된 가상 머신
+    cpuManager: CPU 관리자
+    fingerprint: 지문
+    value: 값
+    actions: 수행
+    readyToUse: 사용 준비 완료
+    backupTarget: 백업 대상
+    targetVm: 대상 가상 머신
+    cronExpression: 표현 복제
+    retain: 유지
+    scheduleType: 유형
+    maxFailure: 최대 실패
+    sourceVm: 소스 가상 머신
+    vmSchedule: 가상 머신 일정
+    hostIp: 호스트 IP
     vm:
-      ipAddress: IP Address
-      node: Node
-      defaultVersion: Default Version
+      ipAddress: IP 주소
+      node: 노드
+      defaultVersion: 기본 버전
     network:
-      type: Type
+      type: 유형
       vlan: VLAN ID
-    snapshotTargetVolume: Original Volume
-    volumeSnapshotCounts: Snapshot Counts
-    networkState: Network State
-    totalSnapshotQuota: Total Snapshot Quota
-    storageClass: Storage Class
-    restore: Restore
+    snapshotTargetVolume: 원본 볼륨
+    volumeSnapshotCounts: 스냅샷 카운트
+    networkState: N네트워크 상태
+    totalSnapshotQuota: 총 스냅샷 할당량
+    storageClass: 스토리지 클래스
+    restore: 복원
   tab:
-    volume: Volumes
-    network: Networks
-    advanced: Advanced Options
-    accessCredentials: Access Credentials
-    pciDevices: PCI Devices
-    vGpuDevices: vGPU Devices
-    usbDevices: USB Devices
-    vmScheduling: Virtual Machine Scheduling
-    quotas: Quotas
-    snapshots: Snapshots
-    instanceLabel: Instance Labels
+    volume: 볼륨
+    network: 네트워크
+    advanced: 고급 옵션
+    accessCredentials: 액세스 자격 증명
+    pciDevices: PCI 장치
+    vGpuDevices: vGPU 장치
+    usbDevices: USB 장치
+    vmScheduling: 가상 머신 스케줄링
+    quotas: 할당량
+    snapshots: 스냅샷
+    instanceLabel: 인스턴스 라벨
   fields:
-    version: Version
-    name: Name
-    type: Type
-    image: Image
-    size: Size
-    volume: Volume
-    network: Network
-    model: Model
-    macAddress: MAC address
-    port: Port
-    protocol: Protocol
-    remove: Remove
-    PhysicalNic: Physical NIC
+    version: 버전
+    name: 이름
+    type: 유형
+    image: 이미지
+    size: 크기
+    volume: 볼륨
+    network: 네트워크
+    model: 모델
+    macAddress: 맥 주소
+    port: 포트
+    protocol: 프로토콜
+    remove: 제거
+    PhysicalNic: 물리적 NIC
     cpu: CPU
-    memory: Memory
-    virtualName: Virtual machine name
-    promiscuous: Promiscuous
-    ipv4Address: IPv4 address
-    filterLabels: Filter labels
-    filterSchedule: Filter schedule
-    storageClass: Storage class
-    dockerImage: Docker image
+    memory: 메모리
+    virtualName: 가상 머신 이름
+    promiscuous: 복잡한
+    ipv4Address: IPv4 주소
+    filterLabels: 라벨 필터링
+    filterSchedule: 일정 필터링
+    storageClass: 스토리지 클래스
+    dockerImage: 도커 이미지
   pci:
-    available: Available Devices
-    compatibleNodes: Compatible Nodes
-    impossibleSelection: 'There are no hosts with all of the selected devices.'
-    howToUseDevice: 'Use the table below to enable PCI passthrough on each device you want to use in this virtual machine.'
-    deviceInTheSameHost: 'You can only select devices on the same host.'
+    available: 사용 가능한 장치
+    compatibleNodes: 호환 노드
+    impossibleSelection: '선택한 모든 장치를 갖춘 호스트가 없습니다.'
+    howToUseDevice: '이 가상 머신에서 사용하려는 각 장치에서 PCI 패스스루를 활성화하려면 아래 표를 사용하십시오.'
+    deviceInTheSameHost: '동일한 호스트에 있는 장치만 선택할 수 있습니다.'
     oldFormatDevices:
       help: |-
         <p>
-          The following PCI devices are using the old naming convention and need to be updated in the YAML file:
+          다음 PCI 장치는 이전 명명 규칙을 사용하고 있으며 YAML 파일에서 업데이트해야 합니다.:
         </p>
         <ul>
           {oldFormatDevicesHTML}
         </ul>
         <p>
-          Please use the following instructions to update the virtual machine:
+          가상 머신을 업데이트하려면 다음 지침을 따르세요.:
         </p>
         <ol>
-          <li>Stop the virtual machine, edit the virtual machine YAML, and remove the <Code>hostDevices</Code> section, and save virtual machine the changes to the YAML file.</li>
-          <li>Edit the virtual machine, and add the already enabled PCI Device from the list of available PCIDevices, and save and start VM.</li>
+          <li>가상 머신을 중지하고 가상 머신 YAML을 편집하고 제거하십시오. <Code>hostDevices</Code> 섹션을 선택하고 가상 머신의 YAML 파일에 대한 변경 사항을 저장합니다.</li>
+          <li>가상 머신을 편집하고, 사용 가능한 PCI 장치 목록에서 이미 활성화된 PCI 장치를 추가한 다음, VM을 저장하고 시작합니다.</li>
         </ol>
-    showCompatibility: Show device compatibility matrix
-    hideCompatibility: Hide device compatibility matrix
-    claimError: Error enabling passthrough on {name}
-    unclaimError: Error disabling passthrough on {name}
-    cantUnclaim: You cannot disable passthrough on a device claimed by another user.
-    enableGroup: Enable Group
-    disableGroup: Disable Group
-    labelRequired: "This rule should not be manually altered: it ensures that the PCI devices selected for this virtual machine are available on the virtual machine's host."
+    showCompatibility: 장치 호환성 매트릭스 표시
+    hideCompatibility: 기기 호환성 매트릭스 숨기기
+    claimError: 패스스루 활성화 중 오류 발생 {name}
+    unclaimError: 패스스루 비활성화 중 오류 발생 {name}
+    cantUnclaim: 다른 사용자가 요청한 장치에서는 패스스루를 비활성화할 수 없습니다.
+    enableGroup: 그룹 활성화
+    disableGroup: 그룹 비활성화
+    labelRequired: "이 규칙은 수동으로 변경해서는 안 됩니다. 이 규칙은 이 가상 머신에 대해 선택된 PCI 장치가 가상 머신의 호스트에서 사용 가능하도록 보장합니다."
     goSetting:
-      prefix: The pcidevices-controller add-on is not enabled, click
-      middle: here
-      suffix: to enable the add-on to successfully manage your PCI devices.
-    noPCIPermission: Please contact your system administrator to enable the PCI devices first.
-    enablePassthroughWarning: Please be careful not to use host-owned PCI devices (e.g., management and VLAN NICs). Incorrect device allocation may cause damage to your cluster, including node failure.
+      prefix: pcidevices-controller 추가 기능이 활성화되지 않았습니다. 클릭하세요.
+      middle: 이곳
+      suffix: 애드온이 PCI 장치를 성공적으로 관리할 수 있도록 하세요.
+    noPCIPermission: PCI 장치를 먼저 활성화하려면 시스템 관리자에게 문의하세요.
+    enablePassthroughWarning: 호스트 소유의 PCI 장치를 사용하지 않도록 주의하세요. (e.g., management and VLAN NICs). 잘못된 장치 할당으로 인해 노드 장애를 포함한 클러스터 손상이 발생할 수 있습니다.
 
   devices:
-    matrixHostName: Host Name
-    matrixDeviceClaimName: Device Claim Name
+    matrixHostName: 호스트 이름
+    matrixDeviceClaimName: 장치 클레임 이름
 
   generic:
-    close: Close
-    open: Open
-    showMore: Show More
-    hideMore: Hide More
-    memory: Memory
+    close: 닫기
+    open: 열기
+    showMore: 더보기
+    hideMore: 숨기기
+    memory: 메모리
     cpu: CPU
-    storage: Storage
-    noFileChosen: No file chosen
-    noSchema: "Can not find the custom resource definition: {schema}."
+    storage: 스토리지
+    noFileChosen: 선택한 파일이 없습니다.
+    noSchema: "사용자 정의 리소스 정의를 찾을 수 없음: {schema}."
 
   validation:
     custom:
-      tooLongName: '"Name" cannot be more than {max} characters.'
+      tooLongName: '"이름"은 {max}자를 넘을 수 없습니다.'
     generic:
-      hasDelete: '{type} "{name}" has been deleted.'
-      maxLength: '"{key}" cannot be more than {max} characters'
+      hasDelete: '{type} "{name}"이 삭제되었습니다..'
+      maxLength: '"{key}"는 {max}자를 넘을 수 없습니다.'
       tabError:  '{prefix}: {message}'
-      maximumSize: "Exceed maximum size {max}!"
-      regex: 'Invalid {lowerType} "{name}": {upperType} must match the regex "{regex}"'
+      maximumSize: "최대 크기 {max}를 초과했습니다!"
+      regex: '잘못된 {lowerType} "{name}": {upperType}은 정규식 "{regex}"와 일치해야 합니다."'
     vm:
-      name: 'name is required!'
-      memory: '"Memory" is required!'
-      duplicatedName: 'duplicate {type} name: "{name}"'
+      name: '이름은 필수입니다!'
+      memory: '"메모리"가 필요합니다!'
+      duplicatedName: '중복된 {type} 이름: "{name}"'
       network:
-        macFormat: 'Invalid MAC address format.'
-        upperType: Network name
-        lowerType: network name
+        macFormat: '잘못된 MAC 주소 형식입니다.'
+        upperType: 네트워크 이름
+        lowerType: 네트워크 이름
       volume:
-        upperType: Volume name
-        lowerType: volume name
-        needImageOrExisting: 'At least an image volume or an existing root-disk volume is required!'
+        upperType: 볼륨 이름
+        lowerType: 볼륨 이름
+        needImageOrExisting: '최소한 이미지 볼륨이나 기존 루트 디스크 볼륨이 필요합니다!'
     image:
-      ruleTip: 'The URL you have entered ends in an extension that we do not support. We only accept image files that end in .img, .iso, .qcow, .qcow2, .raw.'
-      ruleFileTip: 'The file you have chosen ends in an extension that we do not support. We only accept image files that end in .img, .iso, .qcow, .qcow2, .raw.'
+      ruleTip: '입력하신 URL은 지원하지 않는 확장자로 끝납니다. .img, .iso, .qcow, .qcow2, .raw로 끝나는 이미지 파일만 허용됩니다.'
+      ruleFileTip: '선택하신 파일의 확장자는 저희가 지원하지 않습니다. .img, .iso, .qcow, .qcow2, .raw로 끝나는 이미지 파일만 허용됩니다.'
     hash:
-      sha512: 'Invalid SHA512 checksum.'
+      sha512: '잘못된 SHA512 체크섬입니다.'
 
   dashboard:
-    label: Dashboard
-    header: "Harvester Cluster: {cluster}"
+    label: 대시보드
+    header: "Harvester 클러스터: {cluster}"
     hardwareResourceGauge:
       cpu: CPU
-      memory: Memory
-      storage: Storage
-      allocated: Allocated
+      memory: 메모리
+      storage: 스토리지
+      allocated: 할당됨
     sections:
       events:
-        label: Events
+        label: 이벤트
       vmMetrics:
-        label: Virtual Machine Metrics
+        label: 가상 머신 메트릭
 
-    version: Version
+    version: 버전
   host:
-    console: Console
-    label: Hosts
-    inconsistentIP: "Host IP is inconsistent, current IP: { currentIP }, initial IP: { initIP }"
-    noConsoleUrl: 'Console URL not specified'
+    console: 콘솔
+    label: 호스트
+    inconsistentIP: "호스트 IP가 일관되지 않습니다. 현재 IP: { currentIP }, 초기 IP: { initIP ​​}"
+    noConsoleUrl: '콘솔 URL이 지정되지 않았습니다.'
     promote:
       none: ' '
-      running: Promoting
-      failed: Promote failed
-      unknown: Promote halted
-      promoteRestart: Restarting
-      promoteSucceed: Promote completed
+      running: 승격
+      failed: 승격 실패
+      unknown: 승격이 중단됨
+      promoteRestart: 다시 시작하는 중
+      promoteSucceed: 승격 완료
     tabs:
-      network: Network
-      overview: Overview
-      basics: Basics
-      instance: Virtual Machines
-      monitor: Monitor Data
-      storage: Storage
-      labels: Labels
-      ksmtuned: Ksmtuned
-      seeder: Out-of-band Access
+      network: 네트워크
+      overview: 개요
+      basics: 기본
+      instance: 가상 머신
+      monitor: 데이터 모니터링
+      storage: 스토리지
+      labels: 라벨
+      ksmtuned: KSM미세조정
+      seeder: 대역 외 액세스
     detail:
       kvm:
-        disableMessage: Hardware-based virtualization is disabled or not supported. Hardware-based virtualization must be enabled before creating any virtual machines.
+        disableMessage: 하드웨어 기반 가상화가 비활성화되었거나 지원되지 않습니다. 가상 머신을 생성하기 전에 하드웨어 기반 가상화를 활성화해야 합니다.
       title:
-        network: Network Configuration
-      hostIP: Host IP
-      role: Role
-      os: Operating System
-      create: Creation Time
-      update: Last Update Time
-      customName: Custom Name
-      consoleUrl: Console URL
-      more: More Information
+        network: 네트워크 구성
+      hostIP: 호스트 IP
+      role: 역할
+      os: 운영 체제
+      create: 생성 시간
+      update: 마지막 업데이트 시간
+      customName: 맞춤 이름
+      consoleUrl: 콘솔 URL
+      more: 추가 정보
       uuid: UUID
       containerRuntime: Container Runtime
       kernel: Kernel
       management: Management Node
       compute: Compute Node
-      storage: Storage
-      nic: Physical NIC
-      notRecommended: 'Not recommended'
-      networkType: Type
-      manufacturer: Manufacturer
-      serialNumber: Serial Number
-      model: Model
-      etcd: Witness Node
-      cpuManager: CPU Manager
+      storage: 스토리지
+      nic: 물리 NIC
+      notRecommended: '권장되지 않음'
+      networkType: 유형
+      manufacturer: 제조업체
+      serialNumber: 일련번호
+      model: 모델
+      etcd: 감시 노드
+      cpuManager: CPU 관리자
     enableMaintenance:
-      title: Enable Maintenance Mode
-      protip: The operation will migrate all virtual machines on this node to other nodes.
-      shutDownVMs: Check <b>Force</b> option to shutdown virtual machines which cannot be migrated in live mode.
-      force: Force
+      title: 유지 관리 모드 활성화
+      protip: 이 작업을 수행하면 이 노드의 모든 가상 머신이 다른 노드로 마이그레이션됩니다.
+      shutDownVMs: 라이브 모드에서 마이그레이션할 수 없는 가상 머신을 종료하려면 <b>강제</b> 옵션을 선택하세요..
+      force: 강제
     cordon:
-      title: Cordon
-      protip: This operation will mark the node { node } as unschedulable.
+      title: 차단
+      protip: 이 작업은 노드 {node}를 예약 불가능으로 표시합니다.
     ksmtuned:
-      run: Run Strategy
-      configure: Configure
-      mode: Mode
-      modeLink: Mode <a href="{url}" target="_blank"><i class="icon icon-info" /></a>
-      thresCoef: Threshold Coefficient
-      enableMergeNodes: Enable merging across nodes
-      enable: Enable
-      disable: Disable
-      ksmStatus: KSM Status
+      run: 전략 실행
+      configure: 구성
+      mode: 모드
+      modeLink: 모든 <a href="{url}" target="_blank"><i class="icon icon-info" /></a>
+      thresCoef: 임계값 계수
+      enableMergeNodes: 노드 간 병합 활성화
+      enable: 활성화
+      disable: 비활성화
+      ksmStatus: KSM 상태
       modeOption:
-        standard: Standard
-        high: High-performance
-        customized: Customized
+        standard: 기준
+        high: 고성능
+        customized: 맞춤형
       parameters:
-        title: Ksmtuned Parameters
+        title: Ksmtuned 매개변수
         boost: Boost
         decay: Decay
-        sleepMsec: Sleep Time (Millisecond)
-        minPages: Minimum Pages
-        maxPages: Maximum Pages
+        sleepMsec: 정지 시간 (Millisecond)
+        minPages: 최소 페이지
+        maxPages: 최대 페이지
         description:
-          boost: The number of scanned pages is incremented each time if the available memory is less than the threshold coefficient.
-          decay: The number of scanned pages is decremented each time if the available memory is greater than the threshold coefficient.
-          sleepMsec: The interval between two scans (the minimum value is 10ms), which is calculated by the formula (Sleep Milliseconds * 16 * 1024 * 1024/Total Memory).
-          minPages: The minimum number of pages per scan, also the configuration for the first run.
-          maxPages: Maximum number of pages per scan.
+          boost: 사용 가능한 메모리가 임계값 계수보다 적으면 스캔되는 페이지 수가 매번 증가합니다.
+          decay: 사용 가능한 메모리가 임계값 계수보다 클 때마다 스캔된 페이지 수가 감소합니다.
+          sleepMsec: 두 스캔 사이의 간격(최소값은 10ms)은 다음 공식으로 계산됩니다. (Sleep Milliseconds * 16 * 1024 * 1024/Total Memory).
+          minPages: 스캔 당 최소 페이지 수와 첫 번째 실행에 대한 구성입니다.
+          maxPages: 스캔당 최대 페이지 수.
       statistics:
-        title: Statistics <a href="https://www.kernel.org/doc/html/latest/admin-guide/mm/ksm.html#ksm-daemon-sysfs-interface" target="_blank"><i class="icon icon-info" /></a>
-        sharing: Sharing
-        shared: Shared
-        unshared: Unshared
-        volatile: Volatile
-        fullScans: Full Scans
-        stableNodeChains: Stable Node Chains
-        stableNodeDups: Stable Node Dups
+        title: 통계 <a href="https://www.kernel.org/doc/html/latest/admin-guide/mm/ksm.html#ksm-daemon-sysfs-interface" target="_blank"><i class="icon icon-info" /></a>
+        sharing: 공유
+        shared: 공유됨
+        unshared: 공유되지 않음
+        volatile: 휘발성 물질
+        fullScans: 전체 스캔
+        stableNodeChains: 안정적인 노드 체인
+        stableNodeDups: 안정적인 노드 중복
     disk:
-      add: Add Disk
+      add: 디스크 추가
       path:
         label: Path
       storageReserved:
-        label: Storage Reserved
+        label: 예약된 스토리지
       allowScheduling:
-        label: Scheduling
-        tooltip: Disk {name} ({path}) scheduling is disabled
+        label: 스케줄링
+        tooltip: 디스크 {name} ({path}) 스케줄링이 비활성화되었습니다.
       evictionRequested:
-        label: Eviction Requested
+        label: 퇴거 요청됨
       forceFormatted:
-        label: Force Formatted
-        toolTip: Force formatted will clean up disk data, make sure you backup all available data to prevent data loss.
+        label: 강제 포맷됨
+        toolTip: 강제 포맷을 실행하면 디스크 데이터가 정리되므로, 데이터 손실을 방지하려면 사용 가능한 모든 데이터를 백업하세요.
         yes: Yes (Ext4 File System)
       description:
-        label: Description
+        label: 설명
       lastFormattedAt:
-        info: The disk has already been force-formatted.
+        info: 디스크가 이미 강제 포맷되었습니다.
       notification:
-        success: 'Update host "{name}" storage configurations successfully.'
-      error: Host has unready or unschedulable disks.
+        success: '호스트 "{name}" 스토리지 구성을 성공적으로 업데이트했습니다.'
+      error: 호스트에 준비되지 않았거나 예약할 수 없는 디스크가 있습니다.
       fileSystem:
-        info: Current file system is {system}, You can format it manually.
-        formatting: Disk is formatting, please wait.
+        info: 현재 파일 시스템은 {system}입니다. 수동으로 포맷할 수 있습니다.
+        formatting: 디스크를 포맷 중입니다. 잠시만 기다려 주세요.
       tags:
-        label: Disk Tags
-        addLabel: Add Disk Tag
-      conditions: Conditions
+        label: 디스크 태그
+        addLabel: 디스크 태그 추가
+      conditions: 조건식
       storageAvailable:
-        label: Storage Available
+        label: 저장 가능
       storageScheduled:
-        label: Storage Scheduled
+        label: 저장 예약됨
       storageMaximum:
-        label: Storage Maximum
-      provisioner: Provisioner
+        label: 최대 저장 용량
+      provisioner: 제공자
       lvmVolumeGroup:
-        label: Volume Group
-        create: Create New...
+        label: 볼륨 그룹
+        create: 새로 만들기...
       storage:
         longhorn:
           LonghornV1:
@@ -496,635 +496,635 @@ harvester:
         lvm:
           label: LVM
     tags:
-      label: Host Tags
-      addLabel: Add Host Tag
+      label: 호스트 태그
+      addLabel: 호스트 태그 추가
     powerAction:
       message:
-        success: 'Perform host { name } { operation } successfully.'
+        success: '호스트 { 이름 } { 작업 }을 성공적으로 수행했습니다.'
     ntp:
-      label: NTP Server Addresses
-      tips: You can configure multiple IPv4 addresses or host addresses.
+      label: NTP 서버 주소
+      tips: 여러 개의 IPv4 주소나 호스트 주소를 구성할 수 있습니다.
       placeholder: e.g. IPv4
       ntpSyncStatus:
-        isDisabled: 'NTP is disabled. Please check the NTP service is active.'
-        isUnsynced: 'NTP is not synchronized with the NTP server {current}.'
+        isDisabled: 'NTP가 비활성화되어 있습니다. NTP 서비스가 활성화되어 있는지 확인하세요.'
+        isUnsynced: 'NTP가 NTP 서버와 동기화되지 않았습니다. {current}.'
 
   virtualMachine:
-    label: Virtual Machines
-    osType: OS Type
+    label: 가상 머신
+    osType: 운영체제 유형
     instance:
       singleInstance:
       multipleInstance:
       single:
-        label: Single Instance
-        nameLabel: Name
+        label: 단일 인스턴스
+        nameLabel: 이름
         host:
-          label: Hostname
-          placeholder: Default to the virtual machine name.
+          label: 호스트명
+          placeholder: 가상 머신 이름을 기본값으로 지정합니다.
       multiple:
-        label: Multiple Instance
-        nameNsDescription: Name prefix for each instance
+        label: 다중 인스턴스
+        nameNsDescription: 각 인스턴스의 이름 접두사
         count: Count
-        countTip: Count should be between 1 and 10
-        nameLabel: Name Prefix
+        countTip: 개수는 1~10 사이여야 합니다.
+        nameLabel: 이름 접두사
         host:
-          label: Host Prefix Name
-          placeholder: Default to the virtual machine name.
+          label: 호스트 접두사 이름
+          placeholder: 가상 머신 이름을 기본값으로 지정합니다..
     useTemplate:
-      label: "Use the virtual machine template:"
+      label: "가상 머신 템플릿을 사용:"
       template:
-        label: Template
+        label: 템플릿
       version:
-        label: Version
+        label: 버전
     console:
-      novnc: Open in WebVNC
-      serial: Open in Serial Console
+      novnc: Web VNC에서 열기
+      serial: 시리얼 콘솔에서 열기
     vncConsole:
       reconnecting:
-        message: Web VNC console reconnection attempt
+        message: 웹 VNC 콘솔 재연결 시도
     promptRemove:
-      title: 'Select the volume you want to delete:'
-      deleteAll: Delete All
-      tips: "Warn: The snapshots of the virtual machine will be deleted with virtual machine and the snapshots of volume will be deleted with volume."
+      title: '삭제할 볼륨을 선택:'
+      deleteAll: 모두 삭제
+      tips: "경고: 가상 머신의 스냅샷은 가상 머신과 함께 삭제되고 볼륨의 스냅샷은 볼륨과 함께 삭제됩니다."
     unplug:
-      title: 'Are you sure that you want to detach volume {name} ?'
-      actionLabel: Detach
+      title: '볼륨 {name}을 분리하시겠습니까?'
+      actionLabel: 분리
       detachVolume:
-        Detach Volume
+        볼륨 분리
     restartTip: |-
-      {restart, select,
-        true {Restart}
-        other {Start}
-      } the virtual machine now to take effect of the configuration changes.
-    runStrategy: Run Strategy
+      {다시 시작, 선택,
+       참 {다시 시작}
+       다른 {시작}
+      } 이제 가상 머신에 구성 변경 사항이 적용됩니다.
+    runStrategy: 실행 전략
     maintenanceStrategy:
-      label: Maintenance Strategy
+      label: 유지관리 전략
       options:
-        Migrate: Migrate
-        ShutdownAndRestartAfterEnable: Shutdown and Restart After Enable
-        ShutdownAndRestartAfterDisable: Shutdown and Restart After Disable
-        Shutdown: Shutdown
+        Migrate: 마이그레이션
+        ShutdownAndRestartAfterEnable: 활성화 후 종료 및 재시작
+        ShutdownAndRestartAfterDisable: 비활성화 후 종료 및 다시 시작
+        Shutdown: 종료
     cpuPinning:
-      label: Enable CPU Pinning
-      tooltip: Enable CPU Pinning brings better performance and reduce latency for the virtual machine
-      restartVMMessage: Changing the CPU Pinning setting requires a virtual machine reboot for the change to take effect
-      migrationMessage: This virtual machine can only be migrated to a target node that has CPU Manager enabled, as CPU Pinning is configured.
+      label: CPU 고정 활성화
+      tooltip: CPU 고정을 활성화하면 가상 머신의 성능이 향상되고 대기 시간이 줄어듭니다.
+      restartVMMessage: CPU 고정 설정을 변경하려면 변경 사항을 적용하기 위해 가상 머신을 재부팅해야 합니다.
+      migrationMessage: CPU 고정이 구성되어 있으므로 이 가상 머신은 CPU 관리자가 활성화된 대상 노드로만 마이그레이션할 수 있습니다.
     restartNow: |-
-      {restart, select,
-        true {Restart}
-        other {Start}
-      } Now
-    createSSHKey: Create a New...
-    installAgent: Install guest agent
-    enableUsb: Enable USB Tablet
+      {다시 시작, 선택,
+       참 {다시 시작}
+       다른 {시작}
+      } 시작
+    createSSHKey: 새로 만들기...
+    installAgent: 게스트 에이전트 설치
+    enableUsb: USB 태블릿 활성화
     advancedOptions:
-      tpm: Enable TPM
+      tpm: TPM 활성화
       cpuManager:
-        prefix: You must enable CPU Manager for at least one node in
-        middle: 'host page'
-        suffix: to enable CPU Pinning for VM
-    usbTip: Provides an absolute pointer device which often helps with getting a consistent mouse cursor position in VNC.
-    sshTitle: Add Public SSH Key
-    imageTip: An external URL to the .iso, .img, .qcow2 or .raw that the virtual machine should be created from.
-    efiEnabled: Booting in EFI mode
-    secureBoot: Secure Boot
+        prefix: 최소한 하나의 노드에 대해 CPU 관리자를 활성화해야 합니다.
+        middle: '호스트 page'
+        suffix: VM에 대한 CPU 고정을 활성화하려면
+    usbTip: VNC에서 일관된 마우스 커서 위치를 얻는 데 도움이 되는 절대 포인터 장치를 제공합니다.
+    sshTitle: 공개 SSH 키 추가
+    imageTip: 가상 머신이 생성되어야 하는 .iso, .img, .qcow2 또는 .raw에 대한 외부 URL입니다.
+    efiEnabled: EFI 모드로 부팅
+    secureBoot: 보안 부팅
     volume:
-      dragTip: Drag and drop volumes, or use the volume's arrows, to change the boot order.
-      volumeTip: The virtual machine only contains a CD-ROM volume. You may want to add additional disk volumes.
-      macTip: "MAC address as seen inside the guest system."
-      volumeUpdate: 'Set volume { name } successfully'
-      type: Type
-      size: Size
-      edit: Edit
-      bus:  Bus
-      readyToUse: Ready To Use
-      bootOrder: Boot Order
-      volume: Volume
-      dockerImage: Docker Image
-      addVolume: Add Volume
-      addExistingVolume: Add Existing Volume
-      addVmImage: Add a Virtual Machine Image
-      addContainer: Add Container
-      setFirst: Set as root volume
-      saveVolume: Update Volume
-      encryption: Encryption
+      dragTip: 볼륨을 끌어서 놓거나 볼륨의 화살표를 사용하여 부팅 순서를 변경합니다.
+      volumeTip: 가상 머신에는 CD-ROM 볼륨만 있습니다. 디스크 볼륨을 추가할 수도 있습니다.
+      macTip: "게스트 시스템 내부에서 보이는 MAC 주소."
+      volumeUpdate: '볼륨 {name}을(를) 성공적으로 설정했습니다.'
+      type: 유형
+      size: 크기
+      edit: 편집
+      bus:  버스
+      readyToUse: 사용 준비 완료
+      bootOrder: 부팅 순서
+      volume: 볼륨
+      dockerImage: 도커 이미지
+      addVolume: 볼륨 추가
+      addExistingVolume: 기존 볼륨 추가
+      addVmImage: 가상 머신 이미지 추가
+      addContainer: 컨테이너 추가
+      setFirst: 루트 볼륨으로 설정
+      saveVolume: 볼륨 업데이트
+      encryption: 암호화
       lockTooltip:
-        all: All volumes are encrypted.
-        partial: Some volumes are encrypted.
+        all: 모든 볼륨은 암호화됩니다.
+        partial: 일부 볼륨은 암호화되어 있습니다.
       title:
-        vmImage: Image Volume
-        existingVolume: Existing Volume
-        volume: Volume
-        container: Container
+        vmImage: 이미지 볼륨
+        existingVolume: 기존 볼륨
+        volume: 볼륨
+        container: 컨테이너
       unmount:
-        title: Are you sure?
-        message: Are you sure you want to unmount this volume?
+        title: 확실합니까?
+        message: 이 볼륨을 마운트 해제하시겠습니까?
     network:
-      title: Network
-      addNetwork: Add Network
-      addPort:  Add Port
+      title: 네트워크
+      addNetwork: 네트워크 추가
+      addPort:  포트 추가
     cloudConfig:
-      title: Cloud Configuration
-      createTemplateTitle: 'Create {name}.'
-      createNew: Create new...
+      title: 클라우드 구성
+      createTemplateTitle: '생성 {name}.'
+      createNew: 새로 만들기...
       cloudInit:
-        label: Cloud Init
-        placeholder: Select a template
+        label: 클라우드 인스턴스 초기화
+        placeholder: 템플릿 선택
       user:
-        label: User Data Template
-        title: "User Data:"
-        tip: "You can specify user data to configure an instance or run a configuration script during launch. If you launch more than one instance at a time, the user data is available to all the instances in that reservation. <a href='https://cloudinit.readthedocs.io/en/latest/topics/examples.html' target='_blank'>Learn more</a>"
+        label: 사용자 데이터 템플릿
+        title: "사용자 데이터:"
+        tip: "사용자 데이터를 지정하여 인스턴스를 구성하거나 시작 시 구성 스크립트를 실행할 수 있습니다. 한 번에 두 개 이상의 인스턴스를 시작하는 경우, 해당 예약에 속한 모든 인스턴스에서 사용자 데이터를 사용할 수 있습니다. <a href='https://cloudinit.readthedocs.io/en/latest/topics/examples.html' target='_blank'>자세히 알아보기</a>"
       network:
-        label: Network Data Template
-        title: "Network Data:"
-        tip: "The network-data configuration allows you to customize the instance’s networking interfaces by assigning subnet configuration, virtual device creation (bonds, bridges, VLANs) routes and DNS configuration. <a href='https://cloudinit.readthedocs.io/en/latest/reference/network-config-format-v1.html' target='_blank'>Learn more</a>"
+        label: 네트워크 데이터 템플릿
+        title: "네트워크 데이터:"
+        tip: "네트워크 데이터 구성을 사용하면 서브넷 구성, 가상 장치 생성(본드, 브리지, VLAN), 경로 및 DNS 구성을 할당하여 인스턴스의 네트워킹 인터페이스를 사용자 지정할 수 있습니다. <a href='https://cloudinit.readthedocs.io/en/latest/reference/network-config-format-v1.html' target='_blank'>자세히 알아보기</a>"
     scheduling:
       affinity:
-        anyNode: 'Run virtual machine on any available node'
-        schedulingRules: 'Run virtual machine on node(s) matching scheduling rules'
-        specificNode: Run virtual machine on specific node - (Live migration is not supported)
-      networkNotSupport: Network not support schedule
+        anyNode: '사용 가능한 모든 노드에서 가상 머신을 실행합니다.'
+        schedulingRules: '스케줄링 규칙과 일치하는 노드에서 가상 머신을 실행합니다.'
+        specificNode: 특정 노드에서 가상 머신 실행 - (실시간 마이그레이션은 지원되지 않음)
+      networkNotSupport: 네트워크 schedule 미지원
     accessCredentials:
       resetPwd:
-        label: Add Basic Auth
+        label: 기본 인증 추가
       injectSSH:
-        label: Add SSH Key
-        users: Select Users
-        addUser: Add User
-      tips: qemu-guest-agent must be installed to enable the accessing of credentials. The virtual machine needs to be restarted after credentials added. You need to be in the virtual machine to edit your password or remove an SSH-Key after deleting the credentials.
-      userTips: The user to be added must already exist; otherwise, the credentials will not take effect.
-      duplicatedUser: User already exists.
-      invalidUser: Invalid Username.
+        label: SSH 키 추가
+        users: 사용자 선택
+        addUser: 사용자 추가
+      tips: 자격 증명에 액세스하려면 qemu-guest-agent를 설치해야 합니다. 자격 증명을 추가한 후에는 가상 머신을 다시 시작해야 합니다. 자격 증명을 삭제한 후 비밀번호를 편집하거나 SSH 키를 제거하려면 가상 머신에 접속해야 합니다.
+      userTips: 추가할 사용자는 이미 존재해야 합니다. 그렇지 않으면 자격 증명이 적용되지 않습니다.
+      duplicatedUser: 사용자가 이미 존재합니다.
+      invalidUser: 잘못된 사용자 이름입니다.
     input:
-      name: Name
-      memory: Memory
-      image: Image
-      sshKey: SSHKey
-      sshKeyValue: SSH-Key
-      MachineType: Machine Type
-      username: Username
-      password: Password
-      reservedMemory: Reserved Memory
-    machineTypeTip: 'Specify a processor architecture to emulate. To see a list of supported architectures, run: qemu-system-x86_64 -cpu ?'
+      name: 이름
+      memory: 메모리
+      image: 이미지
+      sshKey: SSH키
+      sshKeyValue: SSH-키
+      MachineType: 기계 유형
+      username: 사용자 이름
+      password: 비밀번호
+      reservedMemory: 예약된 메모리
+    machineTypeTip: '에뮬레이션할 프로세서 아키텍처를 지정하세요. 지원되는 아키텍처 목록을 보려면 qemu-system-x86_64 -cpu ?를 실행하세요.'
     detail:
       tabs:
-        overview: Overview
-        details: Details
-        environment: Environment
-        events: Events
-        migration: Migration
-        console: Console
-        networkInterfaces: Network Interfaces
-        disks: Disks
-        networks: Networks
-        basics: Basics
-        configurations: Configurations
-        inventory: Inventory
-        hostBasic: Basic Attributes
-        instance: Virtual Machines
-        monitor: Monitor Data
-        keypairs: SSH Keys
-        cloudConfig: Cloud Configuration
-        metrics: Virtual Machine Metrics
+        overview: 개요
+        details: 세부
+        environment: 환경
+        events: 이벤트
+        migration: 마이그레이션
+        console: 콘솔
+        networkInterfaces: 네트워크 인터페이스
+        disks: 디스트
+        networks: 네트워크
+        basics: 기본
+        configurations: 구성
+        inventory: 목록
+        hostBasic: 기본 속성
+        instance: 가상 머신
+        monitor: 데이터 모니터링
+        keypairs: SSH 키
+        cloudConfig: 클라우드 구성
+        metrics: 가상 머신 메트릭
       details:
         title:
-          vmDetails: Virtual Machine Details
-          requirements: Scheduling and resources requirements
-          services: Services
-          users: Logged in users
-        name: Name
-        totalSnapshotQuota: Total Snapshot Quota
-        namespace: Namespace
-        created: Created
-        hostname: Hostname
-        node: Node
-        ipAddress: IP Address
-        status: Status
-        pod: Pod
-        labels: Labels
-        bootOrder: Boot Order
-        annotations: Annotations
+          vmDetails: 가상 머신 세부정보
+          requirements: 일정 및 리소스 요구 사항
+          services: 서비스
+          users: 로그인한 사용자
+        name: 이름
+        totalSnapshotQuota: 총 스냅샷 할당량
+        namespace: 네임스페이스
+        created: 생성됨
+        hostname: 호스트 이름
+        node: 노드
+        ipAddress: IP 주소
+        status: 상태
+        pod: 파드
+        labels: 라벨
+        bootOrder: 부팅 순서
+        annotations: 주석
         CDROMs: CD-ROMs
-        description: Description
-        operatingSystem: Operating System
-        template: Template
-        kernelRelease: Kernel Release
-        owner: Owner
-        workloadProfile: Workload Profile
-        nodeSelector: Node Selector
-        flavor: Flavor
-        tolerations: Tolerations
-        dedicatedResources: Dedicated Resources
-        down: Virtual machine not running
-        affinityRules: Affinity Rules
-        sourceNode: Source Node
-        targetNode: Target Node
-        started: Started
-        ended: Ended
-      notAvailable: Not available
-      GuestAgentNotInstalled: Guest agent required
-      noOwner: No Owner
+        description: 설명
+        operatingSystem: 운영체제
+        template: 템플릿
+        kernelRelease: 커널 릴리스
+        owner: 소유자
+        workloadProfile: 워크로드 프로파일
+        nodeSelector: 노드 선택기
+        flavor: 플레이버
+        tolerations: 허용오차
+        dedicatedResources: 전담 리소스
+        down: 가상 머신이 실행되지 않음
+        affinityRules: 선호도 규칙
+        sourceNode: 소스 노드
+        targetNode: 대상 노드
+        started: 시작됨
+        ended: 종료됨
+      notAvailable: 사용할 수 없음
+      GuestAgentNotInstalled: 게스트 에이전트 필요
+      noOwner: 소유자 없음
       events:
-        from: Generated from
-        down: No events in the past hour
+        from: 다음에서 생성됨
+        down: 지난 1시간 동안 이벤트가 없습니다
       console:
-        down: This virtual machine is down. Please start it to access its console.
-        shortcutKeys: Shortcut Keys
-        customShortcutKeys: Custom Shortcut Keys
-        management: Management Shortcut Keys
+        down: 이 가상 머신이 다운되었습니다. 콘솔에 접속하려면 가상 머신을 시작하세요.
+        shortcutKeys: 단축키
+        customShortcutKeys: 사용자 정의 단축키
+        management: 관리 단축키
         record:
-          start: Record
-          recording: Recording
-          stop: Stop Recording
-          tips: Press the record button to capture your keyboard inputs.
-          send: Send
-          preferredKeys: Preferred Custom Shortcut Keys
+          start: 기록 시작
+          recording: 기록중
+          stop: 기록 중지
+          tips: 기록 버튼을 눌러 키보드 입력을 캡처하세요.
+          send: 전송
+          preferredKeys: 선호하는 사용자 정의 단축키
     terminationGracePeriodSeconds:
-      label: Termination Grace Period
+      label: 종료 유예 기간
     affinity:
-      thisPodNamespace: This virtual machine's namespace
+      thisPodNamespace: 이 가상 머신의 네임스페이스
       matchExpressions:
-        inNamespaces: "Workloads in these namespaces"
+        inNamespaces: "이 네임스페이스의 워크로드"
       namespaces:
-        label: Namespaces
+        label: 네임스페이스
 
   volume:
-    label: Volumes
+    label: 볼륨
     tabs:
-      basics: Basics
-      snapshots: Snapshots
-      datasource: Data Source
-      details: Details
-    size: Size
-    source: Source
-    kind: Kind
+      basics: 기본
+      snapshots: 스냅샷
+      datasource: 데이터 소스
+      details: 상세
+    size: 크기
+    source: 소스
+    kind: 종류
     sourceOptions:
-      new: New
-      vmImage: Virtual Machine Image
-    image: Image
-    frontend: Frontend
-    blockdev: Block Device
-    attachedNode: Attached Node
-    endpoint: Endpoint
-    diskTags: Disk Tags
-    nodeTags: Node Tags
-    lastBackup: Last Backup
-    lastBackupAt: Last Backup At
-    replicasNumber: Replicas Number
+      new: 새로운
+      vmImage: 가상 머신 이미지
+    image: 이미지
+    frontend: 프런트엔드
+    blockdev: 블록 장치
+    attachedNode: 연결된 노드
+    endpoint: 엔드포인트
+    diskTags: 디스크 태그
+    nodeTags: 노드 태그
+    lastBackup: 마지막 백업
+    lastBackupAt: 마지막 백업 시간
+    replicasNumber: 복제본 번호
     promptRemove:
-      tips: "Warn: The volume's snapshots will be deleted with this volume."
+      tips: "경고: 볼륨의 스냅샷이 이 볼륨과 함께 삭제됩니다."
     externalLink:
-      tips: Check volume details
-    rebuildingMessage: 'Rebuilding: {percentage}%'
+      tips: 볼륨 세부정보 확인
+    rebuildingMessage: '재구성: {percentage}%'
     longhorn:
-      disableResize: 'Longhorn V2 volumes cannot be resized.'
+      disableResize: 'Longhorn V2 볼륨의 크기를 조정할 수 없습니다.'
 
   image:
-    label: Images
+    label: 이미지
     tabs:
-      basics: Basics
+      basics: 기본
     url: URL
-    size: Size
-    isEncryption: Encryption
-    encryptionSecret: Encryption Secret
-    virtualSize: Virtual Size
-    urlTip: 'Supports the <code>raw</code> and <code>qcow2</code> image formats which are supported by <a href="https://www.qemu.org/docs/master/system/images.html#disk-image-file-formats" target="_blank">qemu</a>. Bootable ISO images can also be used and are treated like <code>raw</code> images.'
-    fileName: File Name
-    uploadFile: Upload File
-    source: Source Type
+    size: 크기
+    isEncryption: 암호화
+    encryptionSecret: 암호화 비밀
+    virtualSize: 가상 크기
+    urlTip: '<a href="https://www.qemu.org/docs/master/system/images.html#disk-image-file-formats" target="_blank">qemu</a>에서 지원하는 <code>raw</code> 및 <code>qcow2</code> 이미지 형식을 지원합니다. 부팅 가능한 ISO 이미지도 사용할 수 있으며 <code>raw</code> 이미지처럼 처리됩니다.'
+    fileName: 파일 이름
+    uploadFile: 파일 업로드
+    source: 소스 유형
     sourceType:
       download: URL
-      upload: File
-      clone: Clone
-      encrypt: Encrypt
-      decrypt: Decrypt
-    sourceImage: Source Image
-    cryptoOperation: Crypto Operation
+      upload: 파일
+      clone: 복제
+      encrypt: 암호화
+      decrypt: 복호화
+    sourceImage: 소스 이미지
+    cryptoOperation: Crypto 작업
     warning:
       uploading: |-
         {count, plural,
-        =1 {1 image is uploading, please do not refresh or close the page.}
-        other {{count} images are uploading, please do not refresh or close the page.}
+         =1 {이미지 1개가 업로드 중입니다. 페이지를 새로 고치거나 닫지 마세요.}
+         다른 {{count}개의 이미지가 업로드 중입니다. 페이지를 새로 고치거나 닫지 마세요.}
         }
-    checksum: Checksum
-    checksumTip: Validate the image using the SHA512 checksum, if specified.
+    checksum: 체크섬
+    checksumTip: 지정된 경우 SHA512 체크섬을 사용하여 이미지를 검증합니다.
 
   vmTemplate:
-    label: Templates
+    label: 템플릿
     tabs:
-      basics: Basics
+      basics: 기본
     nameNsDescription:
-      name: Template Name
+      name: 템플릿 이름
     tips:
       notExistImage:
-        title: Image {name} does not exist!
-        message: Please select a new image.
+        title: 이미지 {name}이 존재하지 않습니다!
+        message: 새로운 이미지를 선택해 주세요.
       notExistNode:
-        title: Node {name} does not exist!
-        message: Please select a new node.
+        title: 노드 {name}이 존재하지 않습니다!
+        message: 새로운 노드를 선택해 주세요.
 
   upgradePage:
-    upgradeApp: Upgrade Software
-    upgrade: Upgrade
-    upgradeTip: Please select the version you want to upgrade to
-    currentVersion: CURRENT VERSION
-    versionLabel: AVAILABLE COMPATIBLE VERSIONS
-    enableLogging: Enable Logging
-    upgradeNode: Upgrading Node
-    upgradeSysService: Upgrading System Service
-    upgradeImage: Download Upgrade Image
-    osUpgrade: OS Upgrade
-    uploadNew: Upload New Image
-    selectExisting: Select Existing Image
-    createRepository: Creating Upgrade Repository
-    succeeded: Succeeded
-    releaseTip: Please read the upgrade documentation carefully. You can view details on the <a href="{url}" target="_blank">Harvester Release Notes</a>.
-    checkReady: I have read and understood the upgrade instructions related to this Harvester version.
-    pending: Pending
+    upgradeApp: 소프트웨어 업그레이드
+    upgrade: 업그레이드
+    upgradeTip: 업그레이드하려는 버전을 선택해주세요.
+    currentVersion: 현재 버전
+    versionLabel: 사용 가능한 호환 버전
+    enableLogging: 로깅 활성화
+    upgradeNode: 노드 업그레이드 중
+    upgradeSysService: 시스템 서비스 업그레이드
+    upgradeImage: 업그레이드 이미지 다운로드
+    osUpgrade: 운영체제 업그레이드
+    uploadNew: 새 이미지 업로드
+    selectExisting: 기존 이미지 선택
+    createRepository: 업그레이드 저장소 생성
+    succeeded: 성공
+    releaseTip: 업그레이드 설명서를 주의 깊게 읽어주세요. 자세한 내용은 <a href="{url}" target="_blank">Harvester 릴리스 노트</a>에서 확인하실 수 있습니다.
+    checkReady: 저는 이 Harvester 버전과 관련된 업그레이드 지침을 읽고 이해했습니다.
+    pending: 보류 중
     repoInfo:
-      upgradeStatus: Upgrade Status
-      os: OS
+      upgradeStatus: 업그레이드 상태
+      os: 운영체제
       kubernetes: Kubernetes
-      monitoringChart: Monitoring Chart
-      harvesterChart: Harvester Chart
-      success: Success
-      fail:  Fail
-      ongoing: On-going
-      downloadLog: Download Log
-      logStatus: Log Download Status
-    dismissMessage: Dismiss it
+      monitoringChart: 모니터링 차트
+      harvesterChart: Harvester 차트
+      success: 성공
+      fail:  실패
+      ongoing: 진행중
+      downloadLog: 로그 다운로드
+      logStatus: 로그 다운로드 상태
+    dismissMessage: 무시
     upgradeInfo:
-      warning: WARNING
-      doc: Read the <a href="{url}" target="_blank">documentation</a> before starting the upgrade process. Ensure that you complete procedures that are relevant to your environment and the version you are upgrading to.
-      tip: Unmet system requirements and incorrectly performed procedures may cause complete upgrade failure and other issues that require manual workarounds.
-      moreNotes: For more details about the release notes, please visit -
+      warning: 경고
+      doc: 업그레이드 프로세스를 시작하기 전에 <a href="{url}" target="_blank">문서</a>를 읽어보세요. 사용자 환경 및 업그레이드하려는 버전에 맞는 절차를 완료해야 합니다.
+      tip: 충족되지 않은 시스템 요구 사항과 잘못 수행된 절차로 인해 업그레이드가 완전히 실패하고 수동 해결이 필요한 다른 문제가 발생할 수 있습니다.
+      moreNotes: 릴리스 노트에 대한 자세한 내용은 다음을 방문하세요. -
 
   schedule:
-    label: Virtual Machine Schedules
-    createTitle: Create Schedule
-    createButtonText: Create Schedule
-    scheduleType: Virtual Machine Schedule Type
-    cron: Cron Schedule
+    label: 가상 머신 일정
+    createTitle: 일정 만들기
+    createButtonText: 일정 만들기
+    scheduleType: 가상 머신 일정 유형
+    cron: 크론 일정
     detail:
-      namespace: Namespace
-      sourceVM: Source Virtual Machine
+      namespace: 네임스페이스
+      sourceVM: 소스 가상 머신
     tabs:
-      basic: Basic
-      backups: Backups
-      snapshots: Snapshots
+      basic: 기본
+      backups: 백업
+      snapshots: 스냅샷
     message:
       noSetting:
-        suffix: before creating a backup schedule
+        suffix: 백업 일정을 생성하기 전에
     retain:
-      label: Retain
+      label: 유지
       count: Count
-      tooltip: Number of up-to-date VM backups to retain. Maximum to 250, minimum to 2.
+      tooltip: 유지할 최신 VM 백업 수입니다. 최대 250개, 최소 2개입니다.
     maxFailure:
-      label: Max Failure
+      label: 최대 실패
       count: Count
-      tooltip: Max number of consecutive failed backups that could be tolerated. If reach this threshold, Harvester controller will suspend the schedule job. This value should less than retain count
+      tooltip: 허용 가능한 연속 백업 실패 횟수의 최대값입니다. 이 임계값에 도달하면 Harvester 컨트롤러가 예약 작업을 일시 중단합니다. 이 값은 보유 횟수보다 작아야 합니다.
     virtualMachine:
-      title: Virtual Machine Name
-      placeholder: Select a virtual machine
+      title: 가상 머신 이름
+      placeholder: 가상 머신 선택
     type:
-      snapshot: Snapshot
-      backup: Backup
+      snapshot: 스냅샷
+      backup: 백업
 
   backup:
-    label: Virtual Machine Backups
-    createText: Restore Backup
-    title: Restore Virtual Machine
+    label: 가상 머신 백업
+    createText: 백업 복원
+    title: 가상 머신 복원
     refreshInterval:
-      label: Refresh Interval
-      tip: The interval for the backup target to sync data to harvester cluster. Set to 0 to disable refresh mechanism.
-    backupTargetTip: The endpoint used to access the backupstore. NFS and S3 are supported.
+      label: 새로 고침 간격
+      tip: 백업 대상이 하비스터 클러스터에 데이터를 동기화하는 간격입니다. 새로 고침 메커니즘을 비활성화하려면 0으로 설정하세요.
+    backupTargetTip: 백업 저장소에 액세스하는 데 사용되는 엔드포인트입니다. NFS 및 S3가 지원됩니다.
     message:
       noSetting:
-        prefix: You must configure the backup target
-        middle: 'setting'
-        suffix: before creating a new backup.
+        prefix: 백업 대상을 구성해야 합니다.
+        middle: '설정'
+        suffix: 새로운 백업을 만들기 전에.
       errorTip:
-        prefix: Backup target value in
-        middle: setting
-        suffix: "is invalid, error: "
+        prefix: 백업 대상 값
+        middle: 설정
+        suffix: "유효하지 않습니다. 오류:"
       viewSetting:
-        prefix: Click
-        middle: here
-        suffix: to view the backup configuration.
+        prefix: 클릭
+        middle: 여기
+        suffix: 백업 구성을 보려면.
       testConnect:
-        actionLabel: Test connection
-        waitingLabel: Testing connection...
-        successLabel: Connection tested
-        successMessage: 'Harvester can successfully connect to the endpoint {endpoint}'
+        actionLabel: 테스트 연결
+        waitingLabel: 연결 테스트...
+        successLabel: 연결 테스트됨
+        successMessage: 'Harvester는 엔드포인트 {endpoint}에 성공적으로 연결할 수 있습니다.'
     restore:
-      backup: Backup
-      deletePreviousVolumes: Delete Previous Volumes
-      createNew: Create new
-      replaceExisting: Replace existing
-      virtualMachineName: Virtual Machine Name
-      keepMacAddress: Keep MAC Address
-    matchTarget: The current backup target does not match the existing one.
+      backup: 백업
+      deletePreviousVolumes: 이전 볼륨 삭제
+      createNew: 새로 만들기
+      replaceExisting: 기존 교체
+      virtualMachineName: 가상 머신 이름
+      keepMacAddress: MAC 주소 유지
+    matchTarget: 현재 백업 대상이 기존 백업 대상과 일치하지 않습니다.
     progress:
-      details: Volume details
+      details: 볼륨 세부정보
       tooltip:
-        starting: Backup initiating
-        progress: Backup in progress
-        complete: Backup completed
+        starting: 백업 시작 중
+        progress: 백업 진행 중
+        complete: 백업 완료
   restore:
     progress:
-      details: Volume details
+      details: 볼륨 세부정보
       tooltip:
-        starting: Restore initiating
-        progress: Restore in progress
-        complete: Restore completed
+        starting: 복원 시작 중
+        progress: 복원 진행 중
+        complete: 복원 완료
 
   network:
-    label: Virtual Machine Networks
+    label: 가상 머신 네트워크
     tabs:
-      basics: Basics
-      layer3Network: Route
+      basics: 기본
+      layer3Network: 라우트
     clusterNetwork:
-      label: Cluster Network
-      create: Create a new cluster network
-      toolTip: Define your custom cluster scope network name
-      createPlaceholder: Input a new cluster network name
-      selectOrCreatePlaceholder: Select or create a new cluster network
-      selectPlaceholder: Select a cluster network
+      label: 클러스터 네트워크
+      create: 새로운 클러스터 네트워크 생성
+      toolTip: 사용자 정의 클러스터 범위 네트워크 이름을 정의하세요.
+      createPlaceholder: 새로운 클러스터 네트워크 이름을 입력하세요
+      selectOrCreatePlaceholder: 새 클러스터 네트워크를 선택하거나 생성합니다.
+      selectPlaceholder: 클러스터 네트워크 선택
     layer3Network:
       mode:
-        label: Mode
-        auto: Auto (DHCP)
-        manual: Manual
+        label: 모드
+        auto: 자동 (DHCP)
+        manual: 수동
       serverIPAddr:
-        label: DHCP Server IP
+        label: DHCP 서버 IP
       gateway:
-        label: Gateway
+        label: 게이트웨이
         placeholder: e.g. 172.16.0.1
       cidr:
         label: CIDR
         placeholder: e.g. 172.16.0.1/24
   sshKey:
-    label: SSH Keys
-    keypair: SSH Key
+    label: SSH 키
+    keypair: SSH 키
     tabs:
-      basics: Basics
+      basics: 기본
 
   setting:
-    label: Settings
+    label: 설정
     tabs:
-      advanced: Advanced
+      advanced: 고급
       ui: UI
     validation:
-      physicalNIC: DefaultPhysicalNIC
+      physicalNIC: 기본물리NIC
     placeholder:
-      accessKeyId: Specify your access key ID
-      secretAccessKey: Specify your secret access key
-      cert: Upload a self-signed SSL certificate
-    vlanChangeTip: The newly modified default network interface only applies to newly added nodes, not existing ones.
-    defaultPhysicalNIC: Default Network Interface
-    modifiedMessage: Settings that have been customized from default settings are tagged with 'Modified'.
-    percentTip: The value in parentheses represents the distribution percentage of the network interface on all hosts. If an interface less than 100% is selected, the user needs to manually specify the network interface on the host where the vlan network configuration fails.
+      accessKeyId: 액세스 키 ID를 지정하세요
+      secretAccessKey: 비밀 액세스 키를 지정하세요
+      cert: 자체 서명된 SSL 인증서를 업로드하세요
+    vlanChangeTip: 새로 수정된 기본 네트워크 인터페이스는 새로 추가된 노드에만 적용되며, 기존 노드에는 적용되지 않습니다.
+    defaultPhysicalNIC: 기본 네트워크 인터페이스e
+    modifiedMessage: 기본 설정에서 사용자 정의된 설정에는 '수정됨'이라는 태그가 지정됩니다.
+    percentTip: 괄호 안의 값은 모든 호스트의 네트워크 인터페이스 분포 비율을 나타냅니다. 100% 미만의 인터페이스를 선택한 경우, VLAN 네트워크 구성에 실패한 호스트의 네트워크 인터페이스를 사용자가 직접 지정해야 합니다.
     message:
       ca:
-        prefix: 'Click'
-        middle: 'here'
-        suffix: 'to add a custom certificate.'
+        prefix: '클릭'
+        middle: '여기'
+        suffix: '사용자 정의 인증서를 추가하려면.'
     sslCertificates:
-      publicCertificate: Public Certificate
-      privateKey: Private Key
+      publicCertificate: 공공 인증서
+      privateKey: 개인 키
       ca: CA
     storageNetwork:
       range:
         placeholder: e.g. 172.16.0.0/24
-        label: IP Range
-        invalid: '"Range" is invalid.'
-      clusterNetwork: Cluster Network
+        label: IP 범위
+        invalid: '"범위"가 잘못되었습니다.'
+      clusterNetwork: 클러스터 네트워크
       vlan: VLAN ID
       exclude:
-        label: Exclude
+        label: 제외
         placeholder: e.g. 172.16.0.1/32
-        invalid: '"Exclude list" is invalid.'
-        addIp: Add Exclude IP
-      warning: 'WARNING: <br/> Any change to storage-network requires shutting down all virtual machines before applying this setting. <br/> Users have to ensure the cluster network is configured and VLAN Configuration will cover all nodes and ensure the network connectivity is working and expected in all nodes.'
-      tip: 'Specify an IP range in the IPv4 CIDR format. <code>Number of IPs Required = Number of Nodes * 4 + Number of Disks * 2 + Number of Images to Download/Upload </code>. For more information about storage network settings, see the <a href="{url}" target="_blank">documentation</a>.'
+        invalid: '"제외 목록"이 잘못되었습니다.'
+        addIp: 제외 IP 추가
+      warning: '경고: <br/> 스토리지 네트워크를 변경하려면 이 설정을 적용하기 전에 모든 가상 머신을 종료해야 합니다. <br/> 사용자는 클러스터 네트워크가 구성되었고 VLAN 구성이 모든 노드를 포괄하는지 확인해야 하며 모든 노드에서 네트워크 연결이 작동하고 예상대로 작동하는지 확인해야 합니다.'
+      tip: 'IPv4 CIDR 형식으로 IP 범위를 지정하세요. <code>필요한 IP 수 = 노드 수 * 4 + 디스크 수 * 2 + 다운로드/업로드할 이미지 수</code>. 저장소 네트워크 설정에 대한 자세한 내용은 <a href="{url}" target="_blank">설명서</a>를 참조하세요.
     vmForceDeletionPolicy:
-      period: Period
-    ratio : Ratio
+      period: 기간
+    ratio : 비율
     autoRotateRKE2Certs:
-      expiringInHours: Expiring in
+      expiringInHours: 만료 날짜
     httpProxy:
-      warning: 'WARNING: <br/> If you configure "http-proxy" and "https-proxy", you must also put Harvester node&apos;s CIDR into "no-proxy", otherwise the Harvester cluster will be broken.'
+      warning: '경고: <br/> "http-proxy" 및 "https-proxy"를 구성하는 경우 Harvester 노드의 CIDR도 "no-proxy"로 설정해야 합니다. 그렇지 않으면 Harvester 클러스터가 손상됩니다.'
     supportBundleImage:
-      imagePullPolicy: Pull Policy
-      repo: Repository
-      tag: Tag
+      imagePullPolicy: Pull 정책
+      repo: 저장소
+      tag: 태그
     csiDriverConfig:
-      provisioner: Provisioner
-      volumeSnapshotClassName: Volume Snapshot Class Name
-      backupVolumeSnapshotClassName: Backup Volume Snapshot Class Name
+      provisioner: 제공자
+      volumeSnapshotClassName: 볼륨 스냅샷 클래스 이름
+      backupVolumeSnapshotClassName: 백업 볼륨 스냅샷 클래스 이름
     containerdRegistry:
       mirrors:
-        mirrors: Mirrors
-        registryName: Registry Name
-        endpoints: Endpoints
+        mirrors: 미러
+        registryName: 레지스트리 이름
+        endpoints: 엔드포인트
         rewrite:
-          rewrite: Rewrite
-          addRewrite: Add Rewrite
-        addMirror: Add Mirror
+          rewrite: 재작성
+          addRewrite: 재작성 추가
+        addMirror: 미러 추가
       configs:
-        configs: Configurations
-        registryEDQNorIP: Registry FDQN or IP
+        configs: 구성
+        registryEDQNorIP: 레지스트리 FDQN 또는 IP
         registryPlaceholder: myregistry.local:5000
-        username: Username
-        password: Password
-        auth: Auth
-        identityToken: Identity Token
-        insecureSkipVerify: InsecureSkipVerify
-        addConfig: Add Configuration
+        username: 사용자 이름
+        password: 비밀번호
+        auth: 인증
+        identityToken: identity 토큰
+        insecureSkipVerify: 안전하지 않은 확인 건너뛰기 
+        addConfig: 구성 추가
 
     upgrade:
-      selectExitImage: Please select the OS image to upgrade.
-      imageUrl: Please input a valid image URL.
-      chooseFile: Please select to upload an image.
-      checksum: Checksum
+      selectExitImage: 업그레이드할 OS 이미지를 선택하세요.
+      imageUrl: 유효한 이미지 URL을 입력하세요.
+      chooseFile: 이미지를 업로드하려면 선택하세요.
+      checksum: 체크섬
     harvesterMonitoring:
-      label: Harvester Monitoring
+      label: Harvester 모니터링
       section:
         prometheus: Prometheus
         prometheusNodeExporter: Prometheus Node Exporter
         grafana: Grafana
         alertmanager: Alertmanager
       tips:
-        scrape: Interval between consecutive scrapes
-        evaluation: Interval between consecutive evaluations
-        retention: How long to retain metrics
-        retentionSize: Maximum size of metrics
+        scrape: 연속 스크래핑 사이의 간격
+        evaluation: 연속 평가 간 간격
+        retention: 메트릭을 보관하는 기간
+        retentionSize: 측정항목의 최대 크기
     clusterRegistrationUrl:
-      message: To completely unset the imported Harvester cluster, please also remove it on the Rancher Dashboard UI via the <code> Virtualization Management </code> page.
+      message: 가져온 Harvester 클러스터를 완전히 해제하려면 <code>가상화 관리</code> 페이지를 통해 Rancher 대시보드 UI에서도 제거하세요.
     ntpServers:
-      isNotIPV4: The address you entered is not IPv4 or host. Please enter a valid IPv4 address or a host address.
-      isDuplicate: There are duplicate NTP server configurations.
+      isNotIPV4: 입력하신 주소는 IPv4 또는 호스트가 아닙니다. 유효한 IPv4 주소 또는 호스트 주소를 입력하세요.
+      isDuplicate: 중복된 NTP 서버 구성이 있습니다.
   cloudTemplate:
-    label: Cloud Configuration Templates
-    templateType: Template Type
-    userData: User Data
-    networkData: Network Data
+    label: 클라우드 구성 템플릿
+    templateType: 템플릿 유형
+    userData: 사용자 데이터
+    networkData: 네트워크 데이터
 
   support:
-    title: Harvester Support
+    title: Harvester 지원
     kubeconfig:
-      title: Download KubeConfig
-      titleDescription: Download kubeconfig for debugging.
+      title: KubeConfig 다운로드
+      titleDescription: 디버깅을 위해 kubeconfig를 다운로드하세요.
     internal:
       rancher:
-        title: Access Embedded Rancher UI
-        titleDescription: You can only use the embedded Rancher UI for debugging and validation purposes. For more information about how Harvester integrates with Rancher, see the <a target="_blank" href="{url}" rel="noopener noreferrer nofollow">documentation</a>.
+        title: 임베디드 Rancher UI에 액세스
+        titleDescription: 내장된 Rancher UI는 디버깅 및 검증 목적으로만 사용할 수 있습니다. Harvester와 Rancher의 통합 방식에 대한 자세한 내용은 <a target="_blank" href="{url}" rel="noopener noreferrer nofollow">문서</a>를 참조하세요.
       longhorn:
-        title: Access Embedded Longhorn UI
-        titleDescription: We only support to use the embedded Longhorn UI for debugging and validation purpose.
+        title: 임베디드 롱혼 UI에 액세스
+        titleDescription: 디버깅 및 검증 목적으로만 내장된 Longhorn UI를 지원합니다.
     community:
-      learnMore: Find out more about SUSE Harvester support
-      pricing: Contact us for pricing
+      learnMore: SUSE Harvester 지원에 대해 자세히 알아보세요
+      pricing: 가격 문의
 
   namespace:
-    label: Namespaces
+    label: 네임스페이스
 
   projectNamespace:
-    label: Projects/Namespaces
+    label: 프로젝트/네임스페이스
 
   vip:
     namespace:
-      label: Namespace
+      label: 네임스페이스
     cidr:
-      label: CIDR/IP Range
-      invalid: '"CIDR/IP Range" is invalid.'
-      toolTip: "We can apply multiple pools or ranges by separating them with commas. For example: 192.168.0.200/30,192.168.0.200/29 or 192.168.0.10-192.168.0.11"
+      label: CIDR/IP 범위
+      invalid: '"CIDR/IP 범위"가 잘못되었습니다.'
+      toolTip: "여러 개의 풀이나 범위를 쉼표로 구분하여 적용할 수 있습니다. 예: 192.168.0.200/30, 192.168.0.200/29 또는 192.168.0.10-192.168.0.11"
     add:
-      label: Add IP Pools
+      label: IP 풀 추가
 
   sslParameters:
     protocols:
-      label: Protocols
+      label: 프로토콜
     ciphers:
-      label: Ciphers
+      label: 암호
 
   monitoring:
     configuration:
-      label: Configuration
+      label: 구성
     alertmanagerConfig:
-      label: Alertmanager Configurations
+      label: Alertmanager 구성
       diabledMonitoringTips:
-        prefix: 'Enable the'
-        middle: 'monitoring'
-        suffix: 'add-on first.'
+        prefix: '활성화'
+        middle: '모니터링'
+        suffix: '먼저 추가 기능을 추가하세요.'
       diabledAlertingTips:
-        prefix: 'Enable'
+        prefix: '활성화'
         middle: 'Alertmanager'
-        suffix: 'for configuration to take effect.'
+        suffix: '구성이 적용되려면 다음을 수행해야 합니다.'
       disabledAddon:
-        prefix: 'The monitoring add-on is disabled, click'
-        middle: 'here'
-        suffix: 'to enable it.'
+        prefix: '모니터링 추가 기능이 비활성화되어 있습니다. 클릭하세요.'
+        middle: '여기'
+        suffix: '그것을 활성화하기 위해.'
 
   logging:
     configuration:
@@ -1132,380 +1132,379 @@ harvester:
         fluentbit: Fluentbit
         fluentd: Fluentd
     clusterFlow:
-      label: Cluster Flows
+      label: 클러스터 흐름
     clusterOutput:
-      label: Cluster Outputs
+      label: 클러스터 출력
     flow:
-      label: Flows
+      label: 흐름
     output:
-      label: Outputs
+      label: 출력
     diabledTips:
-        prefix: 'Enable'
-        middle: 'logging'
-        suffix: 'for configuration to take effect.'
+        prefix: '활성화'
+        middle: '로깅'
+        suffix: '구성이 적용되려면.'
 
   snapshot:
-    totalSnapshotSize: Total Snapshot Size
-    label: Volume Snapshots
-    targetVolume: Original Volume
-    size: Size
-    image: Image
+    totalSnapshotSize: 총 스냅샷 크기
+    label: 볼륨 스냅샷
+    targetVolume: 원본 볼륨
+    size: 크기
+    image: 이미지
 
   vmSnapshot:
-    label: Virtual Machine Snapshots
-    createText: Restore Snapshot
-    snapshot: Snapshot
+    label: 가상 머신 스냅샷
+    createText: 스냅샷 복원
+    snapshot: 스냅샷
 
   storage:
-    label: Storage
-    useDefault: Use the default storage
-    volumeEncryption: Volume Encryption
-    secret: Secret
+    label: 스토리지
+    useDefault: 기본 저장소 사용
+    volumeEncryption: 볼륨 암호화
+    secret: 시크릿
     migratable:
-      label: Migratable
+      label: 마이그레이션 가능
     numberOfReplicas:
-      label: Number Of Replicas
+      label: 복제본 수
     staleReplicaTimeout:
-      label: Stale Replica Timeout
+      label: 안정된 복제본 시간 초과
     nodeSelector:
-      label: Host Selector
+      label: 호스트 선택기
     diskSelector:
-      label: Disk Selector
+      label: 디스크 선택기
     storageClass:
-      label: Storage Class
+      label: 스토리지 클래스
       longhorn:
         v1:
           label: Longhorn V1 (CSI)
         v2:
           label: Longhorn V2 (CSI)
-        versionTooltip: Longhorn V2 is disabled for this node.
+        versionTooltip: 이 노드에서는 Longhorn V2가 비활성화되어 있습니다.
       lvm:
         label: LVM
-    title: Storage Classes
+    title: 스토리지 클래스
     customize:
       volumeBindingMode:
-        later: Bind and provision a persistent volume once a virtual machine using the PersistentVolumeClaim is created
+        later: PersistentVolumeClaim을 사용하여 가상 머신이 생성되면 영구 볼륨을 바인딩하고 프로비저닝합니다.
     parameters:
       numberOfReplicas:
-        label: Number Of Replicas
+        label: 복제본 수
       staleReplicaTimeout:
-        label: Stale Replica Timeout
+        label: 안정된 복제본 시간 초과
       diskSelector:
-        label: Disk Selector
-        no-options: No available tags, please add in the `Host > Storage` page
+        label: 디스크 선택기
+        no-options: 사용 가능한 태그가 없습니다. `호스트 > 저장소` 페이지에서 추가하세요.
       nodeSelector:
-        label: Node Selector
-        no-options: No available tags, please add in the `Host > Storage` page
+        label: 노드 선택기
+        no-options: 사용 가능한 태그가 없습니다. `호스트 > 저장소` 페이지에서 추가하세요.
       migratable:
-        label: Migratable
+        label: 마이그레이션 가능
       lvmVolumeGroupType:
-        label: Volume Group Type
+        label: 볼륨 그룹 유형
       lvmVolumeGroup:
-        label: Volume Group Name
-        no-options: No available Volume Groups, please add in the `Host > Storage` page
+        label: 볼륨 그룹 이름
+        no-options: 사용 가능한 볼륨 그룹이 없습니다. `호스트 > 스토리지` 페이지에서 추가하세요.
       node:
-        label: Node
+        label: 노드
     allowedTopologies:
-      title: Allowed Topologies
-      tooltip: Allowed Topologies helps scheduling virtual machines on hosts which match all of below expressions.
+      title: 허용된 토폴로지
+      tooltip: 허용된 토폴로지는 아래 표현식을 모두 충족하는 호스트에서 가상 머신을 예약하는 데 도움이 됩니다.
 
   vlanConfig:
-    title: Network Configuration
-    createNetworkConfig: Create Network Configuration
+    title: 네트워크 구성
+    createNetworkConfig: 네트워크 구성 생성
     action:
-      migrate: Migrate
+      migrate: 마이그레이션
     titles:
-      nodeSelector: Node Selector
+      nodeSelector: 노드 선택기
       uplink: Uplink
-      bondOptions: Bond Options
-      attributes: Attributes
-      host: Selected Hosts
+      bondOptions: Bond 옵션
+      attributes: 속성
+      host: 선택된 호스트
     scheduling:
       affinity:
-        allNodes: Select all nodes
-        specificNode: Select specific node
-        schedulingRules: Select node(s) matching rules
+        allNodes: 모든 노드 선택
+        specificNode: 특정 노드 선택
+        schedulingRules: 규칙과 일치하는 노드를 선택하세요
     uplink:
       nics:
         label: NICs
-        addLabel: Add NIC
-        placeholder: Select a NIC that is available on all the selected nodes
+        addLabel: NIC 추가
+        placeholder: 선택한 모든 노드에서 사용 가능한 NIC를 선택하세요
         validate:
-          available: NIC "{nic}" is not available on the selected nodes
+          available: 선택한 노드에서 NIC "{nic}"을 사용할 수 없습니다.
       linkAttributes:
         mtu:
           label: MTU
       bondOptions:
         mode:
-          label: Mode
+          label: 모드
         miimon:
           label: Miimon
-          tooltip: Miimon specifies the MII link monitoring frequency in milliseconds. <Code>-1</Code> means to keep the original value.
+          tooltip: Miimon은 MII 링크 모니터링 빈도를 밀리초 단위로 지정합니다. <Code>-1</Code>은 원래 값을 유지함을 의미합니다.
     nodeSelector:
       matchingNodes:
         matchesSome: |-
           {matched, plural,
-            =0 {Matches 0 of {total, number} Nodes.}
-            =1 {Matches 1 of {total, number} Nodes: "{sample}"}
-            other {Matches {matched, number} of {total, number} existing Nodes, including "{sample}"}
+            =0 {{total, number}개의 노드 중 0개와 일치합니다.}
+            =1 {{total, number}개의 노드 중 1개와 일치합니다: "{sample}"}
+           other {{{matched, number}개의 기존 노드 중 "{sample}"를 포함하여 {total, number}개의 노드와 일치합니다.}
           }
-
   vlanStatus:
     vlanConfig:
-      label: Network Configuration
+      label: 네트워크 구성
 
   clusterNetwork:
-    title: Cluster Network Configuration
+    title: 클러스터 네트워크 구성
     create:
       button:
-        label: Create a Cluster Network
-    clusterNetwork: There are no network configurations defined.
-    mgmt: mgmt is a built-in cluster management network and does not support any additional network configurations.
-    notExist: 'Cluster Network "{ clusterNetwork }" does not exist'
-    notReady: 'Cluster Network "{ clusterNetwork }" is not ready'
+        label: 클러스터 네트워크 생성
+    clusterNetwork: 정의된 네트워크 구성이 없습니다.
+    mgmt: mgmt는 내장된 클러스터 관리 네트워크이며 추가 네트워크 구성을 지원하지 않습니다.
+    notExist: '클러스터 네트워크 "{ clusterNetwork }"이 존재하지 않습니다.'
+    notReady: '클러스터 네트워크 "{ clusterNetwork }"가 준비되지 않았습니다.'
 
   addons:
     descriptions:
-      'harvester-system/vm-import-controller': vm-import-controller is an add-on to help migrate virtual machine workloads from other source clusters to an existing Harvester cluster.
-      'harvester-system/pcidevices-controller': pcidevices-controller is an add-on to help discover PCI devices for nodes in your cluster and allow users to prepare devices for PCI Passthrough, for use with Harvester virtual machine and guest clusters.
-      'cattle-logging-system/rancher-logging': rancher-logging is an add-on to collect versatile logs, events, and audits from the Harvester cluster and route them to many kinds of servers based on flows.
-      'harvester-system/rancher-vcluster': rancher-vcluster deploys a virtual cluster (vcluster) with Rancher installed.
-      'cattle-monitoring-system/rancher-monitoring': rancher-monitoring is an add-on that collects Harvester cluster and virtual machine metrics and allows you to view the metrics on an embedded dashboard and send alert(s) to remote servers.
-      'vm-import-controller': vm-import-controller is an add-on to help migrate virtual machine workloads from other source clusters to an existing Harvester cluster.
-      'pcidevices-controller': pcidevices-controller is an add-on to help discover PCI devices for nodes in your cluster and allow users to prepare devices for PCI Passthrough, for use with Harvester virtual machines and guest clusters.
-      'nvidia-driver-toolkit': 'nvidia-driver-toolkit is an add-on to enable vGPU devices and assign them to Harvester virtual machines.'
-      'rancher-logging': rancher-logging is an add-on to collect versatile logs, events, and audits from the Harvester cluster and route them to many kinds of servers based on flows.
-      'rancher-monitoring': rancher-monitoring is an add-on to collect Harvester cluster and virtual machine metrics, view them on the embedded dashboard, and send alert(s) to remote servers.
-      'rancher-vcluster': rancher-vcluster deploys a virtual cluster (vcluster) with Rancher installed.
-      'harvester-seeder': harvester-seeder is an add-on that uses IPMI and Redfish to discover hardware information and perform out-of-band operations.
-      'harvester-system/harvester-seeder': harvester-seeder is an add-on that uses IPMI and Redfish to discover hardware information and perform out-of-band operations.
-      'harvester-csi-driver-lvm': harvester-csi-driver-lvm is an add-on allowing users to create PVC through the LVM with local devices.
+      'harvester-system/vm-import-controller': vm-import-controller는 다른 소스 클러스터에서 기존 Harvester 클러스터로 가상 머신 워크로드를 마이그레이션하는 데 도움이 되는 추가 기능입니다.
+      'harvester-system/pcidevices-controller': pcidevices-controller는 클러스터의 노드에 대한 PCI 장치를 검색하고 사용자가 Harvester 가상 머신 및 게스트 클러스터와 함께 사용할 PCI 패스스루를 위한 장치를 준비할 수 있도록 돕는 애드온입니다.
+      'cattle-logging-system/rancher-logging': rancher-logging은 Harvester 클러스터에서 다양한 로그, 이벤트, 감사를 수집하고 흐름에 따라 다양한 종류의 서버로 라우팅하는 애드온입니다.
+      'harvester-system/rancher-vcluster': rancher-vcluster는 Rancher가 설치된 가상 클러스터(vcluster)를 배포합니다.
+      'cattle-monitoring-system/rancher-monitoring': rancher-monitoring은 Harvester 클러스터와 가상 머신 메트릭을 수집하고 내장된 대시보드에서 메트릭을 보고 원격 서버로 알림을 보낼 수 있는 애드온입니다.
+      'vm-import-controller': vm-import-controller는 다른 소스 클러스터에서 기존 Harvester 클러스터로 가상 머신 워크로드를 마이그레이션하는 데 도움이 되는 추가 기능입니다.
+      'pcidevices-controller': pcidevices-controller는 클러스터의 노드에 대한 PCI 장치를 검색하고 사용자가 Harvester 가상 머신 및 게스트 클러스터와 함께 사용할 PCI 패스스루를 위한 장치를 준비할 수 있도록 돕는 애드온입니다.
+      'nvidia-driver-toolkit': 'nvidia-driver-toolkit은 vGPU 장치를 활성화하고 이를 Harvester 가상 머신에 할당하는 애드온입니다.'
+      'rancher-logging': rancher-logging은 Harvester 클러스터에서 다양한 로그, 이벤트 및 감사를 수집하고 흐름에 따라 여러 종류의 서버로 라우팅하는 애드온입니다..
+      'rancher-monitoring': rancher-monitoring은 Harvester 클러스터와 가상 머신 메트릭을 수집하고, 내장된 대시보드에서 이를 보고, 원격 서버로 알림을 보내는 애드온입니다.
+      'rancher-vcluster': rancher-vcluster는 Rancher가 설치된 가상 클러스터(vcluster)를 배포합니다.
+      'harvester-seeder': harvester-seeder는 IPMI와 Redfish를 사용하여 하드웨어 정보를 검색하고 대역 외 작업을 수행하는 애드온입니다.
+      'harvester-system/harvester-seeder': harvester-seeder는 IPMI와 Redfish를 사용하여 하드웨어 정보를 검색하고 대역 외 작업을 수행하는 애드온입니다.
+      'harvester-csi-driver-lvm': harvester-csi-driver-lvm은 사용자가 로컬 장치로 LVM을 통해 PVC를 생성할 수 있도록 해주는 애드온입니다.
     vmImport:
       titles:
-        basic: Basic
-        pvc: Volume
+        basic: 기본
+        pvc: 볼륨
     rancherVcluster:
-      accessRancher: Access the Rancher Dashboard
-      hostname: Hostname
-      rancherVersion: Rancher Version
-      password: Bootstrap Password
-    switchFailed: "{action} {name} failed!"
+      accessRancher: Rancher 대시보드에 접속하세요
+      hostname: 호스트 이름
+      rancherVersion: Rancher 버전
+      password: 부트스트랩 비밀번호
+    switchFailed: "{action} {name}이 실패했습니다!"
     nvidiaDriverToolkit:
       titles:
-        basic: Controller
-        image: Image
-        driver: Driver
+        basic: 컨트롤러
+        image: 이미지
+        driver: 드라이버
       image:
-        tag: Image Tag
-        repository: Image Repository
+        tag: 이미지 태크
+        repository: 이미지 저장소
       driver:
-        location: Driver Location
+        location: 드라이버 로케이션
       parsingSpecError:
-        The field 'spec.valuesContent' has invalid format.
+        필드'spec.valuesContent'의 형식이 잘못되었습니다.
     usbController:
       titles:
-        basic: Basic
+        basic: 기본
 
   loadBalancer:
-    label: Load Balancers
+    label: 로드 밸런서
     tabs:
-      basic: Basic
-      listeners: Listeners
-      healthCheck: Health Check
-      backendServer: Backend Server Selector
+      basic: 기본
+      listeners: 리스너
+      healthCheck: 상태 점검
+      backendServer: 백엔드 서버 선택기
     workloadType:
-      label: Workload Type
+      label: 워크로드 유형
       options:
-        cluster: Guest Kubernetes Cluster
-        vm: Virtual Machine
+        cluster: 게스트 Kubernetes 클러스터
+        vm: 가상 머신
     ipam:
       label: IPAM
       options:
         dhcp: DHCP
-        pool: Pool
+        pool: 풀
     ipPool:
-      label: IP Pool
+      label: IP 풀
       options:
-        none: Auto (Select IP Pool automatically)
+        none: 자동 (IP 풀 자동 선택)
     listeners:
       name:
-        label: Name
+        label: 이름
       protocol:
-        label: Protocol
+        label: 프로토콜
       port:
-        label: Port
+        label: 포트
       backendPort:
-        label: Backend Port
+        label: 백앤드 포트
         placeholder: e.g. 80
     backendServerSelector:
       matchingVMs:
         matchesSome: |-
           {matched, plural,
-            =0 {Matches 0 of {total, number} virtual machines in the namespace where the load balancer is.}
-            =1 {Matches 1 of {total, number} virtual machines in the namespace where the load balancer is: "{sample}"}
-            other {Matches {matched, number} of {total, number} existing virtual machines in the namespace where the load balancer is, including "{sample}"}
+            =0 {로드 밸런서가 있는 네임스페이스의 가상 머신 {total, number}개 중 0개와 일치합니다.}
+            =1 {로드 밸런서가 있는 네임스페이스의 가상 머신 {total, number}개 중 1개와 일치합니다: "{sample}"}}
+            other {로드 밸런서가 있는 네임스페이스의 기존 가상 머신 {matched, number}개 중 {total, number}개와 일치합니다("{sample}" 포함)}
           }
     backendServers:
-      label: Backend Servers
+      label: 백엔드 서버
     healthCheck:
       warning:
-        portInUse: Warning, the Backend Port {port} is in use in Health Check settings. If you need to update the port, update the Health Check settings accordingly.
+        portInUse: 경고: 상태 점검 설정에서 백엔드 포트 {port}가 사용 중입니다. 포트를 업데이트해야 하는 경우 상태 점검 설정을 적절히 업데이트하세요.
 
   ipPool:
-    label: IP Pools
+    label: IP 풀풀
     network:
-      label: Virtual Machine Network
+      label: 가상 머신 네트워크
     tabs:
-      range: Range
+      range: 범위
       scope: Scope
-      selector: Selector
+      selector: 수집기기
     subnet:
-      label: Subnet
+      label: 서브넷넷
     startIP:
-      label: Start IP
+      label: 시작IP
     endIP:
-      label: End IP
+      label: 끝IP
     gateway:
-      label: Gateway
+      label: 게이트웨이
     namespace:
-      label: Namespace
+      label: 네임스페이스스
     project:
-      label: Project
+      label: 프로젝트
     guestCluster:
-      label: Guest Kubernetes Cluster
+      label: 게스트 Kubernetes 클러스터
     availableIP:
-      label: Available IP Count
+      label: 사용 가능한 IP 수
     scope:
       label: Scope
-      addLabel: Add Scope
+      addLabel: Scope 추가
     priority:
-      label: Priority
+      label: 우선 사항
     cidr:
-      addLabel: Add CIDR
+      addLabel: CIDR 추가
     range:
-      addLabel: Add Range
+      addLabel: 범위 추가 
 
   service:
     healthCheckPort:
-      label: Health Check Port
+      label: 상태 확인 포트
     healthCheckSuccessThreshold:
-      label: Health Check Success Threshold
-      description: If the number of times the probe continuously detects an address successfully reaches the success threshold, then the backend server can start to forward traffic.
+      label: 상태 점검 성공 임계값
+      description: 프로브가 주소를 지속적으로 성공적으로 감지하는 횟수가 성공 임계값에 도달하면 백엔드 서버는 트래픽 전달을 시작할 수 있습니다.
     healthCheckFailureThreshold:
-      label: Health Check Failure Threshold
-      description: The backend server will stop forwarding traffic if the number of health check failures reaches the failure threshold.
+      label: 상태 점검 실패 임계값
+      description: 백엔드 서버는 상태 검사 실패 횟수가 실패 임계값에 도달하면 트래픽 전달을 중지합니다.
     healthCheckPeriod:
-      label: Health Check Period
+      label: 상태 점검 기간
     healthCheckTimeout:
-      label: Health Check Timeout
+      label: 상태 점검 시간 초과
     healthCheckEnabled:
-      label: Health Check
+      label: 상태 점검
 
   secret:
-    label: Secrets
+    label: 시크릿
 
   sriov:
-    label: SR-IOV Network Devices
-    nodeName: Node
-    numVFs: Number Of Virtual Functions
-    vfAddresses: Virtual Functions Addresses
-    showMore: Show More
-    parentSriov: Filter By Parent SR-IOV
+    label: SR-IOV 네트워크 장치
+    nodeName: 노드
+    numVFs: 가상 함수의 수
+    vfAddresses: 가상 함수 주소
+    showMore: 더보기
+    parentSriov: 부모 SR-IOV로 필터링
 
   sriovgpu:
-    label: SR-IOV GPU Devices
-    nodeName: Node
-    numVFs: Number of Virtual Functions
-    vfAddresses: Virtual Functions Addresses
-    vGpuDevices: vGPU Devices
-    showMore: Show More
-    parentSriov: Filter By Parent SR-IOV GPU
-    noPermission: Please contact your system administrator to add Harvester add-ons first.
+    label: SR-IOV GPU 장치
+    nodeName: 노드
+    numVFs: 가상 함수의 수
+    vfAddresses: 가상 함수 주소
+    vGpuDevices: vGPU 장치
+    showMore: 더보기
+    parentSriov: 부모 SR-IOV GPU로 필터링
+    noPermission: 먼저 시스템 관리자에게 문의하여 Harvester 애드온을 추가하세요.
     goSetting:
-      prefix: The nvidia-driver-toolkit add-on is not enabled, click
-      middle: here
-      suffix: to enable it to manage your SR-IOV GPU devices.
+      prefix: nvidia-driver-toolkit 추가 기능이 활성화되지 않았습니다. 클릭하세요.
+      middle: 여기
+      suffix: SR-IOV GPU 장치를 관리할 수 있도록 합니다.
 
   vgpu:
-    label: vGPU Devices
-    noPermission: Please contact system administrator to add Harvester add-ons first.
+    label: vGPU 장치
+    noPermission: Harvester 애드온을 추가하려면 먼저 시스템 관리자에게 문의하세요.
     goSetting:
-      prefix: The nvidia-driver-toolkit add-on is not enabled, click
-      middle: here
-      suffix: to enable it to manage your vGPU devices.
-    enableGroup: Enable Group
-    disableGroup: Disable Group
+      prefix: nvidia-driver-toolkit 추가 기능이 활성화되지 않았습니다. 클릭하세요.
+      middle: 여기
+      suffix: vGPU 장치를 관리할 수 있도록 합니다.
+    enableGroup: 그룹 활성화
+    disableGroup: 그룹 비활성화
     enable:
-      title: Select vGPU
-      type: Type
-    available: Available Devices
-    compatibleNodes: Compatible Nodes
-    impossibleSelection: 'There are no hosts with all of the selected devices.'
-    howToUseDevice: 'Use the table below to enable vGPU devices you want to use in this virtual machine.'
-    deviceInTheSameHost: 'You can only select devices on the same host.'
+      title: vGPU 선택
+      type: 유형
+    available: 사용 가능한 장치
+    compatibleNodes: 호환 노드
+    impossibleSelection: '선택한 모든 장치를 갖춘 호스트가 없습니다.'
+    howToUseDevice: '아래 표를 사용하여 이 가상 머신에서 사용하려는 vGPU 장치를 활성화하세요.'
+    deviceInTheSameHost: '동일한 호스트에 있는 장치만 선택할 수 있습니다.'
 
   usb:
-    label: USB Devices
-    noPermission: Please contact system admin to add Harvester add-ons first
+    label: USB 장치
+    noPermission: 먼저 시스템 관리자에게 문의하여 Harvester 추가 기능을 추가하세요.
     goSetting:
-      prefix: The pcidevices-controller add-on is not enabled, click
-      middle: here
-      suffix: to enable it to manage your USB devices.
-    enableGroup: Enable Group
-    disableGroup: Disable Group
-    available: Available USB Devices
-    compatibleNodes: Compatible Nodes
-    impossibleSelection: 'There are no hosts with all of the selected devices.'
-    howToUseDevice: 'Use the table below to enable USB passthrough on each device you want to use in this VM.'
-    deviceInTheSameHost: 'You can only select devices on the same host.'
-    showCompatibility: Show device compatibility matrix
-    hideCompatibility: Hide device compatibility matrix
-    claimError: Error enabling passthrough on {name}
-    unclaimError: Error disabling passthrough on {name}
-    cantUnclaim: You cannot disable passthrough on a device claimed by another user.
-    enablePassthroughWarning: 'Please re-enable the USB device if the device path changes in the following situations:<br/>&nbsp1) Re-plugging the USB device.<br/>&nbsp2) Rebooting the node.<br/><br/>An incorrect device path may cause passthrough to fail.'
+      prefix: pcidevices-controller 추가 기능이 활성화되지 않았습니다. 클릭하세요.
+      middle: 여기
+      suffix: USB 장치를 관리할 수 있도록 합니다.
+    enableGroup: 그룹 활성화
+    disableGroup: 그룹 비활성화
+    available: 사용 가능한 USB 장치
+    compatibleNodes: 호환 노드
+    impossibleSelection: '선택한 모든 장치를 갖춘 호스트가 없습니다.'
+    howToUseDevice: '이 VM에서 사용하려는 각 장치에서 USB 패스스루를 활성화하려면 아래 표를 사용하세요.'
+    deviceInTheSameHost: '동일한 호스트에서만 장치를 선택할 수 있습니다.'
+    showCompatibility: 장치 호환성 매트릭스 표시
+    hideCompatibility: 기기 호환성 매트릭스 숨기기
+    claimError: 패스스루 활성화 중 오류 발생 {name}
+    unclaimError: 패스스루 비활성화 중 오류 발생 {name}
+    cantUnclaim: 다른 사용자가 요청한 장치에서는 패스스루를 비활성화할 수 없습니다.
+    enablePassthroughWarning: '다음 상황에서 장치 경로가 변경되면 USB 장치를 다시 활성화하세요.<br/>&nbsp1) USB 장치를 다시 연결합니다.<br/>&nbsp2) 노드를 재부팅합니다.<br/><br/>잘못된 장치 경로로 인해 패스스루가 실패할 수 있습니다.'
 
   harvesterVlanConfigMigrateDialog:
     targetClusterNetwork:
-      label: Target Cluster Network
-      placeholder: Choose Target Cluster Network
+      label: 대상 클러스터 네트워크
+      placeholder: 대상 클러스터 네트워크 선택
 
   seeder:
     banner:
       enable:
-        prefix: The "harvester-seeder" add-on is disabled.
-        middle: Click here
-        suffix: to enable it.
-      noAccess: Please contact your system administrator to enable the Out-of-Band Access first.
-      noAddon: The "harvester-seeder" add-on does not exist, please check if it is installed.
-      noInventory: Waiting for "inventories.metal.harvesterhci.io" to be ready.
+        prefix: harvester-seeder 뿌리기 추가 기능이 비활성화되었습니다.
+        middle: 여기를 클릭하세요
+        suffix: 이것것을 활성화합니다.
+      noAccess: 먼저 시스템 관리자에게 문의하여 대역 외 액세스를 활성화하세요.
+      noAddon: harvester-seeder 애드온이 존재하지 않습니다. 설치되어 있는지 확인해 주세요.
+      noInventory: inventories.metal.harvesterhci.io가 준비될 때까지 기다리고 있습니다.
     inventory:
       host:
-        label: Host
+        label: 호스트
         placeholder: e.g. 172.16.1.1
       port:
-        label: Port
+        label: 포트
         placeholder: e.g. 623
       insecureTLS:
-        label: Insecure TLS
+        label: 안전하지 않은 TLS
       secret:
-        label: Secret
+        label: 시크릿
         create:
-          title: Add Secret
+          title: 시크릿 추가
       event:
-        label: Event
+        label: 이벤트
       pollingInterval:
-        label: Polling Interval
+        label: 폴링 간격
 
   affinity:
-    thisPodNamespace: This virtual machine's namespace
+    thisPodNamespace: 이 가상 머신의 네임스페이스
     matchExpressions:
-      inNamespaces: "Workloads in these namespaces"
-    vmAffinityTitle: Virtual Machine Scheduling
+      inNamespaces: "이 네임스페이스의 워크로드"
+    vmAffinityTitle: 가상 머신 스케줄링
     namespaces:
       placeholder: e.g. default,system,base
-      label: Namespaces
-    addLabel: Add Workload Selector
+      label: 네임스페이스
+    addLabel: 워크로드 선택기 추가
     topologyKey:
       placeholder: 'topology.kubernetes.io/zone'
 
@@ -1515,134 +1514,134 @@ typeDescription:
   #       Should fit on one line.
   #       If you link to anything external, it MUST have
   #       target="_blank" rel="noopener noreferrer nofollow"
-  harvester: "Branding allows administrators to globally re-brand the UI by customizing the Harvester product name, logos and color scheme."
+  harvester: "브랜딩을 통해 관리자는 Harvester 제품 이름, 로고 및 색 구성표를 사용자 정의하여 UI를 전 세계적으로 리브랜딩할 수 있습니다."
 
 advancedSettings:
-  experimental: 'Experimental features allow users to test and evaluate early-access functionality prior to official supported releases'
+  experimental: '실험적 기능을 통해 사용자는 공식 지원 릴리스 전에 조기 액세스 기능을 테스트하고 평가할 수 있습니다.'
   descriptions:
-    'harv-vlan': Default Network Interface name of the VLAN network.
-    'harv-backup-target': Custom backup target to store virtual machine backups.
-    'branding': Branding allows administrators to globally re-brand the UI by customizing the Harvester product name, logos, and color scheme.
-    'harv-csi-driver-config': Configure additional information for CSI drivers.
-    'harv-containerd-registry': Containerd Registry Configuration to connect private registries.
-    'harv-log-level': Configure Harvester server log level. Defaults to Info.
-    'harv-server-version': Harvester server version.
-    'harv-upgrade-checker-enabled': Specifies whether to enable Harvester upgrade check or not. Default is True.
-    'harv-upgrade-checker-url': Default Harvester upgrade check url. Only used when the <code>upgrade-checker-enabled</code> is equal to True.
-    'harv-ui-source': Configure how to load the UI source.
-    'harv-ui-index': 'HTML index location for the UI.'
-    'harv-ui-plugin-index': 'JS index location for the Harvester plugin UI.'
-    'harv-cluster-registration-url': Registration URL for multi-cluster management.
-    'harv-http-proxy': 'HTTP proxy for Harvester to access external services.'
-    'harv-additional-ca': 'Custom CA root certificates for TLS validation.'
-    'harv-overcommit-config': 'Resource overcommit configuration.'
-    'harv-support-bundle-timeout': 'Support bundle timeout configuration in minutes, use 0 to disable the timeout.'
-    'harv-support-bundle-expiration': 'Support bundle expiration configuration in minutes.'
-    'harv-support-bundle-node-collection-timeout': 'Support bundle node collection timeout configuration in minutes.'
-    'harv-vm-force-reset-policy': Configuration for the force-reset action when a virtual machine is stuck on a node that is down.
-    'harv-ssl-parameters': Custom SSL Parameters for TLS validation.
-    'harv-storage-network': 'Longhorn storage-network setting.'
-    'harv-support-bundle-namespaces': Specify resources in other namespaces to be collected by the support package.
-    'harv-auto-disk-provision-paths': Specify the disks(using glob pattern) that Harvester will automatically add as virtual machine storage.
-    'harv-support-bundle-image': Support bundle image configuration. Find different versions in <a href="https://hub.docker.com/r/rancher/support-bundle-kit/tags" target="_blank">rancher/support-bundle-kit</a>.
-    'harv-release-download-url': This setting allows you to configure the <code>upgrade release download</code> URL address. Harvester will get the ISO URL and checksum value from the (<code>$URL</code>/<code>$VERSION</code>/version.yaml) file hosted by the configured URL.
-    'harv-default-vm-termination-grace-period-seconds': Configure the virtual machine termination grace period for virtual machine stop.
-    'harv-ntp-servers': Configure NTP server. You can configure multiple IPv4 addresses or host addresses.
-    'harv-auto-rotate-rke2-certs': The certificate rotation mechanism relies on Rancher. Harvester will automatically update certificates generation to trigger rotation.
-    'harv-kubeconfig-default-token-ttl-minutes': 'TTL (in minutes) applied on Harvester administration kubeconfig files. Default is 0, which means to never expire.'
-    'harv-longhorn-v2-data-engine-enabled': 'Enable the Longhorn V2 data engine. Default is false. <ul><li>Changing this setting will restart RKE2 on all nodes. This will not affect running VM workloads.</li><li>If you see "not enough hugepages-2Mi capacity" errors when enabling this setting, wait a minute for the error to clear. If the error remains, reboot the affected node.</li></ul>'
-    'harv-additional-guest-memory-overhead-ratio': 'The ratio for kubevirt to adjust the VM overhead memory. The value could be zero, empty value or floating number between 1.0 and 10.0, default to 1.5.'
+    'harv-vlan': VLAN 네트워크의 기본 네트워크 인터페이스 이름입니다.
+    'harv-backup-target': 가상 머신 백업을 저장하기 위한 사용자 정의 백업 대상입니다.
+    'branding': 브랜딩을 통해 관리자는 Harvester 제품 이름, 로고, 색 구성표를 사용자 정의하여 UI를 전 세계적으로 리브랜딩할 수 있습니다.
+    'harv-csi-driver-config': CSI 드라이버에 대한 추가 정보를 구성합니다.
+    'harv-containerd-registry': 개인 레지스트리를 연결하기 위한 Containerd 레지스트리 구성.
+    'harv-log-level': Harvester 서버 로그 수준을 구성합니다. 기본값은 Info입니다.
+    'harv-server-version': Harvester 서버 버전.
+    'harv-upgrade-checker-enabled': Harvester 업그레이드 확인 기능을 활성화할지 여부를 지정합니다. 기본값은 True입니다.
+    'harv-upgrade-checker-url': 기본 Harvester 업그레이드 확인 URL입니다. <code>upgrade-checker-enabled</code>가 True인 경우에만 사용됩니다.
+    'harv-ui-source': UI 소스를 로드하는 방법을 구성합니다.
+    'harv-ui-index': 'UI에 대한 HTML 인덱스 위치.'
+    'harv-ui-plugin-index': 'Harvester 플러그인 UI의 JS 인덱스 위치입니다.'
+    'harv-cluster-registration-url': 멀티 클러스터 관리를 위한 등록 URL입니다.
+    'harv-http-proxy': 'Harvester가 외부 서비스에 접근하기 위한 HTTP 프록시입니다.'
+    'harv-additional-ca': 'TLS 검증을 위한 사용자 정의 CA 루트 인증서.'
+    'harv-overcommit-config': '리소스 오버커밋 구성.'
+    'harv-support-bundle-timeout': '분 단위의 지원 번들 시간 초과 구성, 시간 초과를 비활성화하려면 0을 사용하세요.'
+    'harv-support-bundle-expiration': '지원 번들의 만료 시간을 분 단위로 설정.'
+    'harv-support-bundle-node-collection-timeout': '지원 번들 노드 수집의 타임아웃 시간을 분 단위로 설정.'
+    'harv-vm-force-reset-policy': 가상 머신이 다운된 노드에 갇혔을 때 강제 재설정 작업을 위한 구성입니다.
+    'harv-ssl-parameters': TLS 검증을 위한 사용자 정의 SSL 매개변수.
+    'harv-storage-network': 'Longhorn 스토리지 네트워크 설정.'
+    'harv-support-bundle-namespaces': 지원 패키지에서 수집할 다른 네임스페이스의 리소스를 지정합니다.
+    'harv-auto-disk-provision-paths': Harvester가 가상 머신 스토리지로 자동으로 추가할 디스크를 지정합니다(glob 패턴 사용).
+    'harv-support-bundle-image': 번들 이미지 구성을 지원합니다. <a href="https://hub.docker.com/r/rancher/support-bundle-kit/tags" target="_blank">rancher/support-bundle-kit</a>에서 다른 버전을 확인하세요.
+    'harv-release-download-url': 이 설정을 사용하면 <code>업그레이드 릴리스 다운로드</code> URL 주소를 구성할 수 있습니다. Harvester는 구성된 URL에서 호스팅되는 (<code>$URL</code>/<code>$VERSION</code>/version.yaml) 파일에서 ISO URL과 체크섬 값을 가져옵니다.
+    'harv-default-vm-termination-grace-period-seconds': 가상 머신 중지에 대한 가상 머신 종료 유예 기간을 구성합니다.
+    'harv-ntp-servers': NTP 서버를 구성하세요. 여러 IPv4 주소 또는 호스트 주소를 구성할 수 있습니다.
+    'harv-auto-rotate-rke2-certs': 인증서 순환 메커니즘은 Rancher를 기반으로 합니다. Harvester는 인증서 생성을 자동으로 업데이트하여 순환을 트리거합니다.
+    'harv-kubeconfig-default-token-ttl-minutes': 'Harvester 관리 kubeconfig 파일에 적용되는 TTL(분)입니다. 기본값은 0이며, 만료되지 않음을 의미합니다.'
+    'harv-longhorn-v2-data-engine-enabled': 'Longhorn V2 데이터 엔진을 활성화합니다. 기본값은 false입니다. <ul><li>이 설정을 변경하면 모든 노드에서 RKE2가 다시 시작됩니다. 실행 중인 VM 워크로드에는 영향을 미치지 않습니다.</li><li>이 설정을 활성화할 때 "hugepages 용량 부족 - 2Mi" 오류가 표시되면 오류가 사라질 때까지 잠시 기다리세요. 오류가 지속되면 영향을 받는 노드를 재부팅하세요.</li></ul>'
+    'harv-additional-guest-memory-overhead-ratio': 'TKubevirt가 VM 오버헤드 메모리를 조정하는 비율입니다. 값은 0, 빈 값 또는 1.0에서 10.0 사이의 부동 소수점 수일 수 있으며, 기본값은 1.5입니다.'
 
 typeLabel:
   kubevirt.io.virtualmachine: |-
     {count, plural,
-      one { Virtual Machine }
-      other { Virtual Machines }
+      one { 가상 머신 }
+      other { 가상 머신s }
     }
   harvesterhci.io.virtualmachineimage: |-
     {count, plural,
-      one { Image }
-      other { Images }
+      one { 이미지 }
+      other { 이미지s }
     }
   harvesterhci.io.keypair: |-
     {count, plural,
-      one { SSH Key }
-      other { SSH Keys }
+      one { SSH 키 }
+      other { SSH 키s }
     }
   harvesterhci.io.host: |-
     {count, plural,
-      one { Host }
-      other { Hosts }
+      one { 호스트 }
+      other { 호스트s }
     }
   harvesterhci.io.networkattachmentdefinition: |-
     {count, plural,
-      one { Virtual Machine Network }
-      other { Virtual Machine Networks }
+      one { 가상 머신 네트워크 }
+      other { 가상 머신 네트워크s }
     }
   harvesterhci.io.volume: |-
     {count, plural,
-      one { Volume }
-      other { Volumes }
+      one { 볼륨 }
+      other { 볼륨s }
     }
   harvesterhci.io.user:  |-
     {count, plural,
-      one { User }
-      other { Users }
+      one { 사용자 }
+      other { 사용자s }
     }
   harvesterhci.io.setting:  |-
     {count, plural,
-      one { Setting }
-      other { Settings }
+      one { 설정 }
+      other { 설정s }
     }
   harvesterhci.io.virtualmachinetemplateversion: |-
     {count, plural,
-      one { Template }
-      other { Templates }
+      one { 템플릿 }
+      other { 템플릿s }
     }
   harvesterhci.io.schedulevmbackup: |-
     {count, plural,
-      one { Virtual Machine Schedule }
-      other { Virtual Machine Schedules }
+      one { 가상 머신 일정 }
+      other { 가상 머신 일정s }
     }
   harvesterhci.io.virtualmachinebackup: |-
     {count, plural,
-      one { Virtual Machine Backup }
-      other { Virtual Machine Backups }
+      one { 가상 머신 백업 }
+      other { 가상 머신 백업s }
     }
   harvesterhci.io.cloudtemplate: |-
     {count, plural,
-      one { Cloud Configuration Template }
-      other { Cloud Configuration Templates }
+      one { 클라우드 구성 템플릿 }
+      other { 클라우드 구성 템플릿s }
     }
   harvesterhci.io.volumesnapshot: |-
     {count, plural,
-      one { Volume Snapshot }
-      other { Volume Snapshots }
+      one { 볼륨 스냅샷 }
+      other { 볼륨 스냅샷s }
     }
   harvesterhci.io.vmsnapshot: |-
     {count, plural,
-      one { Virtual Machine Snapshot }
-      other { Virtual Machine Snapshots }
+      one { 가상 머신 스냅샷 }
+      other { 가상 머신 스냅샷s }
     }
   network.harvesterhci.io.vlanconfig: |-
     {count, plural,
-      one { Network Configuration }
-      other { Network Configurations }
+      one { 네트워크 구성 }
+      other { 네트워크 구성s }
     }
   harvesterhci.io.monitoring.alertmanagerconfig: |-
     {count, plural,
-      one { Alertmanager Configuration }
-      other { Alertmanager Configurations }
+      one { Alertmanager 구성 }
+      other { Alertmanager 구성s }
     }
   harvesterhci.io.logging.clusterflow: |-
     {count, plural,
-      one { Cluster Flow }
-      other { Cluster Flows }
+      one { 클러스터 Flow }
+      other { 클러스터 Flows }
     }
   harvesterhci.io.logging.clusteroutput: |-
     {count, plural,
-      one { Cluster Output }
-      other { Cluster Outputs }
+      one { 클러스터 Output }
+      other { 클러스터 Outputs }
     }
   harvesterhci.io.logging.flow: |-
     {count, plural,
@@ -1656,64 +1655,64 @@ typeLabel:
     }
   harvesterhci.io.storage: |-
     {count, plural,
-      one { Storage Class }
-      other { Storage Classes }
+      one { 스토리지 클래스 }
+      other { 스토리지 클래스s }
     }
   devices.harvesterhci.io.pcidevice: |-
     {count, plural,
-      one { PCI Device }
-      other { PCI Devices }
+      one { PCI 장치 }
+      other { PCI 장치s }
     }
   persistentvolumeclaim: |-
     {count, plural,
-      one { Volume }
-      other { Volumes }
+      one { 볼륨 }
+      other { 볼륨s }
     }
   network.harvesterhci.io.clusternetwork: |-
     {count, plural,
-      one { Cluster Network }
-      other { Cluster Networks }
+      one { 클러스터 네트워크 }
+      other { 클러스터 네트워크s }
     }
   harvesterhci.io.addon: |-
     {count, plural,
-      one { Add-on }
-      other { Add-ons }
+      one { 애드-온 }
+      other { 애드-온s }
     }
   devices.harvesterhci.io.sriovnetworkdevice: |-
     {count, plural,
-      one { SR-IOV Network Device }
-      other { SR-IOV Network Devices }
+      one { SR-IOV 네트워크 장치 }
+      other { SR-IOV 네트워크 장치s }
     }
 
   devices.harvesterhci.io.sriovgpudevice: |-
     {count, plural,
-      one { SR-IOV GPU Device }
-      other { SR-IOV GPU Devices }
+      one { SR-IOV GPU 장치 }
+      other { SR-IOV GPU 장치치s }
     }
 
   devices.harvesterhci.io.vgpudevice: |-
     {count, plural,
-      one { vGPU Device }
-      other { vGPU Devices }
+      one { vGPU 장치 }
+      other { vGPU 장치s }
     }
 
   harvesterhci.io.secret: |-
     {count, plural,
-      one { Secret }
-      other { Secrets }
+      one { 시크릿 }
+      other { 시크릿s }
     }
   harvesterhci.io.blockdevice: |-
     {count, plural,
-      one { Disk }
-      other { Disks }
+      one { 디스트 }
+      other { 디스크s }
     }
   loadbalancer.harvesterhci.io.loadbalancer: |-
     {count, plural,
-      one { Load Balancer }
-      other { Load Balancers }
+      one { 로드 밸런서 }
+      other { 로드 밸런서s }
     }
   loadbalancer.harvesterhci.io.ippool: |-
     {count, plural,
-      one { IP Pool }
-      other { IP Pools }
+      one { IP 풀 }
+      other { IP 풀s }
     }
