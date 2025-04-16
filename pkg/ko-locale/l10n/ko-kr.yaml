@@ -1376,13 +1376,13 @@ harvester:
         fluentbit: Fluentbit
         fluentd: Fluentd
     clusterFlow:
-      label: 클러스터 흐름
+      label: 클러스터 Flow
     clusterOutput:
-      label: 클러스터 출력
+      label: 클러스터 Output
     flow:
-      label: 흐름
+      label: Flow
     output:
-      label: 출력
+      label: Output
     diabledTips:
         prefix: '활성화'
         middle: '로깅'
@@ -4655,10 +4655,10 @@ landing:
 
 logging:
   clusterFlow:
-    noOutputsBanner: 선택한 네임스페이스에 클러스터 출력이 없습니다.
+    noOutputsBanner: 선택한 네임스페이스에 클러스터 Output이 없습니다.
   flow:
     clusterOutputs:
-      doesntExistTooltip: 이 클러스터 출력이 존재하지 않습니다.
+      doesntExistTooltip: 이 클러스터 Output이 존재하지 않습니다.
       label: 클러스터 출력
     matches:
       banner: 어떤 컨테이너 로그를 가져올지 구성하세요.
@@ -4692,9 +4692,9 @@ logging:
     filters:
       label: 필터
     outputs:
-      doesntExistTooltip: 이 출력이 존재하지 않습니다.
-      sameNamespaceError: 출력은 플로우와 동일한 네임스페이스에 있어야 합니다.
-      label: 출력
+      doesntExistTooltip: 이 Output이 존재하지 않습니다.
+      sameNamespaceError: Output은 Flow와 동일한 네임스페이스에 있어야 합니다.
+      label: Output
   install:
     k3sContainerEngine: K3S 컨테이너 엔진
     enableAdditionalLoggingSources: 강화된 클라우드 공급자 로깅 활성화
@@ -7309,8 +7309,8 @@ tableHeaders:
   capacity: 용량
   current: 현재
   clusterCreatorDefault: 클러스터 생성자 기본값
-  clusterFlow: 클러스터 플로우
-  clusterOutput: 클러스터 출력
+  clusterFlow: 클러스터 Flow
+  clusterOutput: 클러스터 Output
   cluster: 클러스터
   clusters: 클러스터
   cluster-Name: 클러스터
@@ -7343,7 +7343,7 @@ tableHeaders:
   endpoints: 엔드포인트
   firstSeen: 최초 발견
   fleetBundleType: 타입
-  flow: 플로우
+  flow: Flow
   fingerprint: 지문
   gitRepos: Git 저장소
   groups: 그룹
@@ -7640,8 +7640,8 @@ validation:
       startNumber: '"{key}"은(는) 숫자로 시작할 수 없습니다.'
       tooLongLabel: '"{key}"은(는) {max}자보다 길어질 수 없습니다.'
   flowOutput:
-    both: '"출력" 또는 "클러스터 출력"을 선택해야 합니다.'
-    global: '"클러스터 출력"을 선택해야 합니다.'
+    both: '"Output" 또는 "클러스터 Output"을 선택해야 합니다.'
+    global: '"클러스터 Output"을 선택해야 합니다.'
   git:
     repository: Repository URL must be a HTTP(s) or SSH url with no trailing spaces
   output:
@@ -8412,10 +8412,10 @@ typeDescription:
   catalog.cattle.io.clusterrepo.local: " 차트 저장소는 헬름 저장소 또는 {vendor} git 기반 응용 프로그램 카탈로그입니다. 클러스터 템플릿은 헬름 차트를 통해 배포됩니다."
   catalog.cattle.io.operation: 작업은 클러스터에 적용된 최근 헬름 작업 목록입니다.
   catalog.cattle.io.app: 설치된 응용 프로그램은 Rancher 차트 또는 헬름 CLI를 통해 설치된 헬름 3 차트입니다.
-  logging.banzaicloud.io.clusterflow: 클러스터에서 생성된 로그는 선택한 클러스터 출력에 수집되고 기록됩니다.
-  logging.banzaicloud.io.clusteroutput: 클러스터 출력은 로그를 전송할 수 있는 로깅 제공자를 정의하며 로깅 오퍼레이터가 있는 네임스페이스에 배포될 때만 효과적입니다.
-  logging.banzaicloud.io.flow: 플로우는 수집 및 필터링할 로그 및 로그를 보낼 출력을 정의합니다. 플로우는 네임스페이스별 리소스이므로 로그는 플로우가 배포된 네임스페이스에서만 수집됩니다.
-  logging.banzaicloud.io.output: 출력은 로그를 전송할 수 있는 로깅 제공자를 정의합니다. 출력은 해당 출력을 사용하는 플로우와 동일한 네임스페이스에 있어야 합니다.
+  logging.banzaicloud.io.clusterflow: 클러스터에서 생성된 로그는 선택한 클러스터 Output에 수집되고 기록됩니다.
+  logging.banzaicloud.io.clusteroutput: 클러스터 Output은 로그를 전송할 수 있는 로깅 제공자를 정의하며 로깅 오퍼레이터가 있는 네임스페이스에 배포될 때만 효과적입니다.
+  logging.banzaicloud.io.flow: flow는 수집 및 필터링할 로그 및 로그를 보낼 Output을 정의합니다. flow는 네임스페이스별 리소스이므로 로그는 flow가 배포된 네임스페이스에서만 수집됩니다.
+  logging.banzaicloud.io.output: Output은 로그를 전송할 수 있는 로깅 제공자를 정의합니다. Output은 해당 Output을 사용하는 flow와 동일한 네임스페이스에 있어야 합니다.
   group.principal: 그룹에 전역 역할을 할당하는 것은 그룹을 지원하는 외부 인증 공급자에서만 작동합니다. 로컬 권한 부여는 그룹을 지원하지 않습니다.
   harvester: "브랜딩을 통해 관리자는 Harvester 제품 이름, 로고 및 색 구성표를 사용자 정의하여 UI를 전 세계적으로 리브랜딩할 수 있습니다."
 
@@ -8423,154 +8423,154 @@ typeLabel:
   kubevirt.io.virtualmachine: |-
     {count, plural,
       one { 가상 머신 }
-      other { 가상 머신s }
+      other { 가상 머신 }
     }
   harvesterhci.io.virtualmachineimage: |-
     {count, plural,
       one { 이미지 }
-      other { 이미지s }
+      other { 이미지 }
     }
   harvesterhci.io.keypair: |-
     {count, plural,
       one { SSH 키 }
-      other { SSH 키s }
+      other { SSH 키 }
     }
   harvesterhci.io.host: |-
     {count, plural,
       one { 호스트 }
-      other { 호스트s }
+      other { 호스트 }
     }
   harvesterhci.io.networkattachmentdefinition: |-
     {count, plural,
       one { 가상 머신 네트워크 }
-      other { 가상 머신 네트워크s }
+      other { 가상 머신 네트워크 }
     }
   harvesterhci.io.volume: |-
     {count, plural,
       one { 볼륨 }
-      other { 볼륨s }
+      other { 볼륨 }
     }
   harvesterhci.io.user:  |-
     {count, plural,
       one { 사용자 }
-      other { 사용자s }
+      other { 사용자 }
     }
   harvesterhci.io.setting:  |-
     {count, plural,
       one { 설정 }
-      other { 설정s }
+      other { 설정 }
     }
   harvesterhci.io.virtualmachinetemplateversion: |-
     {count, plural,
       one { 템플릿 }
-      other { 템플릿s }
+      other { 템플릿 }
     }
   harvesterhci.io.schedulevmbackup: |-
     {count, plural,
       one { 가상 머신 일정 }
-      other { 가상 머신 일정s }
+      other { 가상 머신 일정 }
     }
   harvesterhci.io.virtualmachinebackup: |-
     {count, plural,
       one { 가상 머신 백업 }
-      other { 가상 머신 백업s }
+      other { 가상 머신 백업 }
     }  
   harvesterhci.io.volumesnapshot: |-
     {count, plural,
       one { 볼륨 스냅샷 }
-      other { 볼륨 스냅샷s }
+      other { 볼륨 스냅샷 }
     }
   harvesterhci.io.vmsnapshot: |-
     {count, plural,
       one { 가상 머신 스냅샷 }
-      other { 가상 머신 스냅샷s }
+      other { 가상 머신 스냅샷 }
     }
   network.harvesterhci.io.vlanconfig: |-
     {count, plural,
       one { 네트워크 구성 }
-      other { 네트워크 구성s }
+      other { 네트워크 구성 }
     }
   harvesterhci.io.monitoring.alertmanagerconfig: |-
     {count, plural,
       one { Alertmanager 구성 }
-      other { Alertmanager 구성s }
+      other { Alertmanager 구성 }
     }
   harvesterhci.io.logging.clusterflow: |-
     {count, plural,
       one { 클러스터 Flow }
-      other { 클러스터 Flows }
+      other { 클러스터 Flow }
     }
   harvesterhci.io.logging.clusteroutput: |-
     {count, plural,
       one { 클러스터 Output }
-      other { 클러스터 Outputs }
+      other { 클러스터 Output }
     }
   harvesterhci.io.logging.flow: |-
     {count, plural,
       one { Flow }
-      other { Flows }
+      other { Flow }
     }
   harvesterhci.io.logging.output: |-
     {count, plural,
       one { Output }
-      other { Outputs }
+      other { Output }
     }
   harvesterhci.io.storage: |-
     {count, plural,
       one { 스토리지 클래스 }
-      other { 스토리지 클래스s }
+      other { 스토리지 클래스 }
     }
   devices.harvesterhci.io.pcidevice: |-
     {count, plural,
       one { PCI 장치 }
-      other { PCI 장치s }
+      other { PCI 장치 }
     }
   network.harvesterhci.io.clusternetwork: |-
     {count, plural,
       one { 클러스터 네트워크 }
-      other { 클러스터 네트워크s }
+      other { 클러스터 네트워크 }
     }
   harvesterhci.io.addon: |-
     {count, plural,
       one { 애드-온 }
-      other { 애드-온s }
+      other { 애드-온 }
     }
   devices.harvesterhci.io.sriovnetworkdevice: |-
     {count, plural,
       one { SR-IOV 네트워크 장치 }
-      other { SR-IOV 네트워크 장치s }
+      other { SR-IOV 네트워크 장치 }
     }
   devices.harvesterhci.io.sriovgpudevice: |-
     {count, plural,
       one { SR-IOV GPU 장치 }
-      other { SR-IOV GPU 장치치s }
+      other { SR-IOV GPU 장치치 }
     }
 
   devices.harvesterhci.io.vgpudevice: |-
     {count, plural,
       one { vGPU 장치 }
-      other { vGPU 장치s }
+      other { vGPU 장치 }
     }
 
   harvesterhci.io.secret: |-
     {count, plural,
       one { 시크릿 }
-      other { 시크릿s }
+      other { 시크릿 }
     }
   harvesterhci.io.blockdevice: |-
     {count, plural,
       one { 디스트 }
-      other { 디스크s }
+      other { 디스크 }
     }
   loadbalancer.harvesterhci.io.loadbalancer: |-
     {count, plural,
       one { 로드 밸런서 }
-      other { 로드 밸런서s }
+      other { 로드 밸런서 }
     }
   loadbalancer.harvesterhci.io.ippool: |-
     {count, plural,
       one { IP 풀 }
-      other { IP 풀s }
+      other { IP 풀 }
     }
 
   management.cattle.io.token: |-
@@ -8630,13 +8630,13 @@ typeLabel:
     }
   kontainerdriver: |-
     {count, plural,
-      one { Cluster Driver }
-      other { Cluster Drivers }
+      one { 클러스터 드라이버 }
+      other { 클러스터 드라이버 }
     }
   nodedriver: |-
     {count, plural,
-      one { Node Driver }
-      other { Node Drivers }
+      one { 노드 드라이버 }
+      other { 노드 드라이버 }
     }    
   endpoints: |-
     {count, plural,
@@ -8655,8 +8655,8 @@ typeLabel:
     }
   fleet.cattle.io.gitrepo: |-
     {count, plural,
-      one { Git 리포 }
-      other { Git 리포 }
+      one { Git 저장소 }
+      other { Git 저장소 }
     }
   management.cattle.io.authconfig: |-
     {count, plural,
@@ -8851,7 +8851,7 @@ typeLabel:
     }
   storage.k8s.io.storageclass: |-
     {count, plural,
-      one { 스토리지클래스 }
+      one { 스토리지 클래스 }
       other { 스토리지클래스 }
     }
   configmap: |-
@@ -8881,8 +8881,8 @@ typeLabel:
     }
   flowcontrol.apiserver.k8s.io.flowschema: |-
     {count, plural,
-      one { 플로우 스키마 }
-      other { 플로우 스키마 }
+      one { flow 스키마 }
+      other { flow 스키마 }
     }
   flowcontrol.apiserver.k8s.io.prioritylevelconfiguration: |-
     {count, plural,
