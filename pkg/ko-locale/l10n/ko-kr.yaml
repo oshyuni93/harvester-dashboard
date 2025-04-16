@@ -39,7 +39,7 @@ generic:
   customize: 사용자 정의
   dashboard: 대시보드
   default: 기본
-  descending: descending 
+  descending: 내림차순 
   disabled: 비활성화됨
   done: 완료
   enabled: 활성화됨
@@ -50,7 +50,7 @@ generic:
   inProgress: 진행 중 
   imagePullPolicy:
     always: 항상
-    ifNotPresent: IfNotPresent
+    ifNotPresent: 존재하지 않으면
     never: 절대
   labels: 라벨
   labelsAndAnnotations: 라벨 및 주석
@@ -72,9 +72,9 @@ generic:
       error: 오류
   ok: 확인
   overview: 개요
-  plusMore: "+ {n} more"
+  plusMore: "+ {n}개 더"
   readFromFile: 파일에서 읽기
-  readFromFileArea: Read from File - {area}
+  readFromFileArea: 파일에서 읽기 - {area}
   readFromFolder: 폴더에서 읽기
   reload: 새로 고침
   register: 등록
@@ -147,29 +147,29 @@ locale:
 
 nav:
   ariaLabel:
-    clusterIconKeyCombo: Cluster keyboard shortcut combination icon
-    localClusterIcon: Local Cluster icon
-    clusterProvIcon: Cluster {cluster} provider icon
-    topLevelMenu: Main menu
-    homePage: Home page navigation menu
-    cluster: Cluster menu item
-    harvesterCluster: Harvester cluster menu item
-    seeAll: See all clusters menu item
-    multiClusterApps: Main menu multi cluster app menu item
-    configurationApps: Main menu configuration app menu item
-    support: Support page link
-    about: About page link
-    pinCluster: Pin/Unpin {cluster} cluster
-    collapseExpand: Collapse/Expand menu group
-    productAboutPage: Product about page link
+    clusterIconKeyCombo: 클러스터 키보드 단축키 조합 아이콘
+    localClusterIcon: 로컬 클러스터 아이콘
+    clusterProvIcon: 클러스터 {cluster} 공급자 아이콘
+    topLevelMenu: 메인 메뉴
+    homePage: 홈페이지 탐색 메뉴
+    cluster: 클러스터 메뉴 항목
+    harvesterCluster: Harvester 클러스터 메뉴 항목
+    seeAll: 모든 클러스터 메뉴 항목 보기
+    multiClusterApps: 메인 메뉴 다중 클러스터 앱 메뉴 항목
+    configurationApps: 메인 메뉴 구성 앱 메뉴 항목
+    support: 지원 페이지 링크
+    about: About 페이지 링크
+    pinCluster: "{cluster} 클러스터 고정/고정해제"
+    collapseExpand: 메뉴 그룹 축소/확장
+    productAboutPage: 상품에 관한 페이지 링크 
   alt:
-    mainMenuIcon: Main menu icon
-    mainMenuRancherLogo: Main menu Rancher logo
-  expandCollapseAppBar: Expand/Collapse the Application Bar
+    mainMenuIcon: 메인 메뉴 아이콘
+    mainMenuRancherLogo: 메인 메뉴 Rancher 로고
+  expandCollapseAppBar: 애플리케이션 표시줄 확장/축소
   harvesterDashboard: 하베스터 대시보드
   backToRancher: 클러스터 매니저
   clusterTools: 클러스터 도구
-  tools: Tools
+  tools: 툴
   kubeconfig:
     download: KubeConfig 다운로드
     copy: 클립보드에 KubeConfig 복사
@@ -191,7 +191,7 @@ nav:
   takeSnapshot: 스냅샷 찍기
   seeAllClusters: 모든 클러스터 보기
   seeAllClustersCollapsed: 모두 보기
-  keyComboTooltip: Switch clusters and keep location  
+  keyComboTooltip: 클러스터를 전환하고 위치 유지
   group:
     cluster: 클러스터
     inUse: 더 많은 리소스
@@ -203,12 +203,12 @@ nav:
     workload: 워크로드
     monitoring: 모니터링
     advanced: 고급
-    drivers: Drivers    
+    drivers: 드라이버버    
     RKE1Configuration: RKE1 구성
     admission: 승인
     apps: 앱
     clusterProvisioning: 클러스터 프로비저닝
-    jwt.authentication: JWT Authentication  
+    jwt.authentication: JWT 인증
     core: 코어
     legacy: 레거시
     API: API
@@ -221,7 +221,7 @@ nav:
     RBAC: RBAC
     Scheduling: 스케줄링
     Storage: 스토리지
-    Project: Project    
+    Project: 프로젝트    
     networks: 네트워크
     backupAndSnapshot: 백업 및 스냅샷
     Monitoring: 모니터링
@@ -260,13 +260,13 @@ nav:
     preferences: 환경 설정
     accountAndKeys: 계정 및 API 키
     logOut: 로그아웃
-    label: User menu
+    label: 사용자 메뉴
     button:
-      label: Open user menu
+      label: 사용자 메뉴 열기
   actionMenu:
-    label: Page actions menu
+    label: 페이지 작업 메뉴
     button:
-      label: Open page actions menu    
+      label: 페이지 작업 메뉴 열기   
   failWhale:
     authMiddleware: 인증 미들웨어
     clusterNotFound: 클러스터 { clusterId }를 찾을 수 없음
@@ -3034,6 +3034,7 @@ cluster:
     deprecated: (폐지 예정)
     deprecatedPatches: 폐지된 쿠버네티스 패치 버전 표시
     deprecatedPatchWarning: 각 작은 쿠버네티스 버전에 대해 최신 패치 버전을 사용하는 것이 좋습니다. 폐지된 패치 버전은 이전 버전으로 이동할 때 유용할 수 있습니다.
+  toolsTip: 새로운 클러스터 도구를 사용하여 모니터링, 로깅 및 기타 도구를 관리하고 설치합니다.
   legacyWarning: 레거시 기능 플래그가 활성화되어 있으며 쿠버네티스 1.21+에서 모든 레거시 기능이 지원되지 않습니다.
   log:
     connecting: 연결 중...
@@ -3784,17 +3785,17 @@ clusterIndexPage:
     componentStatus:
       etcd: Etcd
       scheduler: 스케줄러
-      controller-manager:
-        label: Controller Manager
+      controller-manager: 컨트롤러 관리자
+#        label: 컨트롤러 관리자
       cattle:
         label: Cattle
       fleet:
         label: Fleet
       tooltip:
-        disconnected: Agent disconnected
-        unavailableReplicas: Replicas not available
+        disconnected: 에이전트 연결이 끊어졌습니다.
+        unavailableReplicas: 복제본을 사용할 수 없습니다
     certs:
-      label: Certificates
+      label: 인증서
 configmap:
   tabs:
     data:
@@ -4091,8 +4092,8 @@ fleet:
       matchesNone: 일치하는 기존 클러스터 없음
       matchesSome: |-
         {matched, plural,
-          =1 {Matches 1 of {total, number} existing clusters: "{sample}"}
-          other {Matches {matched, number} of {total, number} existing clusters, including "{sample}"}
+          =1 {기존 클러스터 {total, number}개 중 1개와 일치: "{sample}"}
+          other {"{sample}"을 포함하여 기존 클러스터 중 {matched, number}개와 일치합니다.}
         }
   fdc:
     loadingChart: 차트 데이터 로드 중...
@@ -4109,13 +4110,13 @@ fleet:
       restrictions: 허용된 대상 네임 스페이스
     timeout: 워크스페이스 생성 제한 시간. 워크스페이스가 만들어졌을 수 있습니다. 다시 만들기 전에 워크스페이스 페이지를 확인하는 것이 좋습니다.
     remove:
-      warning: "Deleting a Workspace also deletes all resources in the Workspace. This includes GitRepos but also Clusters.<br><br>Deleted Clusters will be removed from {vendor}, and if {vendor} manages the life-cycle of the Cluster it's underlying infrastructure will also be deleted."
+      warning: "작업 공간을 삭제하면 작업 공간의 모든 리소스도 삭제됩니다. 여기에는 GitRepos뿐만 아니라 클러스터도 포함됩니다.<br><br>삭제된 클러스터는 {vendor}에서 제거되며, {vendor}가 클러스터의 수명 주기를 관리하는 경우 해당 클러스터의 기본 인프라도 삭제됩니다."
   restrictions:
     addTitle: "허용된 대상 네임 스페이스"
     addLabel: 추가
     banner: "{count, plural,
       =0 { 이곳에 네임스페이스를 추가하면 GitRepoRestriction이 생성됩니다. }
-      other { Only the Git Repo Restriction's <code>allowedTargetNamespaces</code> is managed here. You can make additional changes to the Git Repo Restriction}
+      other { 여기서는 Git Repo Restriction의 <code>allowedTargetNamespaces</code>만 관리됩니다. Git Repo Restriction을 추가로 변경할 수 있습니다.}
       }"
 footer:
   docs: 문서
@@ -4184,20 +4185,20 @@ glance:
   pods: 파드
   provider: 제공자
   version: 쿠버네티스 버전
-  architecture: Architecture  
+  architecture: 아키텍처처  
   monitoringDashboard: 모니터링 대시보드
   installMonitoring: 모니터링 설치
   clusterInfo: 클러스터 정보
   eventsTable: 전체 이벤트 목록
-  secretsTable: Full secrets list
+  secretsTable: 전체 시크릿릿 목록
 clusterBadge:
-  badgeAppearance: Cluster Badge Appearance
-  clusterComment: "Cluster comment - {text}"
-  customizeAppearance: Customize Appearance
-  addLabel: Add Cluster Badge
-  setClusterAppearance: Cluster Appearance
-  customize: Customize
-  editLabel: Edit Cluster Badge
+  badgeAppearance: 클러스터 배지 모양
+  clusterComment: "클러스터 주석 - {text}"
+  customizeAppearance: 외관 사용용자정의
+  addLabel: 클러스터 배지 추가
+  setClusterAppearance: 클러스터 외관관
+  customize: 사용용자정의
+  editLabel: 클러스터 배지 편집
   modal:
     title: 사용자 정의 클러스터 뱃지
     checkbox: 이 클러스터에 대한 뱃지 표시
@@ -4659,7 +4660,7 @@ logging:
   flow:
     clusterOutputs:
       doesntExistTooltip: 이 클러스터 Output이 존재하지 않습니다.
-      label: 클러스터 출력
+      label: 클러스터 Output
     matches:
       banner: 어떤 컨테이너 로그를 가져올지 구성하세요.
       unsupportedConfig: 이 리소스에는 폼 편집기에서 지원하지 않는 일치 구성이 포함되어 있습니다. YAML 편집을 사용하세요.
@@ -4970,10 +4971,10 @@ login:
 
 logout:
   message: 로그아웃 중...
-  error: 'An error occurred logging out: {msg}'
+  error: '로그아웃 중 오류가 발생했습니다: {msg}'
   specificError:
-    unknown: Unknown.\n\nPlease contact your system administrator.
-    500: "Server-side error.\n\nPlease contact your system administrator."
+    unknown: 알 수 없습니다.\n\n시스템 관리자에게 문의하세요.
+    500: "서버 측 오류입니다.\n\n시스템 관리자에게 문의하세요."
 
 managementNode:
   customName: 사용자 정의 이름
@@ -8388,7 +8389,7 @@ typeDescription:
   #       Should fit on one line.
   #       If you link to anything external, it MUST have
   #       target="_blank" rel="noopener noreferrer nofollow"
-  jwt.authentication: Enable this feature on a cluster to add support for JWT authenticating downstream service accounts.  
+  jwt.authentication: 클러스터에서 이 기능을 활성화하면 다운스트림 서비스 계정에 대한 JWT 인증 지원이 추가됩니다.  
   branding: "브랜딩을 사용하면 관리자가  Rancher 제품 이름, 로고 및 색상 체계를 커스텀 하여 UI를 전체적으로 다시 브랜딩 할 수 있습니다."
   chart: "모든 차트에는 Linux 및 Windows 노드를 사용하는 클러스터에 설치할 수 있는 하나 이상의 버전이 있습니다(그렇지 않은 경우 명시되지 않음)."
   cis.cattle.io.clusterscanbenchmark: 벤치마크 버전은 kube-bench를 사용하여 실행할 벤치마크의 이름과 해당 벤치마크에 대한 유효한 구성 매개변수입니다.
