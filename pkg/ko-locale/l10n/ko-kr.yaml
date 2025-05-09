@@ -2035,12 +2035,12 @@ authConfig:
       label: TLS 시작
       tip: 연결 프로세스 중에 TLS로 래핑하여 암호화되지 않은 연결을 업그레이드합니다. TLS와 함께 사용할 수 없습니다.
     searchUsingServiceAccount: 
-      label: Enable Service Account Search
-      tip: When enabled, Rancher will use the service account instead of the user account to search for users and groups.
+      label: 서비스 계정 검색 활성화
+      tip: 이 기능을 활성화하면 Rancher는 사용자 계정 대신 서비스 계정을 사용하여 사용자와 그룹을 검색합니다.
     tls: TLS
     userEnabledAttribute: 사용자 활성화 속성
     userMemberAttribute: 사용자 멤버 속성
-    userLoginFilter: User Login Filter    
+    userLoginFilter: 사용자 로그인 필터   
     userSearchBase:
       label: 사용자 검색 기준
       placeholder: "예: ou=users,dc=mycompany,dc=com"
@@ -2054,11 +2054,11 @@ authConfig:
     UID: UID 필드
     adfs: AD FS 계정 구성
     api: "{vendor} API 호스트"
-    sloTitle: Log Out behavior
+    sloTitle: 로그아웃 동작
     sloOptions:
-      onlyRancher: Log out of Rancher and not {name}
-      logoutAll: Log out of Rancher and {name} (includes all other applications registered with {name})
-      choose: Allow the user to choose one of the above in an additional log out step
+      onlyRancher: Rancher에서 로그아웃하고 {name}에서 로그아웃하지 마세요
+      logoutAll: Rancher 및 {name}에서 로그아웃합니다({name}에 등록된 다른 모든 애플리케이션 포함)
+      choose: 추가 로그아웃 단계에서 사용자가 위의 항목 중 하나를 선택하도록 허용합니다.
     cert:
       label: 인증서
       placeholder: -----BEGIN CERTIFICATE-----로 시작하는 인증서를 붙여넣으세요.
@@ -2085,21 +2085,21 @@ authConfig:
       hide: 세부 정보 숨김
   azuread:
     tenantId:
-      label: Tenant ID
-      tooltip: From the Azure AD portal
-      placeholder: A long UUID string    
+      label: 테넌트 ID
+      tooltip: Azure AD 포털에서
+      placeholder: 긴 UUID 문자열    
     applicationId:
-      label: Application ID
-      placeholder: A long UUID string
+      label: 애플리케이션 ID
+      placeholder: 긴 UUID 문자열
     applicationSecret:
-      label: Application Secret      
+      label: 애플리케이션 시크릿      
     endpoint: 
       label: 엔드포인트
     endpoints:
-      label: Endpoints
-      standard: Standard
-      china: China
-      custom: Custom    
+      label: 엔드포인트s
+      standard: 표준
+      china: 중국
+      custom: 사용자정의    
     graphEndpoint: 
       label: 그래프 엔드포인트
     tokenEndpoint: 
@@ -2107,10 +2107,10 @@ authConfig:
     authEndpoint: 
       label: 인증 엔드포인트
     groupMembershipFilter:
-      label: Group Membership Filter
-      enable: Limit users by group membership
-      tooltip: Limit users by applying a GroupMembershipFilter
-      externalHelp: See the OData filter expression documentation for more information.
+      label: 그룹 멤버십 필터
+      enable: 그룹 멤버십으로 사용자 제한
+      tooltip: 그룹 멤버십 필터를 적용하여 사용자 제한
+      externalHelp: 자세한 내용은 OData 필터 표현식 설명서를 참조하세요.
       externalHelpLink: https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/webservices/use-filter-expressions-in-odata-uris#filter-expressions
     reply:
       info: "Azure AD에서는 Rancher 서버에 대한 화이트리스트 URL이 설정되어야 합니다. 이 설정을 시작하기 전에 아래 URL이 Azure 포털의 회신 URL 섹션에 설정되어 있는지 확인하세요. 화이트리스트 URL이 전파되기까지 최대 5분이 소요될 수 있습니다."
@@ -2139,13 +2139,13 @@ authConfig:
     issuer: 발급자
     authEndpoint: 인증 엔드포인트
     jwksUrl: JWKS URL
-    tokenEndpoint: Token Endpoint
-    userInfoEndpoint: User Info Endpoint
-    acrValue: Authorization Context Reference
+    tokenEndpoint: 토큰 엔드포인트
+    userInfoEndpoint: 사용자 정보 엔드포인트
+    acrValue: 권한 부여 컨텍스트 참조
     scope:
-      label: Scopes
+      label: 범위
       placeholder: openid
-      protip: The <code>openid</code> scope is required. If you are using custom scopes, ensure that it is included.
+      protip: <code>openid</code> 범위는 필수입니다. 사용자 지정 범위를 사용하는 경우 범위가 포함되어 있는지 확인하세요.
     cert:
       label: 인증서
       placeholder: -----BEGIN CERTIFICATE-----로 시작하는 인증서를 붙여넣으세요.
@@ -2153,8 +2153,8 @@ authConfig:
       label: 개인 키
       placeholder: -----BEGIN RSA PRIVATE KEY-----로 시작하는 개인 키를 붙여넣으세요.
     groupSearch:
-      label: Enable group search
-      tooltip: Allows users with appropriate permissions to search and view all groups within the OIDC provider's realm. This can be useful for administrators who need to assign global roles to groups that they are not currently a member of.
+      label: 그룹 검색 활성화
+      tooltip: 적절한 권한이 있는 사용자가 OIDC 공급자 영역 내의 모든 그룹을 검색하고 볼 수 있도록 합니다. 이 기능은 현재 소속되지 않은 그룹에 글로벌 역할을 할당해야 하는 관리자에게 유용할 수 있습니다.
   stateBanner:
     disabled: "{provider} 인증 공급자는 현재 비활성화되어 있습니다."
     enabled: "{provider} 인증 공급자는 현재 활성화되어 있습니다."
@@ -2173,13 +2173,13 @@ authGroups:
 assignTo:
   title: |-
     {count, plural,
-      =1 { Assign Cluster To&hellip; }
-      other { Assign {count} Clusters To&hellip; }
+      =1 { 클러스터 할당 대상&hellip; }
+      other { {count} 클러스터를 다음에 할당합니다.&hellip; }
     }
   labelsTitle: |-
     {count, plural,
-      =1 { Assign Cluster To&hellip; }
-      other { Assign {count} Clusters To&hellip; }
+      =1 { 클러스터 할당 대상&hellip; }
+      other { {count} 클러스터를 다음에 할당합니다.&hellip; }
     }
   workspace: 워크스페이스
 
@@ -2346,15 +2346,15 @@ asyncButton:
 
 backupRestoreOperator:
   backup:
-    label: Resource Set
-    description: The Resource Set determines which resources the backup-restore-operator collects in a backup
-    enableEncryptionWarning: 'Enabling encryption is highly recommended when using <b><i>Full Rancher backup resource set</i></b>, otherwise sensitive information will be backed up as plain-text. <a target="_blank" rel="noopener noreferrer nofollow" href="https://ranchermanager.docs.rancher.com/reference-guides/backup-restore-configuration/backup-configuration#resourcesets">Read more</a>.'
-    missingResourceSetWarning: The <b><i>{resourceSet}</i></b> resource set doesn't exist, it's possible it has been deleted. Please select a different option.
+    label: 리소스 세트
+    description: 리소스 세트는 백업-복원-운영자가 백업에서 수집하는 리소스를 결정합니다.
+    enableEncryptionWarning: '암호화를 활성화하는 것이 좋습니다.<b><i>전체 Rancher 백업 리소스 세트</i></b>, 그렇지 않으면 민감한 정보가 일반 텍스트로 백업됩니다. <a target="_blank" rel="noopener noreferrer nofollow" href="https://ranchermanager.docs.rancher.com/reference-guides/backup-restore-configuration/backup-configuration#resourcesets">더 읽어보세요</a>.'
+    missingResourceSetWarning: The <b><i>{resourceSet}</i></b> 리소스 세트가 존재하지 않습니다. 삭제되었을 수 있습니다. 다른 옵션을 선택하세요.
     resourceSetOptions: 
-      'rancher-resource-set-basic': 'Basic Rancher backup resource set'
-      'rancher-resource-set-full': 'Full Rancher backup resource set'
-      custom: Custom
-      customResourceSetLabel: Custom Resource Set
+      'rancher-resource-set-basic': '기본 Rancher 백업 리소스 세트'
+      'rancher-resource-set-full': '전체 Rancher 백업 리소스 세트'
+      custom: 사용자 정의
+      customResourceSetLabel: 사용자 정의 리소스 세트
   backupFilename: 백업 파일 이름
   deleteTimeout:
     label: 삭제 제한 시간
@@ -2443,7 +2443,7 @@ catalog:
         busy: "{app}이(가) 완전히 설치되면 관련 자원이 표시됩니다."
       values: 값 YAML
     upgrade:
-      uncertainUpgradeWarningTooltip: Unable to determine if an upgrade is available (can not identify the repository and chart used to deploy this application)
+      uncertainUpgradeWarningTooltip: 업그레이드가 가능한지 확인할 수 없습니다(이 애플리케이션을 배포하는 데 사용된 저장소와 차트를 식별할 수 없음)
   chart:
     registry:
       label: 컨테이너 레지스트리
@@ -2467,17 +2467,17 @@ catalog:
       keywords: 키워드
     errors:
       clusterToolExists: 이 차트는 고정된 네임스페이스 및 이름을 가지고 있습니다. 일치하는 <a href="{url}">애플리케이션</a>이 발견되었으며 모든 변경 사항은 해당 애플리케이션에 적용됩니다.
-    global: Global
-    deprecatedWarning: '{chartName} has been marked as deprecated. Use caution when installing this helm chart as it might be removed in the future.'
-    experimentalWarning: '{chartName} has been marked as experimental. Use caution when installing this helm chart as it might not function as expected.'
-    deprecatedAndExperimentalWarning: '{chartName} has been marked as deprecated and experimental. Use caution when installing this helm chart as it might be removed in the future and might not function as expected.'
+    global: 글로벌
+    deprecatedWarning: '{chartName}은 더 이상 사용되지 않습니다. 이 헬름 차트는 향후 삭제될 수 있으므로 설치할 때 주의하세요.'
+    experimentalWarning: '{chartName}은(는) 실험용으로 표시되었습니다. 이 헬름 차트를 설치할 때 예상대로 작동하지 않을 수 있으므로 주의하시기 바랍니다.'
+    deprecatedAndExperimentalWarning: '{chartName}은 더 이상 사용되지 않고 실험용으로 표시되었습니다. 이 헬름 차트는 향후 삭제되어 예상대로 작동하지 않을 수 있으므로 설치할 때는 주의하시기 바랍니다.'
   charts:
     browseBtn: Browse
-    featuredBtn: Featured
-    featuredAriaLabel: Show Featured Charts Carousel and charts grid
-    browseAriaLabel: Show only charts grid
-    iconAlt: Icon for {app} card/grid item
-    refresh: refresh charts
+    featuredBtn: 추천
+    featuredAriaLabel: 추천 회전형 차트 및 그리드 차트 표시
+    browseAriaLabel: 그리드 차트만 표시
+    iconAlt: 카드/그리드 {app} 항목 아이콘
+    refresh: 차트 새로고침
     all: 모두
     categories:
       all: 모든 카테고리
@@ -2508,10 +2508,10 @@ catalog:
     chart: 차트
     warning:
       managed:
-        Warning, {manager} manages deployment and upgrade of the {name} app. Upgrading this app is not supported.<br>
+        경고, {manager}님이 {name} 앱의 배포 및 업그레이드를 관리합니다. 이 앱의 업그레이드는 지원되지 않습니다.<br>
         {version, select,
           null { }
-          other { Under most circumstances, no user intervention should be needed to ensure that the {version} version is compatible with the version of Rancher that you are running.}
+          other { 대부분의 상황에서는 {version} 버전이 현재 실행 중인 Rancher 버전과 호환되는지 확인하기 위해 사용자 개입이 필요하지 않습니다.}
         }    
     error:
       requiresFound: '<a href="{url}">{name}</a>을(를) 설치하기 전에 이 차트를 설치해야 합니다.'
@@ -2719,13 +2719,13 @@ cis:
   customConfigMap: 사용자 정의 벤치마크 컨피그맵
   deleteBenchmarkWarning: |-
     {count, plural,
-      =1 { Any profiles using this benchmark version will no longer work. }
-      other { Any profiles using these benchmark versions will no longer work }
+      =1 { 이 벤치마크 버전을 사용하는 모든 프로필은 더 이상 작동하지 않습니다. }
+      other { 이러한 벤치마크 버전을 사용하는 모든 프로필은 더 이상 작동하지 않습니다. }
     }
   deleteProfileWarning: |-
     {count, plural,
-      =1 { Any scheduled scans using this profile will no longer work. }
-      other { Any scheduled scans using either of these profiles will no longer work. }
+      =1 { 이 프로필을 사용하여 예약된 스캔은 더 이상 작동하지 않습니다. }
+      other { 이러한 프로필을 사용하여 예약된 스캔은 더 이상 작동하지 않습니다. }
     }
   downloadAllReports: 모든 저장된 보고서 다운로드
   downloadLatestReport: 최신 보고서 다운로드
@@ -2834,7 +2834,7 @@ cluster:
       label: 등록 명령어
       linuxDetail: 등록하려는 기존 리눅스 시스템 각각에 대해 이 명령을 실행합니다.
       windowsDetail: 등록하려는 기존의 각 Windows 시스템에서 PowerShell에서 이 명령을 실행합니다. Windows 노드는 작업자만 될 수 있습니다.
-      windowsWorkersOnly: <b>Windows nodes can only be workers.</b>
+      windowsWorkersOnly: <b>Windows 노드는 워커노드만 될 수 있습니다.</b>
       windowsNotReady: Windows 작업자를 추가하기 위한 등록 명령이 표시되기 전에 클러스터가 Linux etcd, 컨트롤 플레인 및 작업자 노드와 함께 실행되고 있어야 합니다.
       windowsWarning: 기본적으로 Rancher 차트에 의해 배포된 일부를 포함한 워크로드 파드는 Linux 및 Windows 노드 모두에서 예약됩니다. 차트에서 NodeSelector를 편집하여 호환되는 노드에 배치하도록 지시합니다.
       windowsDeprecatedForRKE1: RKE1에 대해 Windows 지원이 사용되지 않습니다. RKE2로 마이그레이션하는 것이 좋습니다.
@@ -2843,8 +2843,8 @@ cluster:
     banner:
       createCredential: |-
         {length, plural,
-          =0 {First you'll need to create a credential to talk to the cloud provider}
-          other {Ok, Let's create a new credential}
+          =0 {먼저 클라우드 공급자와 통신하려면 자격 증명을 만들어야 합니다.}
+          other {좋습니다. 새로운 자격 증명을 만들어 보겠습니다.}
         }
     selectExisting:
       label: 기존 선택
@@ -2938,10 +2938,10 @@ cluster:
           <p><a href="https://console.cloud.google.com/projectselector/iam-admin/serviceaccounts" target="_blank" rel="noopener noreferrer nofollow">서비스 계정</a>을 JSON 개인 키와 함께 생성하고 여기에 JSON을 제공하세요.
           이러한 IAM 역할이 필요합니다:</p>
           <ul>
-          <li><b>Compute Engine:</b> Compute Viewer (roles/compute.viewer)</li>
-          <li><b>Project:</b> Viewer (roles/viewer)</li>
-          <li><b>Kubernetes Engine:</b> Kubernetes Engine Admin (roles/container.admin)</li>
-          <li><b>Service Accounts:</b> Service Account User (roles/iam.serviceAccountUser)</li>
+          <li><b>컴퓨팅 엔진:</b> 컴퓨팅 뷰어 (roles/compute.viewer)</li>
+          <li><b>프로젝트:</b> 뷰어 (roles/viewer)</li>
+          <li><b>쿠버네티스 엔진:</b> 쿠버네티스 엔진 관리자 (roles/container.admin)</li>
+          <li><b>서비스 계정:</b> 서비스 계정 사용자 (roles/iam.serviceAccountUser)</li>
           </ul>
           역할에 대한 자세한 정보는 <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/iam-integration" target="_blank" rel="noopener noreferrer nofollow">여기</a>에서 확인할 수 있습니다.
     harvester:
@@ -2959,9 +2959,9 @@ cluster:
         macFormat: "잘못된 MAC 주소 형식입니다."
       vGpus:
         warnings:
-          minimumAllocatable: It's highly recommended to select a vGPU with a number of allocatable devices greater than the number of nodes (Machine Count) to avoid "un-schedulable" errors after cluster updates.
+          minimumAllocatable: 클러스터 업데이트 후 "예약할 수 없는" 오류를 방지하려면 노드 수(머신 수)보다 많은 할당 가능한 장치 수를 가진 vGPU를 선택하는 것이 좋습니다.
         errors:
-          notAllocatable: '[{vGpu}] vGPU device is not allocatable; required: {allocated}, allocatable: {allocatable}'
+          notAllocatable: '[{vGpu}] vGPU 장치를 할당할 수 없습니다. 필요: {allocated}, 할당 가능: {allocatable}'
       volume:
         title: 볼륨
         volume: 볼륨
@@ -2993,8 +2993,8 @@ cluster:
         incompatible: 선택한 RKE2 쿠버네티스 버전과 현재 하베스터 버전이 호환되지 않으므로 하베스터 클라우드 프로바이더를 선택할 수 없습니다. 사용 가능한 쿠버네티스 버전은 <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.suse.com/suse-harvester/support-matrix/all-supported-versions">여기</a>에서 확인하세요.
     clusterWarning: |-
       There {count, plural,
-      =1 {is 1 Harvester cluster that is not shown}
-      other {are # Harvester clusters that are not shown}
+      =1 {표시되지 않은 1개의 Harvester 클러스터입니다.}
+      other {표시되지 않는 # Harvester 클러스터가 있습니다.}
       }
     registration:
       step1: "1. 대상 하베스터 UI의 <code>고급 / 설정</code> 페이지로 이동하세요."
@@ -3043,24 +3043,24 @@ cluster:
     label: 클러스터 이름
     placeholder: 클러스터의 고유명
   directoryConfig:
-    title: Data directory configuration
-    banner: Data directory configuration can not be changed once the cluster has been created
+    title: 데이터 디렉토리 구성
+    banner: 클러스터가 생성된 후에는 데이터 디렉토리 구성을 변경할 수 없습니다.
     radioInput:
-      defaultLabel: Use default data directory configuration
-      commonLabel: Use a common base directory for data directory configuration (sub-directories will be used for the system-agent, provisioning and distro paths)
-      customLabel: Use custom data directories
+      defaultLabel: 기본 데이터 디렉토리 구성 사용
+      commonLabel: 데이터 디렉토리 구성을 위해 공통 기본 디렉토리를 사용합니다(하위 디렉토리는 시스템 에이전트, 프로비저닝 및 배포 경로에 사용됨)
+      customLabel: 사용자 정의 데이터 디렉터리 사용
     common:
-      label: Data directory base path
-      tooltip: Data directory base path. We will append the sub-directories appropriate for each directory (/agent, /provisioning and either /rke2 or /k3s)
+      label: 데이터 디렉터리 기본 경로
+      tooltip: 데이터 디렉터리 기본 경로입니다. 각 디렉터리에 적합한 하위 디렉터리를 추가합니다. (/agent, /provisioning and either /rke2 or /k3s)
     systemAgent:
-      label: System-agent directory path
-      tooltip: Data directory for the system-agent connection info and plans
+      label: 시스템 에이전트 디렉토리 경로
+      tooltip: 시스템 에이전트 연결 정보 및 계획에 대한 데이터 디렉토리
     provisioning:
-      label: Provisioning directory path
-      tooltip: Data directory for provisioning related files
+      label: 프로비저닝 디렉토리 경로
+      tooltip: 관련 파일 프로비저닝을 위한 데이터 디렉토리
     k8sDistro:
-      label: K8s Distro directory path
-      tooltip: Data directory for the k8s distro    
+      label: K8s 배포판 디렉토리 경로
+      tooltip: k8s 배포판의 데이터 디렉토리
   machineConfig:
     banner:
       updateInfo: 머신 구성을 업데이트하려면 새로운 풀을 생성하세요
@@ -3233,8 +3233,8 @@ cluster:
           label: 호스트
           note: 특정 호스트에 VM을 생성합니다 (독립형 ESXi 또는 DRS가 있는 클러스터의 경우 비워두세요)
         gracefulShutdownTimeout:
-          label: Graceful Shutdown Timeout
-          note: The time in seconds to wait before forcing deleting VMs in the infrastructure. Zero means disable graceful shutdown.
+          label: 우아한 종료 시간 초과
+          note: 인프라에서 VM을 강제로 삭제하기 전까지 대기하는 시간(초)입니다. 0은 정상 종료를 비활성화함을 의미합니다.
       instanceOptions:
         label: 인스턴스 옵션
         description: 가상 머신의 크기와 운영 체제를 선택하세요
@@ -3345,15 +3345,15 @@ cluster:
       podAffinity: 어피니티
       podTolerations: 톨러레이션
       podRequestsAndLimits: 요청 및 제한
-      schedulingCustomization: Scheduling Customization
+      schedulingCustomization: 일정 사용자 정의
     subGroups:
       podAffinityAnti: 파드 어피니티/안티-어피니티
       nodeAffinity: 노드 어피니티
       schedulingCustomization: 
-        label: Prevent Rancher cluster agent pod eviction
-        description: This ensures that the cluster agent pod is not evicted due to node pressure, resource constraints or scheduler policies.
-        banner: This feature has been enabled with settings that are different from the global default settings.
-        innerCheckbox: Apply global settings for Priority Class and Pod Disruption Budget  
+        label: Rancher 클러스터 에이전트 포드 퇴거 방지
+        description: 이렇게 하면 노드 압력, 리소스 제약 또는 스케줄러 정책으로 인해 클러스터 에이전트 포드가 추방되는 일이 없습니다.
+        banner: 이 기능은 글로벌 기본 설정과 다른 설정으로 활성화되었습니다.
+        innerCheckbox: 우선순위 클래스 및 Pod 중단 예산에 대한 글로벌 설정 적용
     banners:
       advanced: 이는 고급 구성 옵션입니다. 일반적으로 그대로 두는 것이 좋습니다.
       tolerations: 추가 파드 톨러레이션은 Rancher에서 적용하는 기본 톨러레이션에 추가됩니다.
@@ -3366,10 +3366,10 @@ cluster:
     argInfo:
       title: 추가 쿠블릿 인수
       tooltip:
-        mixed-args: Kubelet args are defined both at Global and Machine Selector level.<br> Click on "Add Global Argument" to add them as Global config.
-        global-args: Kubelet args are defined at Global level.<br> Click on "Add Global Argument" to add them as Global config.
+        mixed-args: Kubelet 인수는 글로벌 및 머신 선택기 수준에서 정의됩니다.<br> "글로벌 인수 추가"를 클릭하여 이를 글로벌 구성으로 추가합니다.
+        global-args: Kubelet 인수는 글로벌 수준에서 정의됩니다.<br> "글로벌 인수 추가"를 클릭하여 이를 글로벌 구성으로 추가합니다.
       machineGlobal:
-        listLabel: Add Global Argument
+        listLabel: 글로벌 인수 추가
       machineSelector:
         label: 기계 선택기 추가
         listLabel: 인수 추가
@@ -3378,7 +3378,7 @@ cluster:
         subTitle: "쿠블릿 인수 사용:"
         titleAlt: |-
           {count, plural,
-            =1 { For all machines, use the Kubelet args: }
+            =1 { 모든 머신에 대해 Kubelet 인수를 사용: }
             other { For any machines, use the Kubelet args: }
           }
         kubeControllerManagerTitle: 추가 컨트롤러 관리자 인수
@@ -3398,19 +3398,19 @@ cluster:
     cloudProviderAddConfig: '쿠버네티스 1.27 이상에서는 Amazon Cloud Provider에 추가 구성이 필요합니다. 자세한 내용은 <a href="https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/set-up-cloud-providers/amazon" target="_blank" rel="noopener noreferrer nofollow">문서</a>를 참조하세요.'
     machinePoolError: |-
       {count, plural,
-        =1 { {pool_name}: The provided value for {fields} was not found in the list of expected values. This can happen with clusters provisioned outside of Rancher or when options for the provider have changed. }
-        other { {pool_name}: The provided values for {fields} were not found in the list of expected values. This can happen with clusters provisioned outside of Rancher or when options for the provider have changed. }
+        =1 { {pool_name}: {fields}에 제공된 값을 예상 값 목록에서 찾을 수 없습니다. 이는 Rancher 외부에서 프로비저닝된 클러스터에서 발생하거나 공급자 옵션이 변경된 경우 발생할 수 있습니다.}
+        other { {pool_name}: {fields}에 제공된 값을 예상 값 목록에서 찾을 수 없습니다. 이는 Rancher 외부에서 프로비저닝된 클러스터에서 발생하거나 공급자 옵션이 변경된 경우 발생할 수 있습니다. }
       }
-    rke1DeprecationMessage: 'Rancher Kubernetes Engine (RKE / RKE1) will reach end of life on July 31, 2025. Rancher 2.12.0 and later will no longer support provisioning or managing downstream RKE1 clusters. We recommend replatforming RKE1 clusters to RKE2 to ensure continued support and security updates. Learn more about the transition <a href="https://www.suse.com/support/kb/doc/?id=000021518" target="_blank" rel="noopener noreferrer nofollow">here</a>.'
-    rke1DeprecationShortMessage: Rancher Kubernetes Engine (RKE / RKE1) will reach end of life on July 31, 2025. Rancher 2.12.0 and later will no longer support provisioning or managing downstream RKE1 clusters.
+    rke1DeprecationMessage: 'Rancher Kubernetes Engine(RKE/RKE1)은 2025년 7월 31일에 지원이 종료됩니다. Rancher 2.12.0 이상 버전은 다운스트림 RKE1 클러스터의 프로비저닝 또는 관리를 더 이상 지원하지 않습니다. 지속적인 지원 및 보안 업데이트를 위해 RKE1 클러스터를 RKE2로 재플랫폼하는 것이 좋습니다. 전환에 대해 더 자세히 알아보세요 <a href="https://www.suse.com/support/kb/doc/?id=000021518" target="_blank" rel="noopener noreferrer nofollow">here</a>.'
+    rke1DeprecationShortMessage: Rancher Kubernetes Engine(RKE/RKE1)은 2025년 7월 31일에 지원이 종료됩니다. Rancher 2.12.0 이상에서는 다운스트림 RKE1 클러스터의 프로비저닝이나 관리를 더 이상 지원하지 않습니다.
   rkeTemplateUpgrade: 템플릿 수정 {name} 업그레이드 가능
   cloudCredentials:
-    renew: Renew Cloud Credentials
-    expired: Cloud Credential expired, please Renew Cloud Credentials
-    expiring: Cloud Credential will expire on { expires }, please Renew Cloud Credentials
+    renew: 클라우드 자격 증명 갱신
+    expired: 클라우드 자격 증명이 만료되었습니다. 클라우드 자격 증명을 갱신하세요.
+    expiring: Cloud Credential은 { expires }에 만료됩니다. Cloud Credential을 갱신해 주세요.
     banners:
-      expiring: "{count} {count, plural, =1 { Cluster has a Cloud Credential that expires soon} other { Clusters have Cloud Credentials that expire soon}}, please Renew Cloud {count, plural, =1 { Credential} other { Credentials}}"
-      expired: "{count} {count, plural, =1 { Cluster has a Cloud Credential that has expired} other { Clusters have Cloud Credentials that have expired}}, please Renew Cloud {count, plural, =1 { Credential} other { Credentials}}"
+      expiring: "{count} {count, plural, =1 { 클러스터에 곧 만료되는 클라우드 자격 증명이 있습니다.} other { 클러스터에는 곧 만료되는 클라우드 자격 증명이 있습니다.}}, 클라우드를 갱신해주세요 {count, plural, =1 { Credential} other { Credentials}}"
+      expired: "{count} {count, plural, =1 { 클러스터에 만료된 클라우드 자격 증명이 있습니다.} other { 클러스터에 만료된 클라우드 자격 증명이 있습니다.}}, 클라우드를 갱신해주세요 {count, plural, =1 { Credential} other { Credentials}}"
 
   architecture:
     label:
@@ -3440,26 +3440,26 @@ cluster:
       tooltip:
         controlPlane: |-
           {count, plural,
-            =0 { A cluster needs at least one control plane node to be usable. }
-            =1 { A cluster with only one control plane node is not fault-tolerant. }
+            =0 { 클러스터를 사용하려면 최소한 하나의 제어 플레인 노드가 필요합니다. }
+            =1 { 제어 플레인 노드가 하나뿐인 클러스터는 장애 허용(fault-tolerant)이 아닙니다. }
             other {}
           }
         etcd: |-
           {count, plural,
-            =0 { A cluster needs at least one etcd node to be usable. }
-            =1 { A cluster with only one etcd node is not fault-tolerant. }
-            =2 { Clusters should have an odd number of nodes.  A cluster with 2 etcd nodes is not fault-tolerant. }
+            =0 { 클러스터를 사용하려면 최소한 하나의 etcd 노드가 필요합니다. }
+            =1 { etcd 노드가 하나뿐인 클러스터는 장애 허용(fault-tolerant)이 아닙니다. }
+            =2 { 클러스터는 홀수 개의 노드로 구성되어야 합니다. etcd 노드가 2개인 클러스터는 장애 허용(fault-tolerant)이 아닙니다. }
             =3 {}
-            =4 { Clusters should have an odd number of nodes. }
+            =4 { 클러스터에는 홀수의 노드가 있어야 합니다. }
             =5 {}
-            =6 { Clusters should have an odd number of nodes. }
+            =6 { 클러스터에는 홀수의 노드가 있어야 합니다. }
             =7 {}
-            other { More than 7 etcd nodes is not recommended. }
+            other { 7개 이상의 etcd 노드는 권장되지 않습니다. }
           }
         worker: |-
           {count, plural,
-            =0 { A cluster needs at least one worker node to be usable. }
-            =1 { A cluster with only one worker node is not fault-tolerant. }
+            =0 { 클러스터를 사용하려면 최소한 하나의 워커 노드가 필요합니다. }
+            =1 { 작업자 노드가 하나만 있는 클러스터는 장애 허용(fault-tolerant)이 아닙니다. }
             other {}
           }
     quantity:
@@ -3497,10 +3497,10 @@ cluster:
     header: Rancher 시스템 컨테이너 이미지용 레지스트리
     label: Rancher 시스템 컨테이너 이미지를 위한 클러스터 범위 컨테이너 레지스트리 활성화
     description: "활성화되면 Rancher는 클러스터 프로비저닝 중에 이 레지스트리에서 컨테이너 이미지를 가져올 것입니다. 기본적으로 Rancher는 Rancher의 공식 헬름 차트 앱을 설치할 때도 이 레지스트리를 사용합니다. 클러스터 범위 레지스트리가 비활성화된 경우 시스템 이미지는 전역 설정의 System Default Registry에서 가져옵니다."
-    importedDescription: "By default, Rancher will also use this registry when installing Rancher's official Helm chart apps. If the cluster scoped registry is disabled, system images are pulled from the System Default Registry in the global settings."
+    importedDescription: "기본적으로 Rancher는 Rancher의 공식 Helm 차트 앱을 설치할 때 이 레지스트리를 사용합니다. 클러스터 범위 레지스트리가 비활성화된 경우 시스템 이미지는 글로벌 설정의 시스템 기본 레지스트리에서 가져옵니다."
     docsLinkRke2: '개인 레지스트리 미러를 구성하는 데 도움이 필요한 경우 RKE2 <a href="https://docs.rke2.io/install/containerd_registry_configuration/" target="_blank">문서</a>를 참조하세요.'
     docsLinkK3s: '개인 레지스트리 미러를 구성하는 데 도움이 필요한 경우 K3s <a href="https://docs.k3s.io/installation/private-registry" target="_blank">문서</a>를 참조하세요.'
-    privateRegistryUrlError: A registry must be a valid url. Scheme is optional. 
+    privateRegistryUrlError: 레지스트리는 유효한 URL이어야 합니다. 스키마는 선택 사항입니다.
   provider:
     aliyunecs: Aliyun ECS
     aliyunkubernetescontainerservice: Alibaba ACK
@@ -3682,7 +3682,7 @@ cluster:
         label: 크론 일정
       snapshotRetention:
         label: 마지막 유지
-        tooltip: Each backup records 1 snapshot per etcd node. If you specify 3 snapshots and you have 3 etcd nodes you will only retain 1 full backup.
+        tooltip: 각 백업은 etcd 노드당 스냅샷 1개를 기록합니다. 스냅샷을 3개 지정하고 etcd 노드가 3개이면 전체 백업은 1개만 보관됩니다.
       exportMetric:
         label: 메트릭
         false: 클러스터 내에서만 사용 가능
@@ -3705,8 +3705,8 @@ cluster:
     bulkSuccessTitle: 스냅샷 시작됨
     bulkSuccessMessage: |-
       {count, plural,
-        =1 { A snapshot has been requested for 1 cluster }
-        other {A snapshot has been requested for {count} clusters}
+        =1 { 1개의 클러스터에 대한 스냅샷이 요청되었습니다. }
+        other { {count}개 클러스터에 대한 스냅샷이 요청되었습니다. }
       }
     groupLabel: 위치
     failed: "{time}에 대한 스냅샷이 실패했습니다."
@@ -3821,10 +3821,10 @@ resource:
   errors:
     update: "{name} 업데이트 중 오류 발생"
 codeMirror:
-  escapeText: Press Shift+Escape to blur from editor
+  escapeText: 편집기에서 흐리게 처리하려면 Shift+Escape를 누르세요.
   keymap:
-    tooltip: Key mapping preference.
-    indicatorToolip: "Key mapping: {name}"
+    tooltip: 키 매핑 기본 설정.
+    indicatorToolip: "키 매핑: {name}"
 cruResource:
   backToForm: 폼으로 돌아가기
   backBody: YAML에 대한 변경 사항이 손실됩니다.
@@ -3845,21 +3845,21 @@ drivers:
     name:
       label: Driver name
     downloadUrl:
-      label: Download URL
+      label: 다운로드 URL
       placeholder: https://test.com/driver
-      tooltip: The URL to download the machine driver binary for 64-bit Linux.
+      tooltip: 64비트 Linux용 머신 드라이버 바이너리를 다운로드할 수 있는 URL입니다.
     customUiUrl:
-      label: Custom UI URL
+      label: 사용자정의 UI URL
       placeholder: https://test.com/ui
-      tooltip: The URL to load for customized Add Nodes screen for this driver. See https://github.com/rancher/ui-driver-skel for more info.
+      tooltip: 이 드라이버에 대한 사용자 정의 노드 추가 화면을 로드하기 위한 URL입니다. See https://github.com/rancher/ui-driver-skel for more info.
     checksum:
-      label: Checksum
-      tooltip: Checksum to verify that the downloaded driver matches the expected checksum.
-    whitelist: Whitelist Domains
+      label: 체크섬
+      tooltip: 다운로드한 드라이버가 예상 체크섬과 일치하는지 확인하는 체크섬입니다.
+    whitelist: 화이트리스트 도메인
   actions:
-    refresh: Refresh Kubernetes Metadata
+    refresh: Kubernetes 메타데이터 새로 고침
   deactivate:
-    title: Are you sure?
+    title: 확실합니까?
     andOthers: |-
       {count, plural,
       =0 {}
@@ -3868,13 +3868,13 @@ drivers:
       }
     warningDrivers: |-
       {count, plural,
-      =1 { You will no longer be able to edit the configuration of clusters using {names} driver.}
-      other { You will no longer be able to edit the configuration of clusters using {names} drivers.}
+      =1 { 더 이상 {names} 드라이버를 사용하여 클러스터 구성을 편집할 수 없습니다.}
+      other { 더 이상 {names} 드라이버를 사용하여 클러스터 구성을 편집할 수 없습니다.}
       }
     warning: |-
       {count, plural,
-      =1 { {warningDrivers} Resources in the corresponding provider will not be automatically removed.}
-      other { {warningDrivers} Resources in the corresponding providers will not be automatically removed.}
+      =1 { {warningDrivers} 해당 공급자의 리소스는 자동으로 제거되지 않습니다.}
+      other { {warningDrivers} 해당 공급자의 리소스는 자동으로 제거되지 않습니다.}
       }
 
 detailText:
@@ -3926,35 +3926,35 @@ fleet:
     getStarted: 시작하기
     thereIsMore: |-
       {count, plural,
-      =1 { There is one other workspace with no repositories}
-      other { There are { count } other workspaces with no repositories}
+      =1 { 저장소가 없는 또 다른 작업 공간이 있습니다.}
+      other { 저장소가 없는 다른 작업 공간이 {count}개 있습니다.}
       }
     expandAll: 전체 펼치기
     collapseAll: 전체 접기
   cluster:
     summary: 리소스 요약
     nonReady: 준비되지 않은 번들
-    labels: Labels
-    hideLabels: Show less
-    showLabels: Show more    
+    labels: 라벨
+    hideLabels: 간략히 보기
+    showLabels: 더 보기 
   clusters:
     harvester: |-
       There {count, plural,
-      =1 {is 1 Harvester cluster that is hidden as this can not be used with Continuous Delivery}
-      other {are # Harvester clusters that are hidden as they can not be used with Continuous Delivery}
+      =1 {지속적인 배포(Continuous Delivery)에 사용할 수 없기 때문에 숨겨진 Harvester 클러스터 1개가 있습니다.}
+      other {지속적인 배포(Continuous Delivery)에 사용할 수 없기 때문에 숨겨진 Harvester 클러스터가 #개 있습니다.}
       }
   tokens:
     harvester: |-
       {count, plural,
-      =1 {1 token is hidden as it belongs to a Harvester cluster that can not be used with Continuous Delivery}
-      other {# tokens are hidden as they belong to Harvester clusters that can not be used with Continuous Delivery}
+      =1 {지속적인 배포(Continuous Delivery)에 사용할 수 없는 Harvester 클러스터에 속해 있기 때문에 토큰 1개가 숨겨졌습니다.}
+      other {지속적인 배포(Continuous Delivery)에 사용할 수 없는 Harvester 클러스터에 속해 있기 때문에 토큰 #개가 숨겨졌습니다.}
       }
   bundles:
     resources: Resources
     harvester: |-
       {count, plural,
-      =1 {1 bundle is hidden as it belongs to a Harvester cluster that can not be used with Continuous Delivery}
-      other {# bundles are hidden as they belong to Harvester clusters that can not be used with Continuous Delivery}
+      =1 {지속적인 배포(Continuous Delivery)에 사용할 수 없는 Harvester 클러스터에 속해 있기 때문에 번들 1개가 숨겨졌습니다.}
+      other {지속적인 배포(Continuous Delivery)에 사용할 수 없는 Harvester 클러스터에 속해 있기 때문에 번들 #개가 숨겨졌습니다.}
       }
   fleetSummary:
     noClustersGitRepo: 이 git 저장소는 어떤 클러스터도 대상으로 하지 않습니다
@@ -3969,23 +3969,23 @@ fleet:
   gitRepo:
     actions:
       forceUpdate:
-        label: Force Update
-        promptTitle: Force Update
-        promptNames: 'You are attempting to update: '
+        label: 강제 업데이트
+        promptTitle: 강제 업데이트
+        promptNames: '업데이트를 시도하고 있습니다: '
         promptWarning: |-
           {
             count, plural,
-            =1 {Force update could be a long running process, the repository will be cloned again.}
-            other {Force update could be a long running process, the repositories will be cloned again.}
+            =1 {강제 업데이트는 장시간 실행되는 프로세스가 될 수 있으며 저장소가 다시 복제됩니다.}
+            other {강제 업데이트는 시간이 오래 걸리는 프로세스일 수 있으며, 저장소가 다시 복제됩니다.}
           }
       enablePolling:
-        label: Enable Polling
+        label: 폴링 활성화
       disablePolling:
-        label: Disable Polling
+        label: 폴링 비활성화
       unpause:
-        label: Unpause
+        label: 일시중지 해제
       pause:
-        label: Pause  
+        label: 일시중지  
     tabs:
       resources: 리소스
       unready: 준비되지 않음
@@ -4013,38 +4013,38 @@ fleet:
       keepResources: 항상 리소스 유지
       keepResourcesBanner: 위에서 활성화한 경우 GitRepo 또는 번들을 삭제할 때 리소스는 유지되며 헬름 릴리스 시크릿은 삭제되지 않습니다.
       correctDrift: 자가 치유 활성화
-      correctDriftTooltip: When enabled, Fleet will ensure that the cluster resources are kept in sync with the git repository. All resource changes made on the cluster will be lost.
+      correctDriftTooltip: Fleet을 활성화하면 클러스터 리소스가 Git 저장소와 동기화 상태를 유지합니다. 클러스터에서 수행된 모든 리소스 변경 사항은 손실됩니다.
     polling:
-      label: Polling
-      enable: Enable Polling
+      label: 폴링
+      enable: 폴링 활성화
       pollingInterval:
-        label: Polling Interval
-        tooltip: Polling Interval is the time between a push to the Repository and Fleet's reaction to it.
-        webhookWarning: A webhook is configured in Rancher to reconcile Git updates and GitRepo resources. The Polling Interval will automatically be adjusted to 1 hour.
-        minimumValuewarning: The recommended minimum Polling Interval is 15 seconds. To avoid performance issues with GitRepos that contain a large amount of resources please consider increasing this value.
+        label: 폴링 간격
+        tooltip: 폴링 간격은 저장소에 푸시한 후 Fleet이 이에 반응하는 데 걸리는 시간입니다.
+        webhookWarning: Rancher에는 Git 업데이트와 GitRepo 리소스를 조정하기 위한 웹훅이 구성되어 있습니다. 폴링 간격은 자동으로 1시간으로 조정됩니다.
+        minimumValuewarning: 권장되는 최소 폴링 간격은 15초입니다. 많은 리소스가 포함된 GitRepos의 성능 문제를 방지하려면 이 값을 늘리는 것을 고려해 보세요.
     add:
       steps:
         metadata:
-          label: Metadata
-          title: Specify the Git Repository name and labels/annotations
-          subtext: 'Define metadata details'
-          description: Git repository basic info
+          label: 메타데이터
+          title: Git 저장소 이름과 레이블/주석을 지정하세요
+          subtext: '메타데이터 세부정보 정의'
+          description: Git 저장소 기본 정보
         repo:
-          label: Repository details
-          title: Specify the Git Repository to add to fleet
-          subtext: 'Define repository details'
-          description: Fleet will continuously monitor the Git Repository you configure below and synchronise the resources contained in it to the configured targets.
+          label: 저장소 세부 정보
+          title: fleet에 추가할 Git 저장소를 지정하세요 
+          subtext: '저장소 세부정보 정의'
+          description: Fleet은 아래에 구성한 Git 저장소를 지속적으로 모니터링하고 해당 저장소에 포함된 리소스를 구성된 대상과 동기화합니다.
         advanced:
-          label: Advanced
-          title: Specify advanced settings like authenticaion credentials and polling
-          subtext: 'Define advanced settings'
-          description: Fleet will use the authentication settings and polling to synchronise the resources contained in it.
-          info: These settings are for advanced usage and optional. You can skip them and finish the creation process.
+          label: 고급
+          title: 인증 자격 증명 및 폴링과 같은 고급 설정을 지정합니다.
+          subtext: '고급 설정 정의'
+          description: Fleet은 인증 설정과 폴링을 사용하여 Fleet에 포함된 리소스를 동기화합니다.
+          info: 이 설정은 고급 사용을 위한 것이며 선택 사항입니다. 건너뛰고 생성 과정을 완료할 수 있습니다.
         targetInfo:
-          label: Target details
-          title: Specify which target to synchronise this repository to
-          subtext: 'Define target details'
-          description: You can configure which clusters will be used as the target of synchronisation with the resources in the repository.
+          label: 대상 세부정보
+          title: 이 저장소를 동기화할 대상을 지정하세요.
+          subtext: '대상 세부정보 정의'
+          description: 저장소의 리소스와 동기화 대상으로 어떤 클러스터를 사용할지 구성할 수 있습니다.
     ref:
       label: 감시
       branch: 브랜치
@@ -4865,8 +4865,8 @@ logging:
       labels: 레이블
       configuration: 구성
     tips:
-      singleProvider: This output is configured with multiple providers. We currently only support a single provider per output. You can view or edit the YAML.
-      multipleProviders: This output is configured with providers we do not support yet. You can view or edit the YAML.
+      singleProvider: 이 출력은 여러 공급자로 구성되어 있습니다. 현재 출력당 하나의 공급자만 지원합니다. YAML을 보거나 편집할 수 있습니다.
+      multipleProviders: 이 출력은 아직 지원하지 않는 공급자로 구성되어 있습니다. YAML을 보거나 편집할 수 있습니다.
   outputProviders:
     elasticsearch: Elasticsearch
     opensearch: OpenSearch
@@ -5489,28 +5489,28 @@ networkpolicy:
     matchingPods:
       matchesSome: |-
         {matched, plural,
-          =0 {Matches 0 of {total, number} pods}
-          =1 {Matches 1 of {total, number} pods: "{sample}"}
-          other {Matches {matched, number} of {total, number} existing pods, including "{sample}"}
+          =0 {{total, number}개의 포드 중 0개와 일치합니다.}
+          =1 {{total, number}개의 포드 중 1개와 일치합니다.: "{sample}"}
+          other {{total, number}개의 기존 포드 중 {matched, number}개와 일치합니다. "{sample}" 포함}
         }
     matchingNamespaces:
       matchesSome: |-
         {matched, plural,
-          =0 {Matches 0 of {total, number} namespaces}
-          =1 {Matches 1 of {total, number} namespaces: "{sample}"}
-          other {Matches {matched, number} of {total, number} existing namespaces, including "{sample}"}
+          =0 {{total, number}개의 네임스페이스 중 0개와 일치합니다.}
+          =1 {{total, number} 네임스페이스 중 1개와 일치합니다.: "{sample}"}
+          other {{total, number}개의 기존 네임스페이스 중 {matched, number}개와 일치합니다, "{sample}" 포함}
         }
     matchingNamespacesAndPods:
-      tooltip: A single entry rule that specifies both Namespace Selector and Pod Selector that selects particular Pods within particular namespaces
+      tooltip: 특정 네임스페이스 내의 특정 Pod를 선택하는 네임스페이스 선택기와 Pod 선택기를 모두 지정하는 단일 항목 규칙
       matchesSome: |-
         {matchedPods, plural,
-          =0 {Matches 0 of {totalPods, number} pods}
-          =1 {Matches 1 of {totalPods, number} pods: "{samplePods}"}
-          other {Matches {matchedPods, number} of {totalPods, number} existing pods, including "{samplePods}"}
+          =0 {{totalPods, number}개 중 0개와 일치합니다.}
+          =1 {{totalPods, number}개의 포드 중 1개와 일치합니다.: "{samplePods}"}
+          other {{totalPods, number}개의 기존 포드 중 {matchedPods, number}개와 일치합니다., "{samplePods}" 포함}
         } in {matchedNamespaces, plural,
-          =0 {0 of {totalNamespaces, number} namespaces}
-          =1 {1 of {totalNamespaces, number} namespaces: "{sampleNamespaces}"}
-          other {{matchedNamespaces, number} of {totalNamespaces, number} existing namespaces, including "{sampleNamespaces}"}
+          =0 {{totalNamespaces, number}개의 네임스페이스 중 0개}
+          =1 {{totalNamespaces, number}개의 네임스페이스 중 1개: "{sampleNamespaces}"}
+          other {{totalNamespaces, number}개 중 {matchedNamespaces, number}개 기존 네임스페이스, "{sampleNamespaces}" 포함}
         }
 node:
   list:
@@ -5943,15 +5943,15 @@ inactivity:
 
 # Rancher Extensions
 plugins:
-  altIcon: Icon for {extension} extension card
-  incompatibleRancherVersion: "The latest version of this extension ({ version }) is not compatible with the current Rancher version ({ required })."
-  incompatibleKubeVersion: "The latest version of this extension ({ version }) is not compatible with the current Kube version ({ required })."
-  incompatibleUiExtensionsApiVersionMissing: 'The latest version of this extension ({ version }) is missing the mandatory annotation catalog.cattle.io/ui-extensions-version from Rancher 2.10 and onwards.'
-  incompatibleUiExtensionsApiVersion: "The latest version of this extension ({ version }) is not compatible with the current Extensions API version ({ required })."
-  incompatibleHost: 'The latest version of this extension ({ version }) has a host of "{ required }" which is not compatible with this application "{ mainHost }".'
-  currentInstalledVersionBlockedByKubeVersion: "This version is not compatible with the current Kubernetes version ({ kubeVersion }  Vs  { kubeVersionToCheck })."
-  closePluginPanel: Close plugin description panel
-  viewVersionDetails: View extension {name} version {version} details/Readme
+  altIcon: "{extension} 확장 카드 아이콘"
+  incompatibleRancherVersion: "이 확장 프로그램의 최신 버전({version})은 현재 Rancher 버전({required})과 호환되지 않습니다."
+  incompatibleKubeVersion: "이 확장 프로그램의 최신 버전({version})은 현재 Kube 버전({required})과 호환되지 않습니다."
+  incompatibleUiExtensionsApiVersionMissing: "이 확장 프로그램의 최신 버전({version})에는 Rancher 2.10 이상에서 필수 주석 catalog.cattle.io/ui-extensions-version이 없습니다."
+  incompatibleUiExtensionsApiVersion: "이 확장 프로그램의 최신 버전({version})은 현재 Extensions API 버전({required})과 호환되지 않습니다."
+  incompatibleHost: '이 확장 프로그램의 최신 버전({version})에는 이 애플리케이션 "{mainHost}"와 호환되지 않는 "{required}" 호스트가 있습니다.'
+  currentInstalledVersionBlockedByKubeVersion: "이 버전은 현재 Kubernetes 버전({ kubeVersion } Vs { kubeVersionToCheck })과 호환되지 않습니다."
+  closePluginPanel: 플러그인 설명 패널 닫기
+  viewVersionDetails: 확장 프로그램 {name} 버전 {version} 세부 정보/Readme 보기
   labels:
     builtin: 내장
     experimental: 실험적
@@ -5959,8 +5959,8 @@ plugins:
     image: 이미지
     installing: 설치 중...
     uninstalling: 제거 중...
-    menu: Extensions menu
-    reloadRancher: Reload Rancher    
+    menu: 확장 메뉴
+    reloadRancher: 랜처 다시 로드
   descriptions:
     experimental: 이 확장 프로그램은 실험적으로 표시되었습니다.
     third-party: 이 확장 프로그램은 제3자에서 제공됩니다.
@@ -5970,11 +5970,11 @@ plugins:
     title: 확장 프로그램 로드 오류
     message: 확장 프로그램 코드를 로드할 수 없습니다.
     generic: 확장 프로그램 오류
-    apiAnnotationMissing: 'Unable to load Extension. The version installed is not compatible with the current Extensions API Version (Extension is missing the annotation catalog.cattle.io/ui-extensions-version which implies incompatibility with Rancher 2.10 and onwards)'
+    apiAnnotationMissing: '확장 프로그램을 로드할 수 없습니다. 설치된 버전이 현재 확장 프로그램 API 버전과 호환되지 않습니다. (확장 프로그램에 catalog.cattle.io/ui-extensions-version 애노테이션이 누락되어 Rancher 2.10 이상 버전과 호환되지 않습니다.)'
     api: 이 확장 프로그램은 확장 API와 호환되지 않습니다.
     host: 이 확장 프로그램은 이 응용 프로그램과 호환되지 않습니다.
     version: 이 확장 프로그램은 Rancher의 이 버전과 호환되지 않습니다.
-    kubeVersion: Unable to load Extension. The version installed is not compatible with the current Rancher kubernetes version
+    kubeVersion: 확장 프로그램을 로드할 수 없습니다. 설치된 버전이 현재 Rancher Kubernetes 버전과 호환되지 않습니다.
     load: 이 확장 프로그램의 코드를 로드하는 중에 오류가 발생했습니다.
     developerPkg: 이 확장 프로그램은 내부적으로 로드되었으므로 외부 버전을 로드하지 않습니다.
   success:
@@ -5994,9 +5994,9 @@ plugins:
     versionError: 버전 정보를 로드할 수 없습니다.
     requiresRancherVersion: "Rancher {version}이 필요함"
     requiresKubeVersion: "Kube 버전 {version}이 필요함"
-    requiresExtensionApiVersionMissing: 'Missing the annotation catalog.cattle.io/ui-extensions-version which implies incompatibility with Rancher 2.10 and onwards'
-    requiresExtensionApiVersion: "Requires Extensions API version {required}"
-    requiresHost: 'Requires a host that matches "{mainHost}"'
+    requiresExtensionApiVersionMissing: 'Rancher 2.10 이상과 호환되지 않는다는 것을 의미하는 catalog.cattle.io/ui-extensions-version 주석이 없습니다.'
+    requiresExtensionApiVersion: "확장 API 버전이 필요합니다. {required}"
+    requiresHost: '일치하는 호스트가 필요합니다. "{mainHost}"'
   empty:
     all: 확장 프로그램이 설치되지 않았으며 사용 가능하지 않습니다.
     available: 사용 가능한 확장 프로그램이 없습니다.
@@ -6008,7 +6008,7 @@ plugins:
   manageRepos: 저장소 관리
   addRancherRepos: Rancher 저장소 추가
   manageCharts: 확장 프로그램 차트 관리
-  warnNoAuth: This version of the extension will be loaded before authentication and will have access to the login process.
+  warnNoAuth: 이 버전의 확장 프로그램은 인증 전에 로드되며 로그인 프로세스에 액세스할 수 있습니다.
   manageCatalog:
     label: 확장 프로그램 카탈로그 관리
     title: 확장 프로그램
@@ -6021,7 +6021,7 @@ plugins:
           label: 카탈로그 이미지 참조
           placeholder: "예: hub.docker.io/example-org/my-image:latest"
         imagePullSecrets:
-          label: Image Pull Secrets
+          label: 풀 시크릿 이미지
           tooltip: Must be of Type `kubernetes.io/dockercfg` or `kubernetes.io/dockerconfigjson`
         secrets:
           banner: "카탈로그 이미지를 호스팅하는 레지스트리가 풀 시크릿을 필요로 하는 경우 다음 네임스페이스에서 생성해야 합니다:<pre>cattle-ui-plugin-system</pre>"
@@ -6282,7 +6282,7 @@ projectMembers:
     workloadsView: 워크로드 보기
 
 projectNamespaces:
-  tableActionsLabel: More actions for project { resource }
+  tableActionsLabel: 프로젝트에 대한 추가 작업 { resource }
   createNamespace: 네임스페이스 생성
   createProject: 프로젝트 생성
   label: 프로젝트/네임스페이스
@@ -6357,13 +6357,13 @@ promptScaleMachineDown:
   retainedMachine2: <b>{ name }</b>이(가) 남겨질 것입니다.
 
 promptSlo:
-  title: "Log out"
-  text: "Log out of only Rancher, or all {name} applications."
+  title: "로그아웃"
+  text: "Rancher에서만 로그아웃하거나, 모든 {name} 애플리케이션에서 로그아웃합니다."
   rancher:
-    active: Only log out of Rancher
+    active: Rancher에서만 로그아웃하세요
   all:
-    active: Log out of {name}
-    waiting: Logging Out
+    active: "{name}에서 로그아웃"
+    waiting: 로그아웃 중
 promptRemove:
   title: 정말로 진행하시겠습니까?
   andOthers: |-
@@ -6484,21 +6484,21 @@ rbac:
     unableToCheck: 역할에 바인딩된 사용자 여부를 확인할 수 없습니다. 다시 시도하십시오.
     waiting: |-
       {count, plural,
-        =1 { Checking if there are any users bound to this role <i class="icon-spin icon icon-spinner" style="margin-left: 5px"></i> }
-        other { Checking if there are any users bound to these roles <i class="icon-spin icon icon-spinner" style="margin-left: 5px"></i> }
+        =1 { 이 역할에 바인딩된 사용자가 있는지 확인 <i class="icon-spin icon icon-spinner" style="margin-left: 5px"></i> }
+        other { 이러한 역할에 바인딩된 사용자가 있는지 확인 <i class="icon-spin icon icon-spinner" style="margin-left: 5px"></i> }
       }
     usersBound: |-
       {count, plural,
-        =1 { Caution: There is 1 user bound to the role(s) about to be deleted. Do you want to proceed? }
-        other { Caution: There are {count} users bound to the role(s) about to be deleted. Do you want to proceed? }
+        =1 { 주의: 삭제하려는 역할에 바인딩된 사용자가 1명 있습니다. 계속하시겠습니까? }
+        other { 주의: 삭제될 역할에 바인딩된 사용자가 {count}명 있습니다. 계속하시겠습니까? }
       }
     types:
       global:
         label: 글로벌 권한
         description: |-
-          Controls what access the {isUser, select,
+          접근을 제어 {isUser, select,
           true {user}
-          false {group}} has to administer the overall {appName} installation.
+          false {group}}하여 {appName}의 전체 설치를 관리해야 합니다.
       custom:
         label: 사용자 정의
         description: "{vendor}에서 생성하지 않은 역할입니다."
@@ -6584,16 +6584,16 @@ resourceDetail:
       {count, plural,
       =1 {Owner}
       other {Owners}}
-    hideLabels: Hide system labels
-    showLabels: Show all labels
+    hideLabels: 시스템 라벨 숨기기
+    showLabels: 모든 라벨 표시
     hideAnnotations: |-
       {annotations, plural,
-      =1 {Hide 1 annotation}
-      other {Hide {annotations} annotations}}
+      =1 {1개의 주석 숨기기}
+      other {{annotations} 주석 숨기기}}
     showAnnotations: |-
       {annotations, plural,
-      =1 {Show 1 annotation}
-      other {Show {annotations} annotations}}
+      =1 {주석 1개 표시}
+      other {{annotations} 주석 표시}}
     name: 이름
   header:
     clone: "{subtype} {name}에서 복제"
@@ -6604,7 +6604,7 @@ resourceDetail:
     view: "{subtype} {name} 보기"
   masthead:
     age: 생성 시간
-    createdBy: Created by    
+    createdBy: 작성자
     restartCount: 파드 재시작 횟수
     defaultBannerMessage:
       error: 이 리소스는 현재 오류 상태이지만 자세한 메시지가 제공되지 않았습니다.
@@ -6620,9 +6620,9 @@ resourceDetail:
     graph: 그래프
     yaml: YAML
     managedWarning: |-
-      This {type} is managed by {hasName, select,
+      이것은 {type} 관리 다음과 같이 관리됩니다. {hasName, select,
         no {a {managedBy} app}
-        yes {the {managedBy} app {appName}}}; changes made here will likely be overwritten the next time {managedBy} runs.
+        yes {the {managedBy} app {appName}}}; 여기서 변경한 내용은 다음에 {managedBy}를 실행할 때 덮어쓰여질 가능성이 높습니다.
 resourceList:
   head:
     create: 생성
@@ -6716,10 +6716,10 @@ secret:
     publicPlaceholder: "공개 키를 붙여넣기하세요."
     private: 개인 키
     privatePlaceholder: "개인 키를 붙여넣기하세요."
-    knownHosts: Known Hosts
-    knownHostsPlaceholder: "Known hosts metadata, one per line"
+    knownHosts: 알려진 호스트
+    knownHostsPlaceholder: "알려진 호스트 메타데이터(줄당 하나씩)"
     editKnownHosts:
-      title: SSH Known Hosts Configuration
+      title: SSH 알려진 호스트 구성
       entries:  |-
         {entries, plural,
           =0 {Empty}
@@ -6898,9 +6898,9 @@ servicesPage:
       description: 선택기 키 및 값은 기존 파드의 레이블 및 값과 일치해야 합니다.
       matchesSome: |-
         {matched, plural,
-          =0 {Matches 0 of {total, number} pods. If no selector is created, manual endpoints must be made.}
-          =1 {Matches 1 of {total, number} pods: "{sample}"}
-          other {Matches {matched, number} of {total, number} existing pods, including "{sample}"}
+          =0 {{total, number}개의 포드 중 0개와 일치합니다.. 선택기가 생성되지 않으면 수동 엔드포인트를 만들어야 합니다.}
+          =1 {{total, number}개의 포드 중 1개와 일치합니다.: "{sample}"}
+          other {{total, number}개의 기존 포드 중 {matched, number}개와 일치합니다., "{sample}" 포함}
         }
   serviceTypes:
     clusterIp:
@@ -6950,10 +6950,10 @@ setup:
   welcome: "{vendor}에 오신 것을 환영합니다!"
 
 sortableTable:
-  genericGroupCheckbox: Table group selection checkbox
-  genericRowCheckbox: Table row selection checkbox for item {item}
-  tableActionsLabel: More actions - { resource }
-  tableActionsImgAlt: More actions icon
+  genericGroupCheckbox: 테이블 그룹 선택 체크박스
+  genericRowCheckbox: '{item} 항목에 대한 테이블 행 선택 체크박스'
+  tableActionsLabel: 추가 작업 - { resource }
+  tableActionsImgAlt: 추가 작업 아이콘
   bulkActions:
     collapsed:
       label: 작업
@@ -7452,8 +7452,8 @@ tableHeaders:
   resourcesReady: 리소스 준비 완료
   restarts: 재시작
   restart: 재시작 필요
-  restartSystem: Restart { vendor }
-  restore: Restore
+  restartSystem: 재시작 { vendor }
+  restore: 복원
   role: 역할
   roles: 역할
   routes: 라우트
@@ -7489,7 +7489,7 @@ tableHeaders:
   targetKind: 대상 유형
   targetPort: 대상 포트
   template: 템플릿
-  totalSnapshotQuota: Total Snapshot Quota 
+  totalSnapshotQuota: 총 스냅샷 할당량
   type: 유형
   updated: 업데이트됨
   up-to-date: 최신 상태
@@ -7498,10 +7498,10 @@ tableHeaders:
   users: 사용자
   userDisplayName: 표시 이름
   userId: ID
-  userDeletedIn: Delete After
-  userDisabledIn: Disable After
-  userLastLogin: Last Login
-  userState: Enabled  
+  userDeletedIn: 이후 삭제
+  userDisabledIn: 이후 비활성화
+  userLastLogin: 마지막 로그인
+  userState: 활성화됨  
   userStatus: 상태
   username: 로컬 사용자 이름
   value: 값
@@ -7509,9 +7509,9 @@ tableHeaders:
   volume: 볼륨
   volumeMode: 볼륨 모드
   weight: 가중치
-  clusterResources: Cluster Resources
-  repoPerClusterState: Cluster State
-  repoPerClusterStateTooltip: The state of the repo on the cluster
+  clusterResources: 클러스터 리소스
+  repoPerClusterState: 클러스터 상태
+  repoPerClusterStateTooltip: 클러스터의 repo 상태
 target:
   router:
     label: 라우터
@@ -7526,9 +7526,9 @@ target:
 
 user:
   state:
-    active: 'Enabled'
-    inactive: 'Disabled'
-    unknown: 'Unknown'
+    active: '활성화'
+    inactive: '비활성화'
+    unknown: '알려지지 않은'
   detail:
     username: 사용자 이름
     globalPermissions:
@@ -7568,39 +7568,39 @@ user:
     errorRefreshingGroupMemberships: 그룹 멤버십 새로 고침 오류
   retention:
     button:
-      label: User retention settings
+      label: 사용자 유지 설정
     growl:
-      title: Save user retention settings
-      message: User retention settings have been updated successfully
+      title: 사용자 유지 설정 저장
+      message: 사용자 유지 설정이 성공적으로 업데이트되었습니다.
     edit:
       title:
-        header: "Users: Settings"
-        pre: "Users:"
-        post: Settings
-        subTitle: User retention
+        header: "사용자: 설정"
+        pre: "사용자:"
+        post: 설정
+        subTitle: 사용자 유지
       form:
         disableAfter:
-          checkbox: Disable user accounts after an inactivity period (duration since last login)
+          checkbox: 비활성 기간(마지막 로그인 이후 기간)이 지나면 사용자 계정을 비활성화합니다.
           input:
-            label: Inactivity period
-            tooltip: Uses duration units (e.g. use 30h for 30 hours)
+            label: 비활성 기간
+            tooltip: 기간 단위를 사용합니다(예, 30시간인 경우 30h 사용)
         deleteAfter:
-          checkbox: Delete user accounts after an inactivity period (duration since last login)
+          checkbox: 비활성 기간(마지막 로그인 이후 기간)이 지난 후 사용자 계정을 삭제합니다.
           input:
-            label: Inactivity period
-            tooltip: Uses duration units (e.g. use 30h for 30 hours)
-            subLabel: This value must be larger than the Disable period, if it's active
+            label: 비활성 기간
+            tooltip: 기간 단위를 사용합니다(예, 30시간인 경우 30h 사용)
+            subLabel: 이 값은 활성화된 경우 비활성화 기간보다 커야 합니다.
         cron:
-          label: User retention process schedule
-          subLabel: The user retention process runs as a cron job (required)
-          errorMessage: User retention process schedule must be a valid cron expression
+          label: 사용자 유지 프로세스 일정
+          subLabel: 사용자 유지 프로세스는 Cron 작업으로 실행됩니다(필수)
+          errorMessage: 사용자 보존 프로세스 일정은 유효한 Cron 표현식이어야 합니다.
         dryRun:
-          label: Run the user retention process in DRY mode (no changes will be applied)
-          subLabel: You can check the logs to see which accounts would be affected
+          label: DRY 모드에서 사용자 보존 프로세스를 실행합니다(변경 사항이 적용되지 않음)
+          subLabel: 어떤 계정이 영향을 받는지 확인하려면 로그를 확인할 수 있습니다.
         defaultLastLogin:
-          label: Default last login (ms)
-          subLabel: Accounts without a registered last login timestamp will get this as a default
-          placeholder: Unix timestamp    
+          label: 기본 마지막 로그인 시간(ms)
+          subLabel: 등록된 마지막 로그인 타임스탬프가 없는 계정은 이것을 기본값으로 받습니다.
+          placeholder: 유닉스 타임스탬프
 validation:
   arrayCountRequired: "최소한 {count}개의 {key} {count, plural, =1 {is} other {are}}가 필요하며, {key}는 비어 있을 수 없습니다."
   noUpperCase: '"{key}"의 알파벳 문자는 소문자여야 합니다.'
@@ -7615,9 +7615,9 @@ validation:
   cluster:
     name: 클러스터 이름은 'local'이거나 'c-xxxxx'와 같은 형식이어서는 안 됩니다.
   conflict: |-
-    This resource has been modified since you started editing it, and some of those modifications conflict with your changes.
-    This screen has been updated to reflect the current values on the cluster. Review and reapply the changes you wanted to make, then Save again.
-    Conflicting {fieldCount, plural, =1 {field} other {fields}}: {fields}
+    이 리소스는 편집을 시작한 이후 수정되었으며, 일부 수정 사항이 귀하의 변경 사항과 충돌합니다.
+    이 화면은 클러스터의 현재 값을 반영하도록 업데이트되었습니다. 변경 사항을 검토하고 다시 적용한 후 다시 저장하세요.
+    충돌하는 {fieldCount, plural, =1 {field} other {fields}}: {fields}
   custom:
     missing: "{ validatorName }에 대한 유효성 검사기가 없습니다! 유효성 검사기는 custom-validators에 존재하며 이름이 올바르게 작성되었는지 확인하세요."
   dns:
@@ -7745,9 +7745,9 @@ validation:
       interval: '"{key}"은(는) 숫자 다음에 단위가 있는 형식이어야 합니다(예: 1h, 2m, 30s)'
   tab: "이 탭의 하나 이상의 필드에 양식 유효성 검사 오류가 포함되어 있습니다"
 carousel:
-  previous: Previous
-  next: Next
-  controlItem: Go to slide nº {number}
+  previous: 이전
+  next: 다음
+  controlItem: 슬라이드로 이동 nº {number}
 
 wizard:
   previous: 이전
@@ -7764,10 +7764,10 @@ wm:
     disconnected: 연결 해제됨
     error: 오류
   containerLogs:
-    options: Additional container logs options
-    expand: Expand additional container logs options
-    searchLogs: Search/filter logs
-    logActionMenu: Logs action menu  
+    options: 컨테이너 로그 옵션 추가하기
+    expand: 컨테이너 로그 옵션 추가 확장
+    searchLogs: 로그 검색/필터링
+    logActionMenu: 로그 작업 메뉴 
     clear: 지우기
     containerName: "컨테이너: {label}"
     download: 다운로드
@@ -7783,7 +7783,7 @@ wm:
         =1 {Hour}
         other {Hours}
         }
-      label: Show the last
+      label: 마지막 보기
       lines: "{value, number} Lines"
       minutes: |-
         {value, number} {value, plural,
@@ -7794,10 +7794,10 @@ wm:
     timestamps: 타임스탬프 표시
     wrap: 줄 바꿈
   containerShell:
-    resizeShellWindow: Resize Shell window - use arrow keys {arrow1} and {arrow2} to resize with keyboard
-    tabIcon: Shell tab icon
-    closeShellTab: Close Shell tab - {tab}
-    escapeText: Press Shift+Escape to blur from terminal
+    resizeShellWindow: Shell 창 크기 조정 - 키보드로 크기를 조정하려면 화살표 키 {arrow1} 및 {arrow2}를 사용하세요.
+    tabIcon: 셸 탭 아이콘
+    closeShellTab: 셸 탭 닫기 - {tab}
+    escapeText: 터미널에서 흐리게 처리하려면 Shift+Escape를 누르세요.
     clear: 지우기
     containerName: "컨테이너: {label}"
     failed: "컨테이너에 쉘을 열 수 없습니다 (쉘 명령 중 어느 것도 성공하지 않았습니다)\n\r"
@@ -7807,16 +7807,16 @@ wm:
       warning: WARN
       debug: DEBUG
     logMessage:
-      containerError: "{ logLevel }: Container missing shell executable (/bin/sh)"
+      containerError: "{ logLevel }: 컨테이너 누락 셸 실행 파일 (/bin/sh)"
   kubectlShell:
     title: "Kubectl: {name}"
 
 workload:
-  scaleWorkloads: Scale workloads
-  healthWorkloads: Jobs/Pods health status
-  healthScaleToggle: Toggle/Expand workloads scaling/health
-  plus: Scale up workload
-  minus: Scale down workload
+  scaleWorkloads: 워크로드 확장
+  healthWorkloads: 잡/파드 상태
+  healthScaleToggle: 전환/확장 워크로드 확장/상태
+  plus: 워크로드 확장
+  minus: 워크로드 축소
   container:
     command:
       addEnvVar: 환경 변수 추가
@@ -9255,9 +9255,9 @@ advancedSettings:
     "ui-default-landing": "로그인 후 사용자가 착륙하는 기본 페이지."
     "brand": "'/assets/brand'에서 정의된 대체 테마의 폴더 이름"
     "hide-local-cluster": 로컬 클러스터 숨기기
-    'agent-tls-mode': "Rancher Certificate Verification. In `strict` mode the agents (system, cluster, fleet, etc) will only trust Rancher installations which are using a certificate signed by the CABundle in the `cacerts` setting. When the mode is system-store, the agents will trust any certificate signed by a CABundle in the operating system’s trust store."
-    'k3s-based-upgrader-uninstall-concurrency': Defines the maximum number of clusters in which Rancher can concurrently uninstall the legacy `rancher-k3s-upgrader` or `rancher-rke2-upgrader` app from imported K3s or RKE2 clusters.
-    'imported-cluster-version-management': Enables version management for imported RKE2/K3s clusters, and the local cluster if it is an RKE2/K3s cluster. The per-cluster version management setting overrides this global setting at the cluster level. For existing clusters where the cluster-level version management is set to 'system-default', changing this flag will trigger a redeployment of the cluster agent during the next reconciliation (by default every 5 minutes, or as soon as the cluster is edited, whichever comes first).
+    'agent-tls-mode': "Rancher 인증서 확인. `strict` 모드에서는 에이전트(시스템, 클러스터, 플릿 등)가 `cacerts` 설정에서 CABundle이 서명한 인증서를 사용하는 Rancher 설치만 신뢰합니다. 모드가 `system-store`인 경우, 에이전트는 운영 체제의 신뢰 저장소에 있는 CABundle이 서명한 모든 인증서를 신뢰합니다."
+    'k3s-based-upgrader-uninstall-concurrency': Rancher가 가져온 K3s 또는 RKE2 클러스터에서 기존 `rancher-k3s-upgrader` 또는 `rancher-rke2-upgrader` 앱을 동시에 제거할 수 있는 최대 클러스터 수를 정의합니다.
+    'imported-cluster-version-management': 가져온 RKE2/K3s 클러스터와 로컬 클러스터(RKE2/K3s 클러스터인 경우)에 대한 버전 관리를 활성화합니다. 클러스터별 버전 관리 설정은 클러스터 수준에서 이 전역 설정을 재정의합니다. 클러스터 수준 버전 관리가 'system-default'로 설정된 기존 클러스터의 경우, 이 플래그를 변경하면 다음 조정 시(기본적으로 5분마다 또는 클러스터가 편집되는 즉시, 둘 중 먼저 발생하는 시점) 클러스터 에이전트가 다시 배포됩니다.
     'harv-vlan': VLAN 네트워크의 기본 네트워크 인터페이스 이름입니다.
     'harv-backup-target': 가상 머신 백업을 저장하기 위한 사용자 정의 백업 대상입니다.
     'branding': 브랜딩을 통해 관리자는 Harvester 제품 이름, 로고, 색 구성표를 사용자 정의하여 UI를 전 세계적으로 리브랜딩할 수 있습니다.
@@ -9313,9 +9313,9 @@ advancedSettings:
       trace: 추적
     'agent-tls-mode':
       strict: 'Strict'
-      system-store: 'System Store'
+      system-store: '시스템 저장소'
   provisioning:
-    header: Cluster provisioning
+    header: 클러스터 프로비저닝
 featureFlags:
   label: 기능 플래그
   warning: |-
@@ -9394,16 +9394,16 @@ performance:
     description: 활성화되고 사용자가 지정된 시간 초과로 비활성화되면 UI는 더 이상 페이지 내용을 새로 고치지 않으며 계속하려면 사용자가 페이지를 다시 로드해야 합니다.
     authUserTTL: 이 타임아웃은 현재 {current} 분인 사용자 세션 타임아웃 auth-user-session-ttl-minutes보다 높을 수 없습니다.
   serverPagination:
-    label: Server-side Pagination
-    description: By default Lists will fetch all resources and paginate in the browser (create the page given sorting and filtering settings). Change this setting to enable pagination server-side. This should help the responsiveness of the UI in systems with a lot of resources.
-    checkboxLabel: Enable Server-side Pagination
-    applicable: "Server-side pagination applies to Resource Types"
-    incompatibleDescription: "Server-side Pagination is incompatible with Manual Refresh and Incremental Loading. Enabling this will disable them."
-    featureFlag: The&nbsp;<a href="{ffUrl}">Feature Flag</a>&nbsp;`ui-sql-cache` must be enabled to use this feature
+    label: 서버 측 페이지 매김
+    description: 기본적으로 Lists는 모든 리소스를 가져와 브라우저에서 페이지 매김을 수행합니다(정렬 및 필터링 설정에 따라 페이지 생성). 이 설정을 변경하여 서버 측 페이지 매김을 활성화하세요. 이렇게 하면 리소스가 많은 시스템에서 UI 반응성이 향상될 것입니다.
+    checkboxLabel: 서버 측 페이지 매김 활성화
+    applicable: "서버 측 페이지 매김은 리소스 유형에 적용됩니다."
+    incompatibleDescription: "서버 측 페이지 매김 기능은 수동 새로 고침 및 증분 로딩 기능과 호환되지 않습니다. 이 기능을 활성화하면 해당 기능이 비활성화됩니다."
+    featureFlag: The&nbsp;<a href="{ffUrl}">기능 플래그</a>&nbsp;`ui-sql-cache` 이 기능을 사용하려면 활성화해야 합니다.
     resources:
-      generic: most resources in the cluster's 'More Resources' section
-      all: All Resources
-    experimental: This setting is experimental and may be removed or updated in future versions. We do not recommend enabling this setting in production environments.
+      generic: 클러스터의 '추가 리소스' 섹션에 있는 대부분의 리소스
+      all: 전체 리소스
+    experimental: 이 설정은 실험용이며 향후 버전에서 제거되거나 업데이트될 수 있습니다. 프로덕션 환경에서는 이 설정을 활성화하지 않는 것이 좋습니다.
 
 banner:
   label: 고정 배너
@@ -9449,21 +9449,21 @@ branding:
     uploadDark: 다크 로고 업로드
     useCustom: 사용자 지정 로고 사용
   banner:
-    label: Banner
-    tip: 'Upload an image to replace the default Rancher banner in the Dashboard page. We recommend using an SVG image with an aspect ratio of 6:1. The default image size is 4197x633. Max file size is 200KB. Accepted formats: JPEG, PNG, SVG.'
-    lightPreview: Light Theme Preview
-    darkPreview: Dark Theme Preview
-    uploadLight: Upload Light Banner
-    uploadDark: Upload Dark Banner
-    useCustom: Use a Custom Banner
+    label: 배너
+    tip: '대시보드 페이지의 기본 Rancher 배너를 대체할 이미지를 업로드하세요. 가로 세로 비율이 6:1인 SVG 이미지를 사용하는 것이 좋습니다. 기본 이미지 크기는 4197x633입니다. 최대 파일 크기는 200KB입니다. JPEG, PNG, SVG 형식을 지원합니다.'
+    lightPreview: 라이트 테마 미리보기
+    darkPreview: 다크 테마 미리보기
+    uploadLight: 라이트 배너 업로드
+    uploadDark: 다크 배너 업로드
+    useCustom: 맞춤 배너 사용
   loginBackground:
-    label: Login Background
-    tip: 'Upload an image to replace the default Rancher background in the Login page. We recommend using an SVG image with an aspect ratio of 7:8. The default image size is 683x768. Max file size is 200KB. Accepted formats: JPEG, PNG, SVG.'
-    lightPreview: Light Theme Preview
-    darkPreview: Dark Theme Preview
-    uploadLight: Upload Light Background
-    uploadDark: Upload Dark Background
-    useCustom: Use a Custom Background    
+    label: 로그인 배경
+    tip: '로그인 페이지의 기본 Rancher 배경을 대체할 이미지를 업로드하세요. 가로 세로 비율이 7:8인 SVG 이미지를 사용하는 것이 좋습니다. 기본 이미지 크기는 683x768입니다. 최대 파일 크기는 200KB입니다. JPEG, PNG, SVG 형식을 지원합니다.'
+    lightPreview: 라이트 테마 미리보기
+    darkPreview: 다크 테마 미리보기
+    uploadLight: 라이트 배경 업로드
+    uploadDark: 다크 배경 업로드
+    useCustom: 사용자 정의 배경 사용
   favicon:
     label: 파비콘
     tip: "브라우저 탭의 Rancher 파비콘을 대체할 아이콘을 업로드하십시오. 최대 파일 크기는 20KB입니다."
@@ -9631,11 +9631,11 @@ volumeClaimTemplate:
 manager:
   cloudCredentials:
     label: 클라우드 자격 증명
-    renew: Renew
-    expired: Expired
+    renew: 갱신
+    expired: 만료됨
     banners:
-      expiring: "{count} Cloud {count, plural, =1 { Credential expires soon} other { Credentials expire soon}}, please Renew"
-      expired: "{count} Cloud {count, plural, =1 { Credential has expired} other { Credentials have expired}}, please Renew"
+      expiring: "{count} Cloud {count, plural, =1 { 자격 증명이 곧 만료됩니다} other { 자격 증명이 곧 만료됩니다}}, 갱신해주세요"
+      expired: "{count} Cloud {count, plural, =1 { 자격 증명이 만료되었습니다} other { 자격 증명이 만료되었습니다}}, 갱신해주세요w"
   drivers:
     label: 드라이버
   rkeTemplates:
